@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sjmcrf.yangfan.dao.InfoDao">
+
+
+	<select id="get" resultType="Info">
+		SELECT *
+		FROM info
+		where deleted = 0
+	</select>
+
+	<update id="deleteAll">
+		UPDATE _goods 
+		SET 
+		deleted = 1
+	</update>
+	
+    <insert id="insert" parameterType="Info" useGeneratedKeys="true" keyProperty="id">
+        insert into 
+        	info(mobile,addr,qq1,qq2,email,wechat,deleted)
+        	values(#{mobile},#{addr},#{qq1},#{qq2},#{email},#{wechat},#{deleted})
+    </insert>
+
+</mapper>
