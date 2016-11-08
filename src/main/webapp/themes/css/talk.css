@@ -1,0 +1,38 @@
+﻿/* CSS Document */
+/* Add  ZhangYihao 2014-10-21 */
+
+.talkArea{text-align:left;}
+.talkHead{ height:60px; background:#bbe0f5 url(images/headerbg.jpg) no-repeat right top;}
+.talkHead h1{ color:#016abb; line-height:60px;font-size:16px; padding-left:20px;}
+.talkHead h1 span{font-size:20px; margin:0 10px;}
+.talkContent{padding:10px; background:#d2d2d2;}
+.talkText{border:1px solid #b5b5b5; background:#ffffff;}
+
+.ttips{ margin:10px 10px 20px 10px; background:#e2fafe url(images/ttips.gif) no-repeat 10px 10px; border:1px solid #c6e8e7;-moz-border-radius: 5px;border-radius:5px;-o-border-radius: 5px; padding:10px 10px 10px 30px;}
+
+.talkLR{overflow:hidden; margin:10px; position:relative;}
+.talkU{ width:50px;height:50px;position:relative; position:absolute; top:0;}
+.talkU img{ width:50px;height:50px;}
+.imgf{ background:url(images/imgf.png) no-repeat left top;_background:url(images/imgf.gif) no-repeat left top;width:50px; height:50px;position:absolute; top:0;left:0;}
+.talkC{margin-right: 20%;margin-bottom:10px; float:left; margin-left:70px; background:#e6f9ff; border:1px solid #cadfe2; padding:10px;position:relative;-moz-border-radius: 5px;border-radius:5px;-o-border-radius: 5px; }
+.talkC p{ font-weight:bold; color:#3b9fb6; margin-bottom:10px; font-size:14px;}
+.talkC p span{ color:#54a0c0; font-weight:normal; float:right; font-size:12px;}
+.sj{background:url(images/sj.jpg) no-repeat left top; width:8px; height:10px; display:block; position:absolute; top:10px;}
+
+.talkT{height:350px; overflow-y:auto;}
+.talkLeft .talkU{ left:0;}
+.talkRight .talkU{ right:0;}
+.talkLeft .sj{left:-7px;}
+.talkRight .sj{ background-position:right top;right:-7px;}
+.talkRight .talkC{float:right; margin-left:30px; margin-right:70px;}
+.talkRight .talkC p{text-align:right;}
+.talkRight .talkC p span{float:left;}
+
+.talktip{background:#f0f0f0; padding:10px; border-bottom:1px solid #d2d2d2;}
+
+.inputT textarea{width:100%; height:80px; border:none;}
+.inputT div{ margin:5px;}
+
+.btnFoot{ border-top:1px solid #d2d2d2; background:#f8f8f8; height:55px; line-height:55px;text-align:right;color:#999999;}
+.btnFoot a{background:url(images/btnB.gif) repeat-x left center; padding:8px; border:1px solid #cfcfcf; margin:0 0 0 20px;}
+.btnFoot a.sentTalk{background:url(images/btnB.gif) repeat-x left bottom; padding:0px; width:80px;display:inline-block;text-align:center; line-height:40px; font-size:16px; margin-right:10px;}

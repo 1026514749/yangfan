@@ -1,0 +1,159 @@
+@CHARSET "UTF-8"; 
+html {color: #000;background: #FFF;}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {margin: 0; padding: 0;}
+
+table {border-collapse: collapse;border-spacing: 0;}
+fieldset, img {border: 0;}
+address, caption, cite, code, dfn, em, strong, th, var {font-style: normal;font-weight: normal;}
+li {list-style: none;}
+caption, th {text-align: left;}
+q:before, q:after {content: '';}
+abbr, acronym {border: 0;font-variant: normal;}
+sup {vertical-align: text-top;}
+sub {vertical-align: text-bottom;}
+input, textarea, select { font-family: inherit; font-size: inherit;font-weight: inherit;}
+input, textarea, select {*font-size: 100%;}
+legend { color: #000;}
+del, ins { text-decoration: none;}
+body {font-family: arial, Tahoma,serif;font-size: 10pt;}
+
+input[type=text] {font-size: 12px; border: #999 1px solid;line-height: 22px; height: 22px;}
+.intype {font-size: 12pt; border: #999 1px solid;line-height: 22px; height: 22px; padding-left: 3px;}
+input[type=text],textarea { border: #999 1px solid;padding: 0 3px 0 3px;font-size: 12px;}
+
+.headerBar {background: url(itemdetal_header.gif) no-repeat right top;padding-top: 6px; display: block; height: 58px; border-bottom: solid 1px #36a1df;margin-bottom: 4px;}
+.headerBar h1 { height: 50px;line-height: 50px; font-size: 14px;font-weight: bold;margin: 0px 30px; background: url(ow_hdr_i.gif) no-repeat left;text-indent: 60px;display: block;float: left}
+
+.applyBar { padding-top: 6px; display: block; height: 58px; border-bottom: solid 1px #36a1df; margin-bottom: 4px;}
+.applyBar h1 { height: 50px;line-height: 50px;font-size: 14px; font-weight: bold; margin: 0px 30px; background: url(ow_hdr_i.gif) no-repeat left; text-indent: 60px; display: block;float: left}
+
+.fsarea { margin-bottom: 10px;}
+.fsarea h2 {font-size: 12px;margin: 0px;float: left;color: #3a6683; background: #fff url(datalist_h2.gif) no-repeat left top; padding-left: 15px; height: 22px;line-height: 22px; padding-right: 5px;font-weight: bold;}
+.fsarea .toolbar {background: #fff url(datalist_toolbar.gif) no-repeat right top;text-align: right;padding-right: 6px;padding-bottom: 2px;height: 20px;}
+.fsarea .toolbar a {background: url(linkbtn_left.gif) no-repeat left top; height: 20px; padding: 0px 0px 0px 3px; text-decoration: none;display: inline-block;}
+.fsarea .toolbar a span { background: url(linkbtn_right.gif) no-repeat right top; height: 18px; display: inline-block;color: #3F5687;padding: 2px 5px 0px 2px;text-align: center;cursor: pointer; white-space: nowrap;word-break: keep-all;font-size: 14px; font-family: '宋体',serif}
+.fsarea .toolbar a span img { border: 0px; margin-bottom: -4px; margin-right: 5px;}
+.fsarea .toolbar a span div { border: 0px; margin-bottom: -4px; margin-right: 5px; display: inline-block;}
+.fsarea .toolbar a:hover {background-position: 0% -40px;}
+.fsarea .toolbar a:hover span {background-position: 100% -40px;color: #333;}
+.fsarea .fscxt { padding: 3px; border: solid 1px #A8CFEB; border-top: none;}
+
+div.fsblock { margin-bottom: 10px;}
+div.fsblock h2 {font-size: 12px; margin: 0px; float: left; color: #3a6683; padding-left: 15px; height: 22px; line-height: 22px; padding-right: 5px; font-weight: bold;}
+div.fsblock .toolbar { background: url(panel_title.png) repeat-x; text-align: right; padding-right: 6px; padding-bottom: 2px; height: 20px; border-bottom: #99bbe8 solid 1px;}
+div.fsblock .toolbar a { background: url(linkbtn_left.gif) no-repeat left top; height: 20px; padding: 0px 0px 0px 3px; text-decoration: none; display: inline-block;}
+div.fsblock .toolbar a span { background: url(linkbtn_right.gif) no-repeat right top; height: 18px; display: inline-block; color: #3F5687; padding: 2px 5px 0px 2px; text-align: center; cursor: pointer; white-space: nowrap; WORD-BREAK: keep-all; font-size: 14px; font-family: '宋体',serif}
+div.fsblock .toolbar a span img { border: 0px; margin-bottom: -4px; margin-right: 5px;}
+div.fsblock .toolbar a span div { border: 0px; margin-bottom: -4px; margin-right: 5px; display: inline-block;}
+div.fsblock .toolbar a:hover { background-position: 0% -40px;}
+div.fsblock .toolbar a:hover span { background-position: 100% -40px; color: #333;}
+div.fsblock .fscxt { padding: 3px; border-top: none;}
+
+div.fsnone { margin-bottom: 10px;}
+div.fsnone h2 { background-image: none; font-size: 12px; margin: 0px; float: left; color: #3a6683; padding-left: 15px; height: 22px; line-height: 22px; padding-right: 5px; font-weight: bold;}
+div.fsnone .toolbar { background-image: none; text-align: right; padding-right: 6px; padding-bottom: 2px; height: 20px;}
+div.fsnone .toolbar a { background: url(linkbtn_left.gif) no-repeat left top; height: 20px; padding: 0px 0px 0px 3px; text-decoration: none; display: inline-block;}
+div.fsnone .toolbar a span { background: url(linkbtn_right.gif) no-repeat right top; height: 18px; display: inline-block; color: #3F5687; padding: 2px 5px 0px 2px; text-align: center; cursor: pointer; white-space: nowrap; WORD-BREAK: keep-all; font-size: 14px; font-family: '宋体',serif}
+div.fsnone .toolbar a span img { border: 0px; margin-bottom: -4px; margin-right: 5px;}
+div.fsnone .toolbar a span div { border: 0px; margin-bottom: -4px; margin-right: 5px; display: inline-block;}
+div.fsnone .toolbar a:hover { background-position: 0% -40px;}
+div.fsnone .toolbar a:hover span { background-position: 100% -40px; color: #333;}
+div.fsnone .fscxt { padding: 3px; border: none;}
+
+.applyform table { background-color: #cde2f1; font-family: "宋体", arial, tahoma,serif; font-size: 12px; table-layout: fixed; border-collapse: collapse; border: solid 1px #A8CFEB; width: 100%;}
+.applyform table tbody { width: 100%;}
+.applyform table th { background-color: #f1f6ff; font-weight: normal; height: 32px; text-align: right; width: 150px; border: solid #A8CFEB 1px;}
+.applyform table td { background-color: #ffffff; padding: 3px 10px 3px 3px; white-space: nowrap; border: solid #A8CFEB 1px;}
+.applyform table td input[type=text] { line-height: 24px; height: 24px; width: 100%; padding-left: 3px; /*font-size: 12pt;*/}
+.applyform table td input[type=text]:focus { border: #FF0000 1px solid;}
+.applyform table td input[type=password] { line-height: 24px; height: 24px; width: 100%; padding-left: 3px; font-size: 12pt;}
+.applyform table td select { height: 24px; line-height: 20px; padding: 2px 0; width: 150px; font-size: 14px;}
+.applyform table td textarea { width: 99.5%; height: 100%; padding-left: 3px; padding-top: 3px; padding-right: 3px; font-size: 12pt; line-height: 24px;} .applyform table td textarea:focus { border: #FF0000 1px solid;}
+
+.gridform table { font-family: "宋体", arial, tahoma; font-size: 12px; border-collapse: collapse; border: solid 1px #A8CFEB; width: 100%;}
+.gridform table tbody { width: 100%;}
+.gridform table th { background-color: #f1f6ff; font-weight: normal; height: 32px; text-align: right; padding-left: 3px; width: 150px; border: solid #A8CFEB 1px;}
+.gridform table td { background-color: #ffffff; padding: 3px 10px 3px 3px; white-space: nowrap; border: solid #A8CFEB 1px;}
+.gridform table td input[type=text] { line-height: 24px; height: 24px; width: 100%; padding-left: 3px; font-size: 12pt;}
+.gridform table td input[type=text]:focus { border: #FF0000 1px solid;}
+.gridform table td input[type=password] { line-height: 24px; height: 24px; width: 100%; padding-left: 3px; font-size: 12pt;}
+.gridform table td select { height: 24px; line-height: 20px; padding: 2px 0; width: 150px; font-size: 14px;}
+.gridform table td textarea { width: 99.5%; height: 100%; padding-left: 3px; padding-top: 3px; padding-right: 3px; font-size: 12pt; line-height: 24px;}
+.gridform table td textarea:focus { border: #FF0000 1px solid;}
+
+.search { border: 1px solid #A8CFEB; background-color: #F1F6FF; margin-bottom: 5px; position: relative; padding-left: 15px;}
+.search input { font-size: 11px; border: #999 1px solid; line-height: 20px; height: 20px; padding-left: 3px;}
+.search input:focus { border: #FF0000 1px solid;}
+/*.search select { height: 22px; line-height: 20px; padding: 0 0; width: 150px; font-size: 12px;*height: 24px;*font-size:12pt;}*/
+.search img.pic { position: absolute; left: 2px; top: 5px; cursor: pointer; _left: -13px;}
+.search th { text-align: right; white-space: nowrap; padding-left: 5px; height: 20px; vertical-align: middle; width: 80px;}
+.search td { padding: 2px;font-size: 12px;}
+.search td img { margin-bottom: -3px; margin-left: 3px; cursor: pointer;}
+.search td.button { width: auto; text-align: right; vertical-align: top; padding-right: 5px; padding-top: 2px;}
+.search td.button a {background: url(linkbtn_left.gif) no-repeat left top;height: 20px;padding: 0 0 0 3px;text-decoration: none; display: inline-block;}
+.search td.button a span {background: url(linkbtn_right.gif) no-repeat right top; height: 16px;display: inline-block;color: #3F5687;padding: 1px 5px 3px 2px; *padding: 4px 5px 0px 2px;text-align: center;cursor: pointer;white-space: nowrap;word-break: keep-all;}
+.search td.button a span img {border: 0;margin-bottom: -4px; *margin-bottom: -3px; margin-right: 5px;width: 15px;height: 14px;}
+.search td.button a:hover { background-position: 0 -40px;}
+.search td.button a:hover span {background-position: 100% -40px; color: #333;}
+
+/* common-button样式 */
+a.combtn { background: url(com_btn_l.gif) no-repeat left top; height: 26px; padding: 0 0 0 3px; text-decoration: none; display: inline-block; margin-right: 8px;}
+a.combtn span { background: url(com_btn_r.gif) no-repeat right top; height: 26px; line-height: 26px; display: inline-block; color: #1c4391; padding: 0 12px 0 4px; text-align: center; cursor: pointer; white-space: nowrap; word-break: keep-all; *padding-top: 6px; *height: 20px;}
+a.combtn:hover { background-position: 0 -26px; text-decoration: none;}
+a.combtn:hover span { background-position: 100% -26px; color: #1c4391;}
+a.combtn span img { margin-bottom: -5px; *margin-bottom: -2px;margin-right: 3px;}
+
+/* link-button样式 */
+a.linkbtn { background: url(linkbtn_left.gif) no-repeat left top; height: 20px; padding: 0px 0px 0px 3px; text-decoration: none; display: inline-block;}
+a.linkbtn span { background: url(linkbtn_right.gif) no-repeat right top; height: 18px; display: inline-block; color: #3F5687; padding: 2px 5px 0px 2px; text-align: center; cursor: pointer; white-space: nowrap; word-break: keep-all;}
+a.linkbtn span div { border: 0px; margin-bottom: -4px; margin-right: 5px; display: inline-block; width: 16px; height: 16px;}
+a.linkbtn span img { border: 0px; margin-bottom: -2px; margin-right: 5px;}
+a.linkbtn:hover { background-position: 0% -40px;}
+a.linkbtn:hover span { background-position: 100% -40px; color: #333;}
+
+.userTips { height: 30px; line-height: 30px; margin-top: 5px; margin-bottom: 5px; background-color: #fefde8; border: #f4b98e 1px solid; padding-left: 5px; overflow: hidden;}
+
+.inputWithBtn { border: 1px solid #808080; width: 100%;}
+.inputWithBtn input { border: 0; color: #333; font-size: 12pt; line-height: 20px; height: 20px; padding-left: 3px; display: inline-block;}
+
+textarea.inputarea { padding: 3px 3px; font-size: 12pt; line-height: 20px;}
+textarea.inputarea:focus { border: #FF0000 1px solid;}
+
+.mainarea { margin-right: 5px; margin-left: 5px;}
+
+/** loadmask插件-css */
+.loadmask { z-index: 100; position: absolute; top: 0; left: 0; -moz-opacity: 0.2; opacity: .20; filter: alpha(opacity = 20); background-color: #CCC; width: 100%; height: 100%; zoom: 1;}
+.loadmask-msg { z-index: 20001; position: absolute; top: 0; left: 0; border: 1px solid #6593cf; background: #c3daf9; padding: 2px;}
+.loadmask-msg div { padding: 5px 10px 5px 25px; background: #fbfbfb url('../../script/loadmask/images/loading.gif') no-repeat 5px 5px; line-height: 16px; border: 1px solid #a3bad9; color: #222; font: normal 11px tahoma, arial, helvetica, sans-serif; cursor: wait;}
+
+.masked { overflow: hidden !important;}
+.masked-relative { position: relative !important;}
+.masked-hidden { visibility: hidden !important;}
+
+.report-table-container { width: 100%; overflow-x: auto; padding-bottom: 10px;overflow-y: hidden;}
+
+.budget-table-report table { width: 100%; table-layout: fixed; border: 1px solid #C1DAD7; background-color: #C1DAD7;}
+.budget-table-report thead td { font: bold 13px "宋体", arial, tahoma; color: #4f6b72; border-right: 1px solid #C1DAD7; border-bottom: 1px solid #C1DAD7; border-top: 1px solid #C1DAD7; letter-spacing: 2px; text-transform: uppercase; text-align: left; padding: 6px 6px 6px 12px; background: #CAE8EA no-repeat;}
+.budget-table-report thead td.nobg { border-top: 0; border-left: 0; border-right: 1px solid #C1DAD7; background: none;}
+.budget-table-report td { border: 1px solid #C1DAD7; background: #fff; padding: 6px 6px 6px 12px; color: #4f6b72; font: 12px "宋体", arial, tahoma; *border: 0px solid #C1DAD7;}
+.budget-table-report td.alt { background: #F5FAFA; color: #797268;}
+.budget-table-report th.spec { border-left: 1px solid #C1DAD7; border-top: 0; background: #fff no-repeat; font: bold 12px "宋体", arial, tahoma;}
+.budget-table-report th.specalt { border-left: 1px solid #C1DAD7; border-top: 0; background: #f5fafa no-repeat; font: bold 12px "宋体", arial, tahoma; color: #797268;}
+.budget-table-report-sumary { border-left: 1px solid #C1DAD7; border-right: 1px solid #C1DAD7; border-bottom: 1px solid #C1DAD7; background: #000000; font-size: 12px; padding: 6px 6px 6px 12px; color: red; font: 12px "宋体", arial, tahoma;}
+
+.text-red-border { border: #FF0000 1px solid;}
+.applyform-table-td-input-text { line-height: 24px; height: 24px; width: 100%; padding-left: 3px; font-size: 16px;border: #999 1px solid;}
+.applyform-table-td-input-file { line-height: 24px; height: 24px; padding-left: 3px; font-size: 16px;border: #999 1px solid;}
+.applyform-table-td-input-text-mini { line-height: 22px; height: 22px; width: 100%; padding-left: 3px; font-size: 16px;border: #999 1px solid;}
+.applyform-table-td-textarea { width: 99.5%; height: 100%; padding-left: 3px; padding-top: 3px; padding-right: 3px; font-size: 16px; line-height: 24px;border: #999 1px solid;}
+.input-readonly{ border: 0;}
+
+td.td-input-edit {padding: 0 6px 0 1px; *padding-right: 4px;}
+td.td-input-edit input{line-height: 24px; height: 24px; width: 100%; padding-left: 3px; font-size: 16px;border: none;background-color: #eebecb;}
+
+td.evilui-td-input-editor {background-color: #eebecb;}
+td.evilui-td-input-editor input{line-height: 24px; height: 24px; width: 100%; padding-left: 3px; font-size: 16px;border: none;background-color: #eebecb;}
+
+tr.table_firstHeader_hidden {height: 0;margin: 0;padding: 0;background: #ffffff;border: none;}
+tr.table_firstHeader_hidden th{height: 0;margin: 0;padding: 0;background: #ffffff;border: none;}
+tr.table_firstHeader_hidden td{height: 0;margin: 0;padding: 0;background: #ffffff;border: none;}

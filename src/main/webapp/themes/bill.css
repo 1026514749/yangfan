@@ -1,0 +1,240 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* start 最顶部信息提示 */
+a{text-decoration: none;}
+.acTable {
+    width: 100%;
+    text-align: center;
+    -moz-border-radius: 5px 5px 0 0;
+    -webkit-border-radius: 5px 5px 0 0;
+    border-radius: 5px 5px 0 0;
+    border: 1px solid #4abae1;
+    margin-bottom: 20px;
+}
+.acTable table{
+    width: 100%;
+    overflow: hidden;
+    font-size: 12pt;
+    text-align: left;
+}
+.acTable table thead{
+    width: 100%;
+    background-color: #33CCCC;
+}
+.acTable table thead th {
+    text-align: center;
+    font-size: 15pt;
+    font-weight: bold;
+}
+.acTable table thead th {
+    background: none repeat scroll 0 0 #4abae1;
+    color: #FFFFFF;
+    font-size: 16px;
+    text-align: left;
+    -moz-border-radius: 5px 5px 0 0;
+    -webkit-border-radius: 5px 5px 0 0;
+    border-radius: 5px 5px 0 0;
+    padding-left: 20px;
+    font-weight: normal;
+
+}
+.acTable table td,.acTable table th{
+    padding:4px; line-height:2;
+}
+.acTable table tbody tr td{
+    padding: 0;
+}
+
+.acTable table tbody tr td table {
+    border: none;
+}
+.indexRow1{
+    background-color: #F0F0FF;
+}
+.indexRow2{
+    background-color: #FFFFFF;
+}
+.indexRow3{
+    background-color: #FFFFFF;
+    border-bottom: dotted 1px #999999;
+}
+
+.staticRow{
+    background-color: #efefef;
+    border-bottom: dotted 1px #999999;
+}
+
+.indexTr1{
+    background-color: #EBF8DE;
+}
+.indexTr2{
+    background-color: #FFFFFF;
+}
+
+.linkbtn a{background: url(linkbtn_left.gif) no-repeat left top;height: 20px;padding: 0 0 0 3px;text-decoration: none; display: inline-block;}
+.linkbtn a span {background: url(linkbtn_right.gif) no-repeat right top; height: 16px;display: inline-block;color: #3F5687;padding: 1px 5px 3px 2px; *padding: 4px 5px 0px 2px;text-align: center;cursor: pointer;white-space: nowrap;word-break: keep-all;}
+.linkbtn a span img {border: 0;margin-bottom: -4px; *margin-bottom: -3px; margin-right: 5px;width: 15px;height: 12px;}
+.linkbtn a:hover { background-position: 0 -40px;}
+.linkbtn a:hover span {background-position: 100% -40px; color: #333;}
+/* end */
+
+
+
+/* by zhangyihao 2014-12-12 */
+body.billgb{width: auto;background:#ffffff url(billbg.gif) repeat-x left top;}
+.bill_form{width: 990px;margin: 0 auto;}
+.bill_header{height: 70px;background: #f6f6f6; border: 1px solid #cccccc}
+.bill_hc{margin: 0 auto; width: 1000px;font-size: 25px;color: #666666}
+.bill_hc img{ margin: 5px 20px -12px 10px;}
+.bill_title{background:url(bill1.jpg) repeat-x right bottom;height: 96px; position: relative;}
+.bill_title h1{background: url(billShop.gif) no-repeat left bottom; height: 50px; padding-left: 60px; line-height: 50px; font-size: 18px;padding-top: 30px;}
+.btn_dc{width: 202px;height: 41px; position: absolute;right:28px;top:90px;background:url(btn_dc.gif) repeat-x left top;}
+.btn_dc a span{color: #848283;padding-left: 40px;font-size: 15px;}
+.acTable table thead th.bill_infoH{}
+.acTable table tbody tr.bill_inforow{background: #f3f3fe;}
+.acTable table tbody tr.bill_inforow td{padding: 0 0 0 20px;}
+.acTable table tbody tr.bill_inforow td .orgB{font-size: 18px;font-weight: bold;color: #ff6600;}
+.acTable table tbody tr.bill_inforow td .greenB{font-size: 18px;font-weight: bold;color: #1bb974;}
+.acTable table tbody tr.bill_inforow td .blueM{font-size: 16px;font-weight: bold;color: #0085d0;}
+.acTable table tbody tr.bill_inforow td .orgM{font-size: 16px;font-weight: bold;color: #ff6600;}
+.acTable table tbody tr.bill_inforow td .grayM{font-size: 14px;color: #666666;}
+.acTable table tbody tr.bill_inforow1{border:10px solid #ffffff;border-bottom:none; border-left-width:20px;border-right-width:20px;   }
+.acTable table tbody tr.bill_inforow2{border:10px solid #ffffff;border-bottom:none; border-top:none; border-left-width:20px;border-right-width:20px;}
+.acTable table tbody tr.bill_inforow3{border:10px solid #ffffff;border-top:none; border-left-width:20px;border-right-width:20px;}
+.acTable table tbody tr td .bill_infoshow{padding: 10px; border-top: 10px solid #e5e5e5;}
+.acTable table tbody tr td .bill_infoshow .indexRow1 td{ padding: 5px; background: #ffffff;font-size: 16px;font-weight: bold}
+.acTable table tbody tr td .bill_infoshow .indexRow1 td span{font-size: 16px;font-weight: bold;color: #0085d0;}
+
+.acTable table tbody tr td .bill_infoshow .indexRowT{  background: #f0f0ff;}
+.acTable table tbody tr td .bill_infoshow .indexRowT td{padding: 5px;font-size: 14px;padding-right: 50px; text-align: right}
+.acTable table tbody tr td .bill_infoshow .indexRowT td.alignLeft{ text-align: left;}
+.acTable table tbody tr td .bill_infoshow .indexRow3 { background-color: #FFFFFF; border-bottom: solid 1px #cccccc;}
+.acTable table tbody tr td .bill_infoshow .indexRow3 img,.acTable table tbody tr td .bill_infoshow .indexRow1 img{margin-bottom: -3px;}
+.acTable table tbody tr td .bill_infoshow .indexRow3 td{padding: 5px;font-size: 16px;padding-right: 50px;text-align: right}
+.acTable table tbody tr td .bill_infoshow .indexRow3 td a{font-size: 16px; color: #666666;}
+.acTable table tbody tr td .bill_infoshow .indexRow3 td.alignLeft{ text-align: left; padding-right: 0}
+.acTable table tbody tr td .bill_infoshow .staticRow td{padding: 5px;padding-right: 50px;text-align: right;font-size: 16px;}
+.acTable table tbody tr td .bill_infoshow .staticRow td.sum{font-size: 18px; font-weight: bold;text-align: left;}
+
+.acTable table tbody tr td.orgF{color: #ff6600;font-size: 14px;font-weight: bold;}
+.acTable table tbody tr td.greenF{color: #1bb974;font-size: 14px;font-weight: bold;}
+.acTable table tbody tr td.blueF{color: #0085d0;font-size: 14px;font-weight: bold;}
+.acTable .bill_yf{}
+.acTable .bill_yf .indexRow1 td{ padding: 5px;font-size: 16px;padding-left: 20px;background: #4abae1; color: #ffffff}
+.acTable .bill_yf .indexRowT{  background: #f0f0ff;}
+.acTable .bill_yf .indexRowT td{ padding: 5px; padding-left: 20px;}
+.acTable .bill_yf .indexRow3{ background-color: #FFFFFF; border-bottom: solid 1px #cccccc}
+.acTable .bill_yf .indexRow3 td{ padding: 5px; padding-left: 20px;}
+.billTipsbody td{padding: 10px; width: 100%;}
+.billTips{padding: 10px;background-color: #fefde8;border: #f4b98e 1px solid; margin:0 10px 10px 10px;}
+
+
+
+.acTable-new{
+    background: none repeat scroll 0 0 #4abae1;
+    color: #FFFFFF;
+    font-size: 16px;
+    text-align: left;
+    -moz-border-radius: 5px 5px 0 0;
+    -webkit-border-radius: 5px 5px 0 0;
+    border-radius: 5px 5px 0 0;
+    padding: 10px;
+    font-weight: normal;
+}
+
+.Wdate-new,.Wdate-new[type=text] {
+    border: none;
+    /* background: none; */
+    font-size: 16px;
+    color: #333;
+    padding: 3px;
+    -moz-border-radius:3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+.actableContent{
+    background: #ffffff;
+    -moz-border-radius: 0 0 5px 5px;
+    -webkit-border-radius:0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
+    border: 1px solid #4abae1;
+    padding: 10px;
+}
+
+.bill_inforow{
+    background: #f3f3fe;
+}
+
+.bill_inforow table td{
+    padding:0 10px;
+    color: #515151;
+    font-size: 12px;
+}
+
+.tipsmonth{margin: 0 -10px 10px -10px;}
+
+.blockTips-new {
+    padding: 10px;
+    background-color: #fefde8;
+    border: #f4b98e 1px solid;
+    margin: 10px 0px;
+}
+
+.blockTips-new p{
+    line-height: 25px;
+}
+
+.orgB{font-size: 18px;font-weight: bold;color: #ff6600;}
+.greenB{font-size: 18px;font-weight: bold;color: #1bb974;}
+.blueM{font-size: 16px;font-weight: bold;color: #0085d0;}
+.orgM{font-size: 16px;font-weight: bold;color: #ff6600;}
+.simpleTable .orgF{color: #ff6600;font-size: 16px;font-weight: bold;}
+.simpleTable .greenF{color: #1bb974;font-size: 16px;font-weight: bold;}
+.simpleTable .blueF{color: #0085d0;font-size: 16px;font-weight: bold;}
+
+
+.grayM{font-size: 14px;color: #666666;}
+.sum-new {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+}
+.lineCssnew{
+    height: 10px;
+    background: #e5e5e5;
+    margin:0 -10px;
+}
+
+.moneyNamenew{
+    padding: 5px;
+    background: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.simpleTable th{background: #f0f0ff;color: #515151; font-size: 14px; padding: 10px;}
+.simpleTable{width: 100%;}
+.simpleTable td{padding: 8px;  border-bottom: solid 1px #cccccc;font-size: 16px;color: #515151;}
+.simpleTable .staticRow td{padding: 10px;}
+
+
+.simpleTable a:link.simple-btn{
+    font-size: 16px;
+    color: #666666;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

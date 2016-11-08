@@ -1,0 +1,67 @@
+/*
+*Time:2016-02-03
+*Creator:Levan
+*/
+/*.l-layout{background: transparent url("images/bodybg.gif") repeat-x scroll left top; }*/
+#master{height: 95px;}
+.header{height: 95px;  background: transparent url("images/header-bg.png") no-repeat scroll right top;  position: relative;}
+.header .img1{position: absolute;top: 25px; left: 30px;}
+.header div{color: #006ABE;  font-size: 26px;  text-align: left;  line-height: 94px;  padding-left: 90px;  letter-spacing: 4px;}
+.navigation{height: 40px;}
+.navigation ul{padding-left: 36px;}
+.logout{position: absolute;  top: 61px;  right: 4px;}
+#username{position: absolute;  top: 64px;  right:30px;font-size: 14px;color:#FCFCFC;letter-spacing: 1px;font-family: '宋体', serif}
+.l-body span{width:100px;}
+.l-children .l-body span{float: right;  text-align: left;  margin-right: 40px;font-weight: normal;color: #666;line-height: 17px;}
+#menuTree li{/*border: 1px solid #CCC;*/  background: #FFF none repeat scroll 0% 0%;margin: 5px;}
+
+.l-body{  height: 26px;}
+.l-first .l-body{height: 26px;}
+.l-last .l-body{height: 26px;}
+.l-onlychild .l-body{height: 26px;}
+.l-children li span{color:#666;}
+.l-children li .l-body{height: 26px;color:#666;border: none;background: transparent url("images/icon-bg.gif") no-repeat scroll -273px -22px;}
+/*.l-children li .l-body:hover{border: solid 1px #CCC;}
+.l-children li .l-body:hover span{font-weight: bold;}*/
+.l-children li .l-body span{color: #666; }
+
+
+.l-children li  .l-over{ border: solid 1px #CCCCCC;font-weight: bold;}
+.l-children li  .l-over span{ font-weight: bold;}
+.l-children li .l-selected{border: solid 1px #CCCCCC;}
+
+/*---2014-12-31 by zhangyihao--*/
+.gdOverlay{ width:100%;height: 100%; left:0; top:0;background:#000000;position: absolute;z-index: 9999;}
+.gdContent{ width: 960px; left: 50%;top:30px;margin-left: -480px; height: 500px;position: absolute;z-index: 999999;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 5px;
+    /* border: 6px solid rgba(0,0,0,0.2);*/
+
+    background: rgba(0,0,0,0.2);
+    padding: 6px;
+    position: absolute;
+    filter: progid:DXImageTransform.Microsoft.gradient(gradientType = 0, startColorstr = #30000000, endColorstr = #30000000)\9;
+    -moz-box-shadow: 0 0 10px rgba(0,0,0,.15);
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,.15);
+    box-shadow: 0 0 10px rgba(0,0,0,.15);
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+
+}
+
+.gdText{background:#ffffff;height: 100%;}
+/* Overlays */
+.gdOverlay { background: #aaaaaa url(../overlay.png) 50% 50% repeat-x; opacity: .30;filter:Alpha(Opacity=30); }
+/*.gdOverlay { background: rgba(0, 0, 0, .4); background: #000\9!important; filter: alpha(opacity=40);}*/
+.ui-widget-shadow { margin: -8px 0 0 -8px; padding: 8px; background: #aaaaaa url(../overlay.png) 50% 50% repeat-x; opacity: .30;filter:Alpha(Opacity=30); -moz-border-radius: 8px; -khtml-border-radius: 8px; -webkit-border-radius: 8px; border-radius: 8px; }
+.gdIframe{border: none; height: 100%; width: 100%;}
+
+.aclose{ position: absolute;right: 15px;top: 18px; height: 21px;line-height: 21px;font-size: 18px;color: #999999;}
+.aclose span{color: #ff6600; font-size: 20px; margin-right: 5px;;}
+.aclose i{ width: 21px;height:21px;display: inline-block; margin-left: 10px;background: url(../aclose.gif) no-repeat right top;margin-bottom: -3px;}
+.aclose:hover i{ background: url(../aclose.gif) no-repeat right bottom;}
+
+/*---- 2015-4-26 by zhangyihao for Monitor css------*/

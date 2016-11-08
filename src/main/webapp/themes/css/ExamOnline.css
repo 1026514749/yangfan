@@ -1,0 +1,150 @@
+﻿/* --------------------------------------------- */
+/* exam online CSS,2014/6/16 add by zhangyihao   */
+/* --------------------------------------------- */
+table{width:100%;border-collapse: collapse;border-spacing: 0;}
+.show{display:block;}
+.hide{display:none;}
+/* .inputBase{ border:1px solid #dddddd;border-radius:3px;padding:5px;} */
+.input-s{ width:100px;}
+.input-m{ width:200px;}
+select.input-m{ width:212px;}
+.input-l{ width:300px;}
+.input-80{ width:80%;}
+.input-90{ width:90%;}
+.input-100{ width:100%;}
+.btn-formFoot{ padding:5px 10px;}
+
+input.btn-blue:hover {
+background: #2384cf;
+}
+input.btn-blue ,input.btn-white{
+padding: 10px 20px;
+background: #379be9;
+color: #ffffff;
+border:none;
+cursor:pointer;
+margin-left:10px;
+}
+input.btn-white{
+	background:#ffffff;
+	color:#333333;
+	border:1px solid #cccccc;
+}
+input.btn-white:hover{
+	background:#f5f5f5;
+}
+.fast_nav{ background:#ffffff; overflow:hidden;}
+.fast_nav .nav_head{ height:35px;line-height:35px;background:#ebf2fa; padding-left:10px;}
+.fast_nav .nav_head img{ margin-bottom:-7px;}
+.fast_nav ul { overflow:hidden;}
+.fast_nav ul li{}
+.fast_nav ul li a{display:block;margin:5px; border:1px solid #ffffff; padding-left:40px; background:url(images/icon-bg.gif) no-repeat -265px -23px;}
+.fast_nav ul li a img{width:25px; height:25px; margin-bottom:-5px;}
+.fast_nav ul li a span{color:#666666;}
+.fast_nav ul li a:hover,.fast_nav ul li a.on{ border:1px solid #cccccc; background-color:#fdfdfd; text-decoration:none;}
+.fast_nav ul li a:hover span{ font-weight:bold;}
+
+
+.tableWrap{ background:#ffffff;padding:10px;}
+.tableList{ width:100%;border-collapse: collapse;border-spacing: 0;}
+.tableList tr th, .tableList tr td {border: 1px solid #dddddd;padding: 8px; text-align:center;}
+.tableList tr th{ background:url(ExamOnline/thbg.jpg) repeat-x left bottom;}
+.tableList tr td {color: #555555;background: #ffffff;}
+.tableList tr.trEven td {background: #f9f9f9;}
+
+table td.fim_l {text-align: right;padding-right: 10px;}
+
+.searchArea{ margin-bottom:10px;background: #E3ECFF; border:1px solid #CCCCCC; padding:10px 0;}
+.searchArea table td input.inputs{ width:100px; margin-left:5px; margin-right:5px;}
+
+.divForm{ background:#ffffff; padding:10px;}
+.tableForm th,.tableForm td{ padding:3px;}
+.tableForm th{ width:120px;text-align:right; }
+.formFoot{padding:20px;background:#fefefe; border-top:2px solid #cccccc; margin-top:20px; text-align:right;}
+
+
+.tableForm .tableList{ margin:5px 0;}
+.tableForm .tableList th{ text-align:center;}
+.redScope{ font-weight:bold;font-size:16px; color:#ff6600;margin-right:5px; margin-left:5px;}
+
+.tableFormFill th{ width:150px;text-align:right;vertical-align:top;line-height:25px;}
+.tableFormFill th,.tableFormFill td{padding:10px;}
+
+.divBtn{ position:relative;}
+.addPerson{ border:3px solid #cccccc; position:absolute; background:#ffffff; z-index:9999999; width:610px; display:none;top: 25px;left: -130px;}
+.addPerson .addHead{position:relative;background: url(tab_top_m.jpg) repeat-x top left;font-size: 10.5pt;color: #52B0CD;font-weight: bold;position: relative;padding-top: 5px; padding-left:10px;}
+.addPerson .addHead a{ position:absolute; right:10px;top:10px; font-weight:normal;}
+
+.addScorer{}
+
+.tabbox{}
+.tabtit{height:30px;border-bottom:1px solid #cccccc;border-top:1px solid #cccccc;background-color: #EBF2FA; margin-top:10px;}
+.tabtit li{background:url(../images/tab/news-link.jpg) no-repeat;height:30px;line-height:30px;width:80px;float:left;text-align:center;border-right:1px solid #cccccc;}
+.tabtit li a{display:block;color:#333;}
+.tabtit li.on{background: url(../images/tab/news-linkon.gif) no-repeat;height:30px;background-color: #FDFDA8;background-color: #fff;border-bottom: 1px solid #ffffff;}
+.tabtit li.on a{color:#333;}
+.tabcontent{ padding:10px;}
+
+.dg_pagerstyle_nob{ border:none;}
+.alignCenter{text-align:center;}
+
+.divLeft{ float:left; width:130px;}
+.divRight{ margin-left:140px;}
+
+.titleHead{ padding:10px 0; text-align:center; font-size:20px; border-bottom:2px solid #666; font-weight:bold; margin-bottom:20px;}
+
+
+
+
+.fullWrap{ background:#ffffff;padding:10px;}
+.examTips{ text-align:left; position:relative;}
+.curUser{ position:absolute;right:10px; top:5px;}
+.curUser b{ font-size:14px;}
+
+
+.paperHead{ border-bottom:2px solid #333333;margin-bottom:0px; padding-bottom:10px;}
+.examUinfo{ width:100%}
+.examUinfo th,.examUinfo td{padding:5px 0;text-align:left;}
+.examUinfo th{ text-align:right; width:150px; }
+
+.checkContent tr{border-bottom:1px dotted #333333;padding:10px 0;}
+.checkContent th,.checkContent td{padding:15px 0;background: #fffcf1;text-align:left;}
+.checkContent th{padding-top: 23px;background: #e3f4fe;color:#3d6473;}
+.checkContent th{ text-align:right; width:100px; vertical-align:top;}
+.checkContent table.detailContent th{ width:50px; }
+.checkContent table.detailContent tr{ border:none;padding:0; }
+.checkContent td .detailContent td,.checkContent td .detailContent th{padding:8px 0;background: #fffcf1;color:#323136}
+
+.paperFoot{ border-top:1px solid #999999;padding:30px; margin-top:20px;text-align: center;}
+
+.fillPaper th,.fillPaper td{ padding:10px 0;}
+.fillPaper td{background: #fffcf1;text-align:left;}
+.fillPaper th{ width:120px; text-align:right;}
+.trCss,.trCss td{background: #e3f4fe;color: #3d6473;}
+
+.btn-base{ display:inline-block; width:98px;height:30px;font-weight:bold; background:url(ExamOnline/btnBg.jpg) no-repeat left top; border:none; cursor:pointer}
+.btn-nextq{background-position:left top;}
+.btn-preq{ background-position:left -32px;}
+
+.detailContent{ margin-left:10px;}
+
+.tableForm-tht th,.tableForm-tht td{ vertical-align:top;padding-top: 5px;}
+
+.inputradio{ vertical-align:middle;margin-bottom: 3px;margin-right: 3px;}
+.radioLabel{ margin-right:10px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
