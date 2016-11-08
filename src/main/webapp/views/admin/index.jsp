@@ -12,20 +12,9 @@
 <!-- BEGIN SHORTCUT ICON -->
 <link rel="shortcut icon" href="img/favicon.ico">
 <!-- END SHORTCUT ICON -->
-<title>Blank</title>
+<title>后台管理</title>
  
-<!-- BEGIN STYLESHEET -->  
-<link href="css/bootstrap.min.css" rel="stylesheet"><!-- BOOTSTRAP CSS  -->
-<link href="css/bootstrap-reset.css" rel="stylesheet"><!-- BOOTSTRAP CSS  -->
-<link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet"><!-- FONT AWESOME CSS  -->
-<link href="css/style.css" rel="stylesheet"><!-- THEME BASIC CSS  -->
-<link href="css/style-responsive.css" rel="stylesheet"><!-- THEME RESPONSIVE CSS  -->
- 
-<!--[if lt IE 9]>
-      <script src="js/html5shiv.js"></script>
-      <script src="js/respond.min.js"></script>
-    <![endif]-->
-<!-- END STYLESHEET --> 
+<%@include file="/common/header-back.jsp" %>
 </head>
 <body>
 <!-- BEGIN SECTION --> 
@@ -150,13 +139,7 @@ function openView(url){
 	$("#rightContentFrame", parent.document.body).attr("src", url);
 }
 </script>
-<script src="js/jquery.js" ></script><!-- BASIC JS LIABRARY -->
-<script src="js/bootstrap.min.js" ></script><!-- BOOTSTRAP JS  -->
-<script src="js/jquery.dcjqaccordion.2.7.js"></script><!-- ACCORDING JS -->
-<script src="js/jquery.scrollTo.min.js" ></script><!-- SCROLLTO JS  -->
-<script src="js/jquery.nicescroll.js" > </script><!-- NICESCROLL JS  -->
-<script src="js/respond.min.js" ></script><!-- RESPOND JS  -->
-<script src="js/common-scripts.js" ></script><!-- BASIC COMMON JS  -->
+
 <!-- END JS --> 
 </body>
 </html>

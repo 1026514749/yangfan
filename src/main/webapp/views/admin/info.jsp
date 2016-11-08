@@ -11,7 +11,7 @@
 
 <!-- END SHORTCUT ICON -->
 <title>后台管理</title>
-<%@ include file="/common/header-back.jsp" %>
+<%@include file="/common/header-back.jsp" %>
  
 </head>
 <body>
