@@ -10,7 +10,7 @@
 	</select>
 
 	<update id="deleteAll">
-		UPDATE _goods 
+		UPDATE info 
 		SET 
 		deleted = 1
 	</update>

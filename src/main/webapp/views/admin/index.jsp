@@ -1,4 +1,5 @@
 ﻿<!DOCTYPE html>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html lang="en">
 <head>
 <!-- BEGIN META --> 
@@ -28,13 +29,10 @@
         </div>
         <!-- SIDEBAR TOGGLE BUTTON  END-->
  
-		<a href="index.html" class="logo">olive<span>admin</span></a>
+		<a href="javascript:" class="logo">扬帆<span>后台管理</span></a>
  
 <div class="top-nav ">
 <ul class="nav pull-right top-menu">
-<li>
-<input type="text" class="form-control search" placeholder="Search">
-</li>
  
 <li class="dropdown">
 <a data-toggle="dropdown" class="dropdown-toggle" href="#">
@@ -44,8 +42,8 @@
 </a>
 <ul class="dropdown-menu extended logout">
 <li class="log-arrow-up"></li>
-<li><a href="#"><i class="fa fa-bell-o"></i> 修改密码</a></li>
-<li><a href="login.html"><i class="fa fa-key"></i>注   销</a></li>
+<li><a href="javascript:"><i class="fa fa-bell-o"></i> 修改密码</a></li>
+<li><a href="javascript:"><i class="fa fa-key"></i>注   销</a></li>
 </ul>
 </li>
  
@@ -61,14 +59,14 @@
  
 <ul class="sidebar-menu" id="nav-accordion">
 <li class="sub-menu">
-<a href="javascript:;">
+<a href="javascript:">
 <i class="fa fa-cogs"></i>
 <span>基本信息</span>
 <span class="label label-primary span-sidebar">2</span>
 </a>
 <ul class="sub">
-<li><a href="grids.html">基本信息</a></li>
-<li><a href="calendar.html">公司简介</a></li>
+<li><a href="javascript:" onclick="openView('/admin/info.do')">基本信息</a></li>
+<li><a href="javascript:">公司简介</a></li>
 </ul>
 </li>
 <li class="sub-menu">
@@ -78,9 +76,9 @@
 <span class="label label-info span-sidebar">3</span>
 </a>
 <ul class="sub">
-<li><a href="form_component.html">栏目管理</a></li>
-<li><a href="advanced_form_components.html">栏目简介</a></li>
-<li><a href="form_wizard.html">栏目内容</a></li>
+<li><a href="javascript:" onclick="openView('/admin/columnList.do')">栏目管理</a></li>
+<li><a href="javascript:">栏目简介</a></li>
+<li><a href="javascript:">栏目内容</a></li>
 </ul>
 </li>
 <li class="sub-menu">
@@ -90,8 +88,8 @@
 <span class="label label-inverse span-sidebar">2</span>
 </a>
 <ul class="sub">
-<li><a href="basic_table.html">员工信息</a></li>
-<li><a href="responsive_table.html">用户账号</a></li>
+<li><a href="javascript:">员工信息</a></li>
+<li><a href="javascript:">用户账号</a></li>
 </ul>
 </li>
 <li class="sub-menu">
@@ -101,8 +99,18 @@
 <span class="label label-danger span-sidebar">2</span>
 </a>
 <ul class="sub">
-<li><a href="inbox.html">案例管理</a></li>
-<li><a href="inbox_details.html">活动管理</a></li>
+<li><a href="javascript:">案例管理</a></li>
+<li><a href="javascript:">活动管理</a></li>
+</ul>
+</li>
+<li class="sub-menu">
+<a href="javascript:;">
+<i class=" fa fa-envelope"></i>
+<span>客户评价</span>
+<span class="label label-danger span-sidebar">1</span>
+</a>
+<ul class="sub">
+<li><a href="javascript:">客户评价</a></li>
 </ul>
 </li>
 </ul>
@@ -112,9 +120,9 @@
  <!-- END SIDEBAR --> 
  <!-- BEGIN MAIN CONTENT --> 
 <section id="main-content">
-<section class="wrapper " style="height=700px;">
+<section class="wrapper " style="height: 700px;margin-top:60px;">
  
-	<iframe style="overflow-y: auto; width=100%;height=650px" id="rightContentFrame" 
+	<iframe style="overflow-y: auto; width:100%;height:650px" id="rightContentFrame" 
                 frameBorder="0" name="rtmfrm" scrolling="auto"></iframe>
  
 </section>
@@ -136,6 +144,7 @@
 <!-- BEGIN JS --> 
 <script type="text/javascript">
 function openView(url){
+	url = path+url;
 	$("#rightContentFrame", parent.document.body).attr("src", url);
 }
 </script>

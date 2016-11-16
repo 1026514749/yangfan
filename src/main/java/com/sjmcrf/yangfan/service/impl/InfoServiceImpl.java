@@ -6,10 +6,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 
 
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
 import com.sjmcrf.yangfan.dao.InfoDao;
 import com.sjmcrf.yangfan.entity.Info;
 import com.sjmcrf.yangfan.service.InfoService;
-
+@Service
 public class InfoServiceImpl implements InfoService {
 	private final Logger LOG = LoggerFactory.getLogger(this.getClass());
 	@Autowired
@@ -22,11 +25,12 @@ public class InfoServiceImpl implements InfoService {
 	}
 
 	@Override
+	@Transactional
 	public boolean modify(Info info) {
 		// TODO Auto-generated method stub
-		infoDao.delelteAll();
+		infoDao.deleteAll();
 		infoDao.insert(info);
-		return false;
+		return true;
 	}
 
 }

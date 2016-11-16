@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sjmcrf.yangfan.dao.ColumnDao">
+
+
+	<select id="get" resultType="Column" parameterType="String">
+		SELECT *
+		FROM `column`
+		where id = #{id}
+	</select>
+
+	<update id="deleteAll">
+		UPDATE `column`
+		SET 
+		deleted = 1
+		where code = #{code}
+	</update>
+	<update id="delete" parameterType="String">
+		UPDATE `column`
+		SET 
+		deleted = 1
+		where id = #{id}
+	</update>
+	
+    <insert id="insert" parameterType="Column" useGeneratedKeys="true" keyProperty="id">
+        insert into 
+        	`column`(code,name,url,`order`,deleted)
+        	values(#{code},#{name},#{url},#{order},#{deleted})
+    </insert>
+    
+    <select id="queryByPage" resultType="java.util.Map" >
+		SELECT *
+		FROM `column` t
+		WHERE t.deleted = 0
+		ORDER BY t.order,t.code
+		LIMIT #{pageIndex},#{pageSize}
+	</select>
+	
+	<select id="getCount" resultType="Integer">
+		SELECT COUNT(*)
+		FROM `column`
+		WHERE deleted = 0
+	</select>
+	
+	<update id="update" parameterType="Column">
+		update `column` set code=#{code},name=#{name},url=#{url},`order`=#{order}
+		where id = #{id}
+	</update>
+
+</mapper>

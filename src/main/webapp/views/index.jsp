@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-    <head>
-        <meta charset="utf-8">
-        <title>Grill Restaurant Website Template</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width">
-		<title>扬帆教育</title>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<html lang="en">
+<head>
+<!-- BEGIN META --> 
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="Custom Theme">
+<!-- END META -->
+		<title>æ¬å¸æè²</title>
 		<%@ include file="/common/header-front.jsp" %>
     </head>
     <body class="body111">
@@ -24,20 +28,20 @@
                         <div class="row">
                             <div class="col-md-2">
                                 <div class="logo">
-                                    <a href="#"><img src="images/logo.png" title="æ¬å¸æè²" alt="æ¬å¸æè²" ></a>
+                                    <a href="#"><img src="images/logo.png" title="Ã¦ÂÂ¬Ã¥Â¸ÂÃ¦ÂÂÃ¨ÂÂ²" alt="Ã¦ÂÂ¬Ã¥Â¸ÂÃ¦ÂÂÃ¨ÂÂ²" ></a>
                                 </div>
                             </div>
                             <div class="col-md-10">
                                 <div class="main-menu">
                                     <ul>
-                                        <li><a href="index.html">ä¸»é¡µ</a></li>
-                                        <li><a href="item.html">å¹¼å¿å¹è®­</a></li>
-                                        <li><a href="item.html">èºæ¯æå¸è¾åº</a></li>
-										<li><a href="item.html">å­é¿èµæ ¼è¯</a></li>
-										<li><a href="item.html">æå¸èµæ ¼è¯</a></li>
-										<li><a href="item.html">å­¦åæå</a></li>
-										<li><a href="item.html">å¾®ä¿¡å¬ä¼å·å¶ä½</a></li>
-										<li><a href="contact-us.html">å å¥æä»¬</a></li>
+                                        <li><a href="index.html">Ã¤Â¸Â»Ã©Â¡Âµ</a></li>
+                                        <li><a href="item.html">Ã¥Â¹Â¼Ã¥ÂÂ¿Ã¥ÂÂ¹Ã¨Â®Â­</a></li>
+                                        <li><a href="item.html">Ã¨ÂÂºÃ¦ÂÂ¯Ã¦ÂÂÃ¥Â¸ÂÃ¨Â¾ÂÃ¥ÂÂº</a></li>
+										<li><a href="item.html">Ã¥ÂÂ­Ã©ÂÂ¿Ã¨ÂµÂÃ¦Â Â¼Ã¨Â¯Â</a></li>
+										<li><a href="item.html">Ã¦ÂÂÃ¥Â¸ÂÃ¨ÂµÂÃ¦Â Â¼Ã¨Â¯Â</a></li>
+										<li><a href="item.html">Ã¥Â­Â¦Ã¥ÂÂÃ¦ÂÂÃ¥ÂÂ</a></li>
+										<li><a href="item.html">Ã¥Â¾Â®Ã¤Â¿Â¡Ã¥ÂÂ¬Ã¤Â¼ÂÃ¥ÂÂ·Ã¥ÂÂ¶Ã¤Â½Â</a></li>
+										<li><a href="contact-us.html">Ã¥ÂÂ Ã¥ÂÂ¥Ã¦ÂÂÃ¤Â»Â¬</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -46,21 +50,21 @@
                 </div>
             </header>
 		<!--	<ul class="social">
-				<li class="twitter"><a href="tencent://message/?uin=1026514749&amp;Site=æäºQæ&amp;Menu=yes">  
-						<img style="border:0px;" src=http://wpa.qq.com/pa?p=1:707321921:9>å®¢æ00001</a></li>        
-				<li class="facebook"><a href="tencent://message/?uin=1026514749&amp;Site=æäºQæ&amp;Menu=yes">  
-						<img style="border:0px;" src=http://wpa.qq.com/pa?p=1:707321921:9>å®¢æ00001</a></li>
-				<li <a target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=huzv4761tr_zsrfG9-eo5enr" style="text-decoration:none;">å¬å¸é®ç®±</a></li>
+				<li class="twitter"><a href="tencent://message/?uin=1026514749&amp;Site=Ã¦ÂÂÃ¤ÂºÂQÃ¦ÂÂ&amp;Menu=yes">  
+						<img style="border:0px;" src=http://wpa.qq.com/pa?p=1:707321921:9>Ã¥Â®Â¢Ã¦ÂÂ00001</a></li>        
+				<li class="facebook"><a href="tencent://message/?uin=1026514749&amp;Site=Ã¦ÂÂÃ¤ÂºÂQÃ¦ÂÂ&amp;Menu=yes">  
+						<img style="border:0px;" src=http://wpa.qq.com/pa?p=1:707321921:9>Ã¥Â®Â¢Ã¦ÂÂ00001</a></li>
+				<li <a target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=huzv4761tr_zsrfG9-eo5enr" style="text-decoration:none;">Ã¥ÂÂ¬Ã¥ÂÂ¸Ã©ÂÂ®Ã§Â®Â±</a></li>
 			</ul>
 		-->
 			<div class="pinned note-container">
 				<div class="note">
-					<h5>èç³»æä»¬</h5>
-					<p><a href="tencent://message/?uin=1026514749&amp;Site=æäºQæ&amp;Menu=yes">  
-						<img style="border:0px;" src=http://wpa.qq.com/pa?p=1:707321921:9>å®¢æ00001</a></p>
-					<p><a href="tencent://message/?uin=1026514749&amp;Site=æäºQæ&amp;Menu=yes">  
-						<img style="border:0px;" src=http://wpa.qq.com/pa?p=1:707321921:9>å®¢æ00001</a></p>
-					<p><a target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=huzv4761tr_zsrfG9-eo5enr" style="text-decoration:none;">å¬å¸é®ç®±</a></p>
+					<h5>Ã¨ÂÂÃ§Â³Â»Ã¦ÂÂÃ¤Â»Â¬</h5>
+					<p><a href="tencent://message/?uin=1026514749&amp;Site=Ã¦ÂÂÃ¤ÂºÂQÃ¦ÂÂ&amp;Menu=yes">  
+						<img style="border:0px;" src=http://wpa.qq.com/pa?p=1:707321921:9>Ã¥Â®Â¢Ã¦ÂÂ00001</a></p>
+					<p><a href="tencent://message/?uin=1026514749&amp;Site=Ã¦ÂÂÃ¤ÂºÂQÃ¦ÂÂ&amp;Menu=yes">  
+						<img style="border:0px;" src=http://wpa.qq.com/pa?p=1:707321921:9>Ã¥Â®Â¢Ã¦ÂÂ00001</a></p>
+					<p><a target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=huzv4761tr_zsrfG9-eo5enr" style="text-decoration:none;">Ã¥ÂÂ¬Ã¥ÂÂ¸Ã©ÂÂ®Ã§Â®Â±</a></p>
 				</div>
 			</div>
             <div id="slider">
@@ -68,46 +72,46 @@
                   <ul class="slides">
                     <li>
                         <div class="slider-caption">
-                            <h1>å¹¼å¿å¹è®­</h1>
-                            <p>è¯å¥½çå­¦ä¹ ç¯å¢ï¼ä¼ç§çå¹¼å¿æå¸ï¼æ¬å¸å¸®å©æ¨çå°å­©
-                            <br><br>èµ¢å¨èµ·è·çº¿ã</p>
-                            <a href="single-post.html">äºè§£è¯¦æ</a>
+                            <h1>Ã¥Â¹Â¼Ã¥ÂÂ¿Ã¥ÂÂ¹Ã¨Â®Â­</h1>
+                            <p>Ã¨ÂÂ¯Ã¥Â¥Â½Ã§ÂÂÃ¥Â­Â¦Ã¤Â¹Â Ã§ÂÂ¯Ã¥Â¢ÂÃ¯Â¼ÂÃ¤Â¼ÂÃ§Â§ÂÃ§ÂÂÃ¥Â¹Â¼Ã¥ÂÂ¿Ã¦ÂÂÃ¥Â¸ÂÃ¯Â¼ÂÃ¦ÂÂ¬Ã¥Â¸ÂÃ¥Â¸Â®Ã¥ÂÂ©Ã¦ÂÂ¨Ã§ÂÂÃ¥Â°ÂÃ¥Â­Â©
+                            <br><br>Ã¨ÂµÂ¢Ã¥ÂÂ¨Ã¨ÂµÂ·Ã¨Â·ÂÃ§ÂºÂ¿Ã£ÂÂ</p>
+                            <a href="single-post.html">Ã¤ÂºÂÃ¨Â§Â£Ã¨Â¯Â¦Ã¦ÂÂ</a>
                         </div>
                       <img src="images/slide1.jpg" alt="" />
                     </li>
                     <li>
                         <div class="slider-caption">
-                            <h1>èºæ¯æå¸è¾åº</h1>
-                            <p>æ¥èªç¥åèºæ¯å­¦æ ¡çæ¯ä¸å­¦çï¼æçä¼ç§çèä¸è½ååè¯å¥½çèä¸ç´ å»ï¼
-                            <br><br>æ¯æ¨å·¥ä½çå·¦èå³èã</p>
-                            <a href="single-post.html">äºè§£è¯¦æ</a>
+                            <h1>Ã¨ÂÂºÃ¦ÂÂ¯Ã¦ÂÂÃ¥Â¸ÂÃ¨Â¾ÂÃ¥ÂÂº</h1>
+                            <p>Ã¦ÂÂ¥Ã¨ÂÂªÃ§ÂÂ¥Ã¥ÂÂÃ¨ÂÂºÃ¦ÂÂ¯Ã¥Â­Â¦Ã¦Â Â¡Ã§ÂÂÃ¦Â¯ÂÃ¤Â¸ÂÃ¥Â­Â¦Ã§ÂÂÃ¯Â¼ÂÃ¦ÂÂÃ§ÂÂÃ¤Â¼ÂÃ§Â§ÂÃ§ÂÂÃ¨ÂÂÃ¤Â¸ÂÃ¨ÂÂ½Ã¥ÂÂÃ¥ÂÂÃ¨ÂÂ¯Ã¥Â¥Â½Ã§ÂÂÃ¨ÂÂÃ¤Â¸ÂÃ§Â´Â Ã¥ÂÂ»Ã¯Â¼Â
+                            <br><br>Ã¦ÂÂ¯Ã¦ÂÂ¨Ã¥Â·Â¥Ã¤Â½ÂÃ§ÂÂÃ¥Â·Â¦Ã¨ÂÂÃ¥ÂÂ³Ã¨ÂÂÃ£ÂÂ</p>
+                            <a href="single-post.html">Ã¤ÂºÂÃ¨Â§Â£Ã¨Â¯Â¦Ã¦ÂÂ</a>
                         </div>
                       <img src="images/slide2.jpg" alt="" />
                     </li>
                     <li>
                         <div class="slider-caption">
-                            <h1>å­é¿èµæ ¼è¯</h1>
-                            <p>æè²é¨è®¤è¯çå­é¿èµæ ¼è¯ä¹¦ï¼å¼å¹¼å¿å­å¿å¤ç¥å¨
+                            <h1>Ã¥ÂÂ­Ã©ÂÂ¿Ã¨ÂµÂÃ¦Â Â¼Ã¨Â¯Â</h1>
+                            <p>Ã¦ÂÂÃ¨ÂÂ²Ã©ÂÂ¨Ã¨Â®Â¤Ã¨Â¯ÂÃ§ÂÂÃ¥ÂÂ­Ã©ÂÂ¿Ã¨ÂµÂÃ¦Â Â¼Ã¨Â¯ÂÃ¤Â¹Â¦Ã¯Â¼ÂÃ¥Â¼ÂÃ¥Â¹Â¼Ã¥ÂÂ¿Ã¥ÂÂ­Ã¥Â¿ÂÃ¥Â¤ÂÃ§Â¥ÂÃ¥ÂÂ¨
                             <br><br></p>
-                            <a href="single-post.html">äºè§£è¯¦æ</a>
+                            <a href="single-post.html">Ã¤ÂºÂÃ¨Â§Â£Ã¨Â¯Â¦Ã¦ÂÂ</a>
                         </div>
                       <img src="images/slide3.jpg" alt="" />
                     </li>
 					<li>
                         <div class="slider-caption">
-                            <h1>æå¸èµæ ¼è¯</h1>
-                            <p>æè²é¨è®¤è¯çæå¸èµæ ¼è¯ä¹¦
+                            <h1>Ã¦ÂÂÃ¥Â¸ÂÃ¨ÂµÂÃ¦Â Â¼Ã¨Â¯Â</h1>
+                            <p>Ã¦ÂÂÃ¨ÂÂ²Ã©ÂÂ¨Ã¨Â®Â¤Ã¨Â¯ÂÃ§ÂÂÃ¦ÂÂÃ¥Â¸ÂÃ¨ÂµÂÃ¦Â Â¼Ã¨Â¯ÂÃ¤Â¹Â¦
                             <br><br></p>
-                            <a href="single-post.html">äºè§£è¯¦æ</a>
+                            <a href="single-post.html">Ã¤ÂºÂÃ¨Â§Â£Ã¨Â¯Â¦Ã¦ÂÂ</a>
                         </div>
                       <img src="images/slide3.jpg" alt="" />
                     </li>
 					<li>
                         <div class="slider-caption">
-                            <h1>å­¦åæå</h1>
-                            <p>è¿å¨ä¸ºèªå·±çä½å­¦åèç¦æ¼åï¼è¿å¨ä¸ºæ²¡æéå¾æåå­¦åèè¦æ¼åï¼
-                            <br><br>èç³»æä»¬</p>
-                            <a href="single-post.html">äºè§£è¯¦æ</a>
+                            <h1>Ã¥Â­Â¦Ã¥ÂÂÃ¦ÂÂÃ¥ÂÂ</h1>
+                            <p>Ã¨Â¿ÂÃ¥ÂÂ¨Ã¤Â¸ÂºÃ¨ÂÂªÃ¥Â·Â±Ã§ÂÂÃ¤Â½ÂÃ¥Â­Â¦Ã¥ÂÂÃ¨ÂÂÃ§ÂÂ¦Ã¦ÂÂ¼Ã¥ÂÂÃ¯Â¼ÂÃ¨Â¿ÂÃ¥ÂÂ¨Ã¤Â¸ÂºÃ¦Â²Â¡Ã¦ÂÂÃ©ÂÂÃ¥Â¾ÂÃ¦ÂÂÃ¥ÂÂÃ¥Â­Â¦Ã¥ÂÂÃ¨ÂÂÃ¨ÂÂ¦Ã¦ÂÂ¼Ã¥ÂÂÃ¯Â¼Â
+                            <br><br>Ã¨ÂÂÃ§Â³Â»Ã¦ÂÂÃ¤Â»Â¬</p>
+                            <a href="single-post.html">Ã¤ÂºÂÃ¨Â§Â£Ã¨Â¯Â¦Ã¦ÂÂ</a>
                         </div>
                       <img src="images/slide3.jpg" alt="" />
                     </li>
@@ -119,7 +123,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="heading-section">
-                                <h2>æä»¬æ¯</h2>
+                                <h2>Ã¦ÂÂÃ¤Â»Â¬Ã¦ÂÂ¯</h2>
                                 <img src="images/under-heading.png" alt="" >
                             </div>
                         </div>
@@ -127,11 +131,11 @@
                     
                     <div class="row">
                         <div class="col-md-6">
-                        	<h3>å¬å¸ç®ä»</h3>
+                        	<h3>Ã¥ÂÂ¬Ã¥ÂÂ¸Ã§Â®ÂÃ¤Â»Â</h3>
                             <p>Duis efficitur, est ut sollicitudin efficitur, nulla eros tempus lacus, non auctor mi leo ut justo. Proin euismod sapien nec risus bibendum aliquam. Quisque non maximus augue. Vivamus mattis placerat faucibus. Fusce nec facilisis justo. Vestibulum tristique et purus condimentum dignissim. Curabitur mollis, sem nec condimentum consequat, velit diam consequat ex, nec rhoncus risus purus eget nibh. Sed a mollis dolor.</p>
                         </div>
                         <div class="col-md-6">
-                        	<h3>å¢éç®¡ç</h3>
+                        	<h3>Ã¥ÂÂ¢Ã©ÂÂÃ§Â®Â¡Ã§ÂÂ</h3>
                             <p>Nam id felis nec libero posuere pretium ut ut tortor. Maecenas molestie dolor sed lectus vestibulum viverra. Morbi quis augue massa. Curabitur vel imperdiet justo, ut commodo sem. Donec ac elementum dolor, at finibus ex. Curabitur viverra venenatis gravida. Proin augue libero, accumsan sit amet ullamcorper in, posuere ac erat. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
                         </div>
                     </div>
@@ -142,7 +146,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="heading-section">
-                                <h2>æå¡å®æ¨</h2>
+                                <h2>Ã¦ÂÂÃ¥ÂÂ¡Ã¥Â®ÂÃ¦ÂÂ¨</h2>
                                 <img src="images/under-heading.png" alt="" >
                             </div>
                         </div>
@@ -153,8 +157,8 @@
                                 <div class="icon">
                                     <i class="fa fa-pencil"></i>
                                 </div>
-                                <h4>ä¸ªæ§åå®å¶</h4>
-                                <p>å¯æ ¹æ®å®¢æ·çæåµæä¾ä¸åçè§£å³æ¹æ¡ï¼å¸®å©å®¢æ·æ¾å°æåéçæ¹æ¡</p>
+                                <h4>Ã¤Â¸ÂªÃ¦ÂÂ§Ã¥ÂÂÃ¥Â®ÂÃ¥ÂÂ¶</h4>
+                                <p>Ã¥ÂÂ¯Ã¦Â Â¹Ã¦ÂÂ®Ã¥Â®Â¢Ã¦ÂÂ·Ã§ÂÂÃ¦ÂÂÃ¥ÂÂµÃ¦ÂÂÃ¤Â¾ÂÃ¤Â¸ÂÃ¥ÂÂÃ§ÂÂÃ¨Â§Â£Ã¥ÂÂ³Ã¦ÂÂ¹Ã¦Â¡ÂÃ¯Â¼ÂÃ¥Â¸Â®Ã¥ÂÂ©Ã¥Â®Â¢Ã¦ÂÂ·Ã¦ÂÂ¾Ã¥ÂÂ°Ã¦ÂÂÃ¥ÂÂÃ©ÂÂÃ§ÂÂÃ¦ÂÂ¹Ã¦Â¡Â</p>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
@@ -162,8 +166,8 @@
                                 <div class="icon">
                                     <i class="fa fa-bullhorn"></i>
                                 </div>
-                                <h4>è´´å¿æå¡</h4>
-                                <p>24å°æ¶éæ¶å¾å½ï¼è®©æ¨ä½ä¼å°æè´´å¿çæå¡</p>
+                                <h4>Ã¨Â´Â´Ã¥Â¿ÂÃ¦ÂÂÃ¥ÂÂ¡</h4>
+                                <p>24Ã¥Â°ÂÃ¦ÂÂ¶Ã©ÂÂÃ¦ÂÂ¶Ã¥Â¾ÂÃ¥ÂÂ½Ã¯Â¼ÂÃ¨Â®Â©Ã¦ÂÂ¨Ã¤Â½ÂÃ¤Â¼ÂÃ¥ÂÂ°Ã¦ÂÂÃ¨Â´Â´Ã¥Â¿ÂÃ§ÂÂÃ¦ÂÂÃ¥ÂÂ¡</p>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
@@ -171,7 +175,7 @@
                                 <div class="icon">
                                     <i class="fa fa-bell"></i>
                                 </div>
-                                <h4>ä¸ä¸æå¯¼</h4>
+                                <h4>Ã¤Â¸ÂÃ¤Â¸ÂÃ¦ÂÂÃ¥Â¯Â¼</h4>
                                 <p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
                             </div>
                         </div>
@@ -180,8 +184,8 @@
                                 <div class="icon">
                                     <i class="fa fa-heart"></i>
                                 </div>
-                                <h4>æ»¡æåº¦</h4>
-                                <p>å®¢æ·çæ»¡æï¼æ¯æä»¬åè¿çæå¤§å¨å</p>
+                                <h4>Ã¦Â»Â¡Ã¦ÂÂÃ¥ÂºÂ¦</h4>
+                                <p>Ã¥Â®Â¢Ã¦ÂÂ·Ã§ÂÂÃ¦Â»Â¡Ã¦ÂÂÃ¯Â¼ÂÃ¦ÂÂ¯Ã¦ÂÂÃ¤Â»Â¬Ã¥ÂÂÃ¨Â¿ÂÃ§ÂÂÃ¦ÂÂÃ¥Â¤Â§Ã¥ÂÂ¨Ã¥ÂÂ</p>
                             </div>
                         </div>
                     </div>
@@ -197,7 +201,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="heading-section">
-                                <h2>ç»å¸æ¡ä¾</h2>
+                                <h2>Ã§Â»ÂÃ¥ÂÂ¸Ã¦Â¡ÂÃ¤Â¾Â</h2>
                                 <img src="images/under-heading.png" alt="" >
                             </div>
                         </div>
@@ -210,7 +214,7 @@
                                 </div>
                                 <div class="blog-content">
                                     <div class="content-show">
-                                        <h4><a href="single-post.html">çº¢æå¹¼å¿å­</a></h4>
+                                        <h4><a href="single-post.html">Ã§ÂºÂ¢Ã¦ÂÂÃ¥Â¹Â¼Ã¥ÂÂ¿Ã¥ÂÂ­</a></h4>
                                         <span>2016-10-17</span>
                                     </div>
                                     <div class="content-hide">
@@ -226,7 +230,7 @@
                                 </div>
                                 <div class="blog-content">
                                     <div class="content-show">
-                                        <h4><a href="single-post.html">å¤§é£è½¦å¹¼å¿å­</a></h4>
+                                        <h4><a href="single-post.html">Ã¥Â¤Â§Ã©Â£ÂÃ¨Â½Â¦Ã¥Â¹Â¼Ã¥ÂÂ¿Ã¥ÂÂ­</a></h4>
                                         <span>2016-10-18</span>
                                     </div>
                                     <div class="content-hide">
@@ -242,7 +246,7 @@
                                 </div>
                                 <div class="blog-content">
                                     <div class="content-show">
-                                        <h4><a href="single-post.html">xxå¹¼å¿å­</a></h4>
+                                        <h4><a href="single-post.html">xxÃ¥Â¹Â¼Ã¥ÂÂ¿Ã¥ÂÂ­</a></h4>
                                         <span>2016-10-18</span>
                                     </div>
                                     <div class="content-hide">
@@ -258,7 +262,7 @@
                                 </div>
                                 <div class="blog-content">
                                     <div class="content-show">
-                                        <h4><a href="single-post.html">xxå¹¼å¿å­</a></h4>
+                                        <h4><a href="single-post.html">xxÃ¥Â¹Â¼Ã¥ÂÂ¿Ã¥ÂÂ­</a></h4>
                                         <span>2016-10-18</span>
                                     </div>
                                     <div class="content-hide">
@@ -274,7 +278,7 @@
                                 </div>
                                 <div class="blog-content">
                                     <div class="content-show">
-                                        <h4><a href="single-post.html">xxå¹¼å¿å­</a></h4>
+                                        <h4><a href="single-post.html">xxÃ¥Â¹Â¼Ã¥ÂÂ¿Ã¥ÂÂ­</a></h4>
                                         <span>2016-10-18</span>
                                     </div>
                                     <div class="content-hide">
@@ -290,7 +294,7 @@
                                 </div>
                                 <div class="blog-content">
                                     <div class="content-show">
-                                        <h4><a href="single-post.html">xxå¹¼å¿å­</a></h4>
+                                        <h4><a href="single-post.html">xxÃ¥Â¹Â¼Ã¥ÂÂ¿Ã¥ÂÂ­</a></h4>
                                         <span>2016-10-18</span>
                                     </div>
                                     <div class="content-hide">
@@ -310,7 +314,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="heading-section">
-                                <h2>æä»¬çå¢é</h2>
+                                <h2>Ã¦ÂÂÃ¤Â»Â¬Ã§ÂÂÃ¥ÂÂ¢Ã©ÂÂ</h2>
                                 <img src="images/under-heading.png" alt="" >
                             </div>
                         </div>
@@ -333,8 +337,8 @@
                                      </div>
                                  </div>
                                  <div class="author-details">
-                                     <h2>å¼ ä¸</h2>
-                                     <span>è®¾è®¡å¸</span>
+                                     <h2>Ã¥Â¼Â Ã¤Â¸Â</h2>
+                                     <span>Ã¨Â®Â¾Ã¨Â®Â¡Ã¥Â¸Â</span>
                                  </div>
                             </div>
                             <div class="col-md-3 col-sm-6">
@@ -353,8 +357,8 @@
                                      </div>
                                  </div>
                                  <div class="author-details">
-                                     <h2>æå</h2>
-                                     <span>å¼åäººå</span>
+                                     <h2>Ã¦ÂÂÃ¥ÂÂ</h2>
+                                     <span>Ã¥Â¼ÂÃ¥ÂÂÃ¤ÂºÂºÃ¥ÂÂ</span>
                                  </div>
                             </div>
                             <div class="col-md-3 col-sm-6">
@@ -373,7 +377,7 @@
                                      </div>
                                  </div>
                                  <div class="author-details">
-                                     <h2>èµµäº</h2>
+                                     <h2>Ã¨ÂµÂµÃ¤ÂºÂ</h2>
                                      <span>CEO</span>
                                  </div>
                             </div>
@@ -393,8 +397,8 @@
                                      </div>
                                  </div>
                                  <div class="author-details">
-                                     <h2>å­å­</h2>
-                                     <span>ç»ç</span>
+                                     <h2>Ã¥Â­ÂÃ¥ÂÂ­</h2>
+                                     <span>Ã§Â»ÂÃ§ÂÂ</span>
                                  </div>
                             </div>
                         </div>
@@ -408,7 +412,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="heading-section">
-                                <h2>å®¢æ·è¯ä»·</h2>
+                                <h2>Ã¥Â®Â¢Ã¦ÂÂ·Ã¨Â¯ÂÃ¤Â»Â·</h2>
                                 <img src="images/under-heading.png" alt="" >
                             </div>
                         </div>
@@ -419,20 +423,20 @@
                               <ul class="slides">
                                 <li>
                                     <div class="testimonails-content">
-                                        <p>ååæ¿å°äºæçå­é¿èµæ ¼è¯ï¼éå¸¸çæ»¡æ</p>
-                                        <h6>å¼ ä¸ - <a href="#">å­é¿èµæ ¼è¯</a></h6>
+                                        <p>Ã¥ÂÂÃ¥ÂÂÃ¦ÂÂ¿Ã¥ÂÂ°Ã¤ÂºÂÃ¦ÂÂÃ§ÂÂÃ¥ÂÂ­Ã©ÂÂ¿Ã¨ÂµÂÃ¦Â Â¼Ã¨Â¯ÂÃ¯Â¼ÂÃ©ÂÂÃ¥Â¸Â¸Ã§ÂÂÃ¦Â»Â¡Ã¦ÂÂ</p>
+                                        <h6>Ã¥Â¼Â Ã¤Â¸Â - <a href="#">Ã¥ÂÂ­Ã©ÂÂ¿Ã¨ÂµÂÃ¦Â Â¼Ã¨Â¯Â</a></h6>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="testimonails-content">
-                                        <p>æçå°å­©å¨è¿éå¹è®­äºä¸ä¸ªæï¼å·²ç»ä¼è¯´ä¸äºç®åçè±æåè¯ï¼è¿æ¿äºå¥½å¤å°çº¢è±ï¼ççä»å¼å¿ï¼æä¹æ¯å¾æ¬£æ°</p>
-                                        <h6>æå - <a href="#">å¹¼å¿å¹è®­</a></h6>
+                                        <p>Ã¦ÂÂÃ§ÂÂÃ¥Â°ÂÃ¥Â­Â©Ã¥ÂÂ¨Ã¨Â¿ÂÃ©ÂÂÃ¥ÂÂ¹Ã¨Â®Â­Ã¤ÂºÂÃ¤Â¸ÂÃ¤Â¸ÂªÃ¦ÂÂÃ¯Â¼ÂÃ¥Â·Â²Ã§Â»ÂÃ¤Â¼ÂÃ¨Â¯Â´Ã¤Â¸ÂÃ¤ÂºÂÃ§Â®ÂÃ¥ÂÂÃ§ÂÂÃ¨ÂÂ±Ã¦ÂÂÃ¥ÂÂÃ¨Â¯ÂÃ¯Â¼ÂÃ¨Â¿ÂÃ¦ÂÂ¿Ã¤ÂºÂÃ¥Â¥Â½Ã¥Â¤ÂÃ¥Â°ÂÃ§ÂºÂ¢Ã¨ÂÂ±Ã¯Â¼ÂÃ§ÂÂÃ§ÂÂÃ¤Â»ÂÃ¥Â¼ÂÃ¥Â¿ÂÃ¯Â¼ÂÃ¦ÂÂÃ¤Â¹ÂÃ¦ÂÂ¯Ã¥Â¾ÂÃ¦Â¬Â£Ã¦ÂÂ°</p>
+                                        <h6>Ã¦ÂÂÃ¥ÂÂ - <a href="#">Ã¥Â¹Â¼Ã¥ÂÂ¿Ã¥ÂÂ¹Ã¨Â®Â­</a></h6>
                                     </div> 
                                 </li>
                                 <li>
                                     <div class="testimonails-content">
-                                        <p>åå¤å¼ä¸ä¸ªèªå·±çå¹¼å¿å­ï¼ä½æ¯ä¸ç¥éå°åªéå»æ¾å¹¼å¿æå¸ï¼æ¬å¸ç»ææ¨èäºå¥½å ä¸ªä¼ç§çèå¸ï¼ç°å¨å¹¼å¿å­åçéå¸¸å¥½</p>
-                                        <h6>èµµäº - <a href="#">èºæ¯èå¸è¾åº</a></h6>
+                                        <p>Ã¥ÂÂÃ¥Â¤ÂÃ¥Â¼ÂÃ¤Â¸ÂÃ¤Â¸ÂªÃ¨ÂÂªÃ¥Â·Â±Ã§ÂÂÃ¥Â¹Â¼Ã¥ÂÂ¿Ã¥ÂÂ­Ã¯Â¼ÂÃ¤Â½ÂÃ¦ÂÂ¯Ã¤Â¸ÂÃ§ÂÂ¥Ã©ÂÂÃ¥ÂÂ°Ã¥ÂÂªÃ©ÂÂÃ¥ÂÂ»Ã¦ÂÂ¾Ã¥Â¹Â¼Ã¥ÂÂ¿Ã¦ÂÂÃ¥Â¸ÂÃ¯Â¼ÂÃ¦ÂÂ¬Ã¥Â¸ÂÃ§Â»ÂÃ¦ÂÂÃ¦ÂÂ¨Ã¨ÂÂÃ¤ÂºÂÃ¥Â¥Â½Ã¥ÂÂ Ã¤Â¸ÂªÃ¤Â¼ÂÃ§Â§ÂÃ§ÂÂÃ¨ÂÂÃ¥Â¸ÂÃ¯Â¼ÂÃ§ÂÂ°Ã¥ÂÂ¨Ã¥Â¹Â¼Ã¥ÂÂ¿Ã¥ÂÂ­Ã¥ÂÂÃ§ÂÂÃ©ÂÂÃ¥Â¸Â¸Ã¥Â¥Â½</p>
+                                        <h6>Ã¨ÂµÂµÃ¤ÂºÂ - <a href="#">Ã¨ÂÂºÃ¦ÂÂ¯Ã¨ÂÂÃ¥Â¸ÂÃ¨Â¾ÂÃ¥ÂÂº</a></h6>
                                     </div>
                                 </li>
                               </ul>
@@ -448,13 +452,13 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="recent-posts">
-                                    <h4 class="footer-title">ææ°æ´»å¨</h4>
+                                    <h4 class="footer-title">Ã¦ÂÂÃ¦ÂÂ°Ã¦Â´Â»Ã¥ÂÂ¨</h4>
                                     <div class="recent-post">
                                         <div class="recent-post-thumb">
                                             <img src="images/recent-post1.jpg" alt="">
                                         </div>
                                         <div class="recent-post-info">
-                                            <h6><a href="#">å­é¿èµæ ¼è¯æ¥å</a></h6>
+                                            <h6><a href="#">Ã¥ÂÂ­Ã©ÂÂ¿Ã¨ÂµÂÃ¦Â Â¼Ã¨Â¯ÂÃ¦ÂÂ¥Ã¥ÂÂ</a></h6>
                                             <span>2016-10-17</span>
                                         </div>
                                     </div>
@@ -463,7 +467,7 @@
                                             <img src="images/recent-post2.jpg" alt="">
                                         </div>
                                         <div class="recent-post-info">
-                                            <h6><a href="#">æå¸èµæ ¼è¯æ¥å</a></h6>
+                                            <h6><a href="#">Ã¦ÂÂÃ¥Â¸ÂÃ¨ÂµÂÃ¦Â Â¼Ã¨Â¯ÂÃ¦ÂÂ¥Ã¥ÂÂ</a></h6>
                                             <span>2016-10-17</span>
                                         </div>
                                     </div>
@@ -471,11 +475,11 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="more-info">
-                                    <h4 class="footer-title">æ´å¤ä¿¡æ¯</h4>
-                                    <p>å¦æä½ æ³è¦å¯¹æä»¬å¬å¸ææ´æ·±å»çäºè§£ï¼ä»¥ä¸æ¯æä»¬å¬å¸çèç³»æ¹å¼</p>
+                                    <h4 class="footer-title">Ã¦ÂÂ´Ã¥Â¤ÂÃ¤Â¿Â¡Ã¦ÂÂ¯</h4>
+                                    <p>Ã¥Â¦ÂÃ¦ÂÂÃ¤Â½Â Ã¦ÂÂ³Ã¨Â¦ÂÃ¥Â¯Â¹Ã¦ÂÂÃ¤Â»Â¬Ã¥ÂÂ¬Ã¥ÂÂ¸Ã¦ÂÂÃ¦ÂÂ´Ã¦Â·Â±Ã¥ÂÂ»Ã§ÂÂÃ¤ÂºÂÃ¨Â§Â£Ã¯Â¼ÂÃ¤Â»Â¥Ã¤Â¸ÂÃ¦ÂÂ¯Ã¦ÂÂÃ¤Â»Â¬Ã¥ÂÂ¬Ã¥ÂÂ¸Ã§ÂÂÃ¨ÂÂÃ§Â³Â»Ã¦ÂÂ¹Ã¥Â¼Â</p>
                                     <ul>
                                         <li><i class="fa fa-phone"></i>010-020-0340</li>
-                                        <li><i class="fa fa-globe"></i>å¤©æ´¥å¸xxåºxxè·¯xxå¤§æ¥¼xxx</li>
+                                        <li><i class="fa fa-globe"></i>Ã¥Â¤Â©Ã¦Â´Â¥Ã¥Â¸ÂxxÃ¥ÂÂºxxÃ¨Â·Â¯xxÃ¥Â¤Â§Ã¦Â¥Â¼xxx</li>
                                         <li><i class="fa fa-envelope"></i><a href="#">yangfangjiaoyu@126.com</a></li>
                                     </ul>
                                 </div>
@@ -483,7 +487,7 @@
                         </div>
                     </div>
                     <div class="bottom-footer">
-                        <p>Copyright Â© 2084 <a href="#">æ¬å¸æè²</a> Collect from </p>
+                        <p>Copyright ÃÂ© 2084 <a href="#">Ã¦ÂÂ¬Ã¥Â¸ÂÃ¦ÂÂÃ¨ÂÂ²</a> Collect from </p>
                     </div>
                     
                 </div>

@@ -437,7 +437,6 @@ ul.sidebar-menu li a.active i {
 
 .wrapper {
 	display: inline-block;
-	margin-top: 60px;
 	padding: 15px;
 	width: 100%;
 }
@@ -6674,3 +6673,10 @@ a.guest-on i {
 .lobby {
 	padding: 0 !important;
 }
+
+
+.fsarea { margin-bottom: 10px;}
+.fsarea h2 {font-size: 16px;margin: 0px;float: left;color: #3a6683; padding-left: 15px; height: 22px;line-height: 22px; padding-right: 5px;font-weight: bold;}
+.fsarea .toolbar {text-align: right;padding-right: 6px;padding-bottom: 2px;height:40px;}
+.fsarea .toolbar button{float:right;}
+.fsarea .fscxt { border: solid 1px #A8CFEB;}

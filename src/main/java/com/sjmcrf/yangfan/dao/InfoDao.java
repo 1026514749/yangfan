@@ -1,7 +1,5 @@
 package com.sjmcrf.yangfan.dao;
 
-import org.apache.ibatis.annotations.Param;
-
 import com.sjmcrf.yangfan.entity.Info;
 
 public interface InfoDao {
@@ -16,7 +14,7 @@ public interface InfoDao {
 	 * 将原信息删除
 	 * @return
 	 */
-	int delelteAll();
+	int deleteAll();
 	
 	/**
 	 * 插入新信息

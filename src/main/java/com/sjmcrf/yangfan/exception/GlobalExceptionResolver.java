@@ -1,7 +1,9 @@
 package com.sjmcrf.yangfan.exception;
 
 import com.alibaba.fastjson.JSON;
+import com.sjmcrf.yangfan.dto.ActionResult;
 import com.sjmcrf.yangfan.dto.BaseResult;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
@@ -11,6 +13,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
 import java.io.PrintWriter;
 
 /**
@@ -35,7 +38,8 @@ public class GlobalExceptionResolver implements HandlerExceptionResolver {
 		//返回json格式的错误信息
 		try {
 			PrintWriter writer = response.getWriter();
-			BaseResult<String> result=new BaseResult(false, ex.getMessage());
+			ActionResult result = new ActionResult(false);
+			result.setMessage("业务异常！");
 			writer.write(JSON.toJSONString(result));
 			writer.flush();
 		} catch (Exception e) {
