@@ -1,5 +1,7 @@
 package com.sjmcrf.yangfan.service;
 
+import java.util.List;
+
 import com.sjmcrf.yangfan.dto.PageQueryResult;
 import com.sjmcrf.yangfan.entity.Column;
 
@@ -14,4 +16,6 @@ public interface ColumnService {
 	void update(Column column);
 	
 	Column get(String id);
+	
+	List<Column> queryAll();
 }

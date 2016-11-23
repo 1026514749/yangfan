@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sjmcrf.yangfan.dao.EvaluateDao">
+
+
+	<select id="get" resultType="Evaluate" parameterType="String">
+		SELECT *
+		FROM `Evaluate`
+		where id = #{id}
+	</select>
+
+	<update id="delete" parameterType="String">
+		UPDATE `Evaluate`
+		SET 
+		deleted = 1
+		where id = #{id}
+	</update>
+	
+    <insert id="insert" parameterType="Evaluate" useGeneratedKeys="true" keyProperty="id">
+        insert into 
+        	`Evaluate`(column,content,status,`time`,deleted)
+        	values(#{column},#{content},#{status},#{time},#{deleted})
+    </insert>
+    
+    <select id="queryByPage" resultType="java.util.Map" >
+		SELECT *
+		FROM `Evaluate` t
+		WHERE t.deleted = 0
+		ORDER BY t.order,t.code
+		LIMIT #{pageIndex},#{pageSize}
+	</select>
+	
+	<select id="queryAll" resultType="Evaluate" >
+		SELECT *
+		FROM `Evaluate` t
+		WHERE t.deleted = 0
+		ORDER BY t.order,t.code
+	</select>
+	
+	<select id="getCount" resultType="Integer">
+		SELECT COUNT(*)
+		FROM `Evaluate`
+		WHERE deleted = 0
+	</select>
+	
+	<update id="update" parameterType="Evaluate">
+		update `Evaluate` 
+			set column=#{column},
+				content=#{content},
+				status=#{status},
+				`time`=#{time}
+		where id = #{id}
+	</update>
+
+</mapper>

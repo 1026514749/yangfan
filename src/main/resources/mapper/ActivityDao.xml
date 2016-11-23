@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sjmcrf.yangfan.dao.ActivityDao">
+
+
+	<select id="get" resultType="Activity" parameterType="String">
+		SELECT *
+		FROM `Activity`
+		where id = #{id}
+	</select>
+	
+	<update id="delete" parameterType="String">
+		UPDATE `Activity`
+		SET 
+		deleted = 1
+		where id = #{id}
+	</update>
+	
+    <insert id="insert" parameterType="Activity" useGeneratedKeys="true" keyProperty="id">
+        insert into 
+        	`Activity`(title,image,content,design,deleted,time)
+        	values(#{title},#{image},#{content},#{design},#{deleted},#{time})
+    </insert>
+    
+    <select id="queryByPage" resultType="java.util.Map" >
+		SELECT *
+		FROM `Activity` t
+		WHERE t.deleted = 0
+		ORDER BY t.time,t.id
+		LIMIT #{pageIndex},#{pageSize}
+	</select>
+	
+	<select id="queryAll" resultType="Activity" >
+		SELECT *
+		FROM `Activity` t
+		WHERE t.deleted = 0
+		ORDER BY t.order,t.code
+	</select>
+	
+	<select id="getCount" resultType="Integer">
+		SELECT COUNT(*)
+		FROM `Activity`
+		WHERE deleted = 0
+	</select>
+	
+	<update id="update" parameterType="Activity">
+		update `Activity` 
+		set title=#{title},
+			image=#{image},
+			content=#{content},
+			design=#{design},
+			`time`=#{time}
+		where id = #{id}
+	</update>
+
+</mapper>

@@ -1,19 +1,23 @@
 package com.sjmcrf.yangfan.entity;
 
 public class ColumnDetail {
-	private int id;
+	private String id;
 	
 	private String code;
 	
 	private String content;
 	
+	private String design;
+	
 	private int deleted;
 
-	public int getId() {
+	
+
+	public String getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(String id) {
 		this.id = id;
 	}
 
@@ -40,6 +44,16 @@ public class ColumnDetail {
 	public void setDeleted(int deleted) {
 		this.deleted = deleted;
 	}
+
+	public String getDesign() {
+		return design;
+	}
+
+	public void setDesign(String design) {
+		this.design = design;
+	}
+	
+	
 	
 	
 }

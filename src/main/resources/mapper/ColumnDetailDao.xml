@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sjmcrf.yangfan.dao.ColumnDetailDao">
+
+
+	<select id="get" resultType="ColumnDetail" parameterType="String">
+		SELECT *
+		FROM column_detail
+		where id = #{id}
+	</select>
+
+	<update id="deleteAll">
+		UPDATE column_detail
+		SET 
+		deleted = 1
+		where code = #{code}
+	</update>
+	<update id="delete" parameterType="String">
+		UPDATE column_detail
+		SET 
+		deleted = 1
+		where id = #{id}
+	</update>
+	
+    <insert id="insert" parameterType="ColumnDetail" useGeneratedKeys="true" keyProperty="id">
+        insert into 
+        	column_detail(code,content,design,deleted)
+        	values(#{code},#{content},#{design},#{deleted})
+    </insert>
+    
+    <select id="queryByPage" resultType="java.util.Map" >
+		SELECT *
+		FROM column_detail t
+		WHERE t.deleted = 0
+		ORDER BY t.code
+		LIMIT #{pageIndex},#{pageSize}
+	</select>
+	
+	<select id="queryAll" resultType="ColumnDetail" >
+		SELECT *
+		FROM column_detail t
+		WHERE t.deleted = 0
+		ORDER BY t.code
+	</select>
+	
+	<select id="getCount" resultType="Integer">
+		SELECT COUNT(*)
+		FROM column_detail
+		WHERE deleted = 0
+	</select>
+	
+	<update id="update" parameterType="ColumnDetail">
+		update column_detail 
+			set code=#{code},
+				content=#{content},
+		where id = #{id}
+	</update>
+
+</mapper>

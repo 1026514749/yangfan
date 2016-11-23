@@ -1,7 +1,7 @@
 package com.sjmcrf.yangfan.entity;
 
-public class CloumnSimple {
-	private int id;
+public class ColumnSimple {
+	private String id;
 	
 	private String code;
 	
@@ -17,11 +17,13 @@ public class CloumnSimple {
 	
 	private int deleted;
 
-	public int getId() {
+	
+
+	public String getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(String id) {
 		this.id = id;
 	}
 

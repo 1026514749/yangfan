@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sjmcrf.yangfan.dao.ColumnSimpleDao">
+
+
+	<select id="get" resultType="ColumnSimple" parameterType="String">
+		SELECT *
+		FROM column_simple
+		where id = #{id}
+	</select>
+
+	<update id="deleteAll">
+		UPDATE column_simple
+		SET 
+		deleted = 1
+		where code = #{code}
+	</update>
+	<update id="delete" parameterType="String">
+		UPDATE column_simple
+		SET 
+		deleted = 1
+		where id = #{id}
+	</update>
+	
+    <insert id="insert" parameterType="ColumnSimple" useGeneratedKeys="true" keyProperty="id">
+        insert into 
+        	column_simple(code,image,title,content,button,`order`,deleted)
+        	values(#{code},#{image},#{title},#{content},#{button},#{order},#{deleted})
+    </insert>
+    
+    <select id="queryByPage" resultType="java.util.Map" >
+		SELECT *
+		FROM column_simple t
+		WHERE t.deleted = 0
+		ORDER BY t.order,t.code
+	</select>
+	
+	<select id="queryAll" resultType="ColumnSimple" >
+		SELECT *
+		FROM column_simple t
+		WHERE t.deleted = 0
+		ORDER BY t.order,t.code
+		LIMIT #{pageIndex},#{pageSize}
+	</select>
+	
+	<select id="getCount" resultType="Integer">
+		SELECT COUNT(*)
+		FROM column_simple
+		WHERE deleted = 0
+	</select>
+	
+	<update id="update" parameterType="ColumnSimple">
+		update column_simple 
+			set code=#{code},
+				image=#{image},
+				title=#{title},
+				content=#{content},
+				button=#{button},
+				`order`=#{order}
+		where id = #{id}
+	</update>
+
+</mapper>

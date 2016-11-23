@@ -11,7 +11,7 @@
 
 
 <!-- BEGIN SHORTCUT ICON -->
-<link rel="shortcut icon" href="img/favicon.ico">
+<link rel="shortcut icon" href="${path}/img/favicon.ico">
 <!-- END SHORTCUT ICON -->
 <title>后台管理</title>
  
@@ -77,8 +77,8 @@
 </a>
 <ul class="sub">
 <li><a href="javascript:" onclick="openView('/admin/columnList.do')">栏目管理</a></li>
-<li><a href="javascript:">栏目简介</a></li>
-<li><a href="javascript:">栏目内容</a></li>
+<li><a href="javascript:" onclick="openView('/admin/columnSimpleList.do')">栏目简介</a></li>
+<li><a href="javascript:" onclick="openView('/admin/columnDetailList.do')">栏目内容</a></li>
 </ul>
 </li>
 <li class="sub-menu">

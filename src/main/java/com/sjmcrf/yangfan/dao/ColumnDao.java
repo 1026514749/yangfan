@@ -23,4 +23,5 @@ public interface ColumnDao {
 	
 	public List<Map<String,Object>> queryByPage(@Param(value="pageIndex")int pageIndex,@Param(value="pageSize")int pageSize);
 	
+	public List<Column> queryAll();
 }

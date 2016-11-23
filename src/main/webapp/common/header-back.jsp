@@ -22,6 +22,7 @@
 
 <script src="${path}/js/jquery/jquery.js" ></script><!-- BASIC JS LIABRARY -->
 <script src="${path}/js/bootstrap/bootstrap.min.js" ></script><!-- BOOTSTRAP JS  -->
+<script src="${path}/js/jquery/ajaxfileupload.js"></script><!-- ACCORDING JS -->
 <script src="${path}/js/jquery/jquery.dcjqaccordion.2.7.js"></script><!-- ACCORDING JS -->
 <script src="${path}/js/jquery/jquery.scrollTo.min.js" ></script><!-- SCROLLTO JS  -->
 <script src="${path}/js/jquery/jquery.nicescroll.js" > </script><!-- NICESCROLL JS  -->

@@ -62,4 +62,10 @@ public class ColumnServiceImpl implements ColumnService {
 		return columnDao.get(id);
 	}
 
+	@Override
+	public List<Column> queryAll() {
+		// TODO Auto-generated method stub
+		return columnDao.queryAll();
+	}
+
 }

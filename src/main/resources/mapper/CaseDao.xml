@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sjmcrf.yangfan.dao.CaseDao">
+
+
+	<select id="get" resultType="Case" parameterType="String">
+		SELECT *
+		FROM `Case`
+		where id = #{id}
+	</select>
+
+	<update id="delete" parameterType="String">
+		UPDATE `Case`
+		SET 
+		deleted = 1
+		where id = #{id}
+	</update>
+	
+    <insert id="insert" parameterType="Case" useGeneratedKeys="true" keyProperty="id">
+        insert into 
+        	`Case`(code,title,image,`time`,simple,content,design,`order`,deleted)
+        	values(#{code},#{title},#{image},#{time},,#{simple},#{content},#{order}#{design},#{deleted})
+    </insert>
+    
+    <select id="queryByPage" resultType="java.util.Map" >
+		SELECT *
+		FROM `Case` t
+		WHERE t.deleted = 0
+		ORDER BY t.order,t.code
+		LIMIT #{pageIndex},#{pageSize}
+	</select>
+	
+	<select id="queryAll" resultType="Case" >
+		SELECT *
+		FROM `Case` t
+		WHERE t.deleted = 0
+		ORDER BY t.order,t.code
+	</select>
+	
+	<select id="getCount" resultType="Integer">
+		SELECT COUNT(*)
+		FROM `Case`
+		WHERE deleted = 0
+	</select>
+	
+	<update id="update" parameterType="Case">
+		update `Case` 
+			set code=#{code},
+				title=#{title},
+				image=#{image},
+				`time`=#{time},
+				simple=#{simple},
+				content=#{content},
+				design=#{design},
+				`order`=#{order}
+		where id = #{id}
+	</update>
+
+</mapper>

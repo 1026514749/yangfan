@@ -36,6 +36,13 @@
 		LIMIT #{pageIndex},#{pageSize}
 	</select>
 	
+	<select id="queryAll" resultType="Column" >
+		SELECT *
+		FROM `column` t
+		WHERE t.deleted = 0
+		ORDER BY t.order,t.code
+	</select>
+	
 	<select id="getCount" resultType="Integer">
 		SELECT COUNT(*)
 		FROM `column`
