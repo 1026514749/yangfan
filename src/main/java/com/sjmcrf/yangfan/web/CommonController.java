@@ -1,18 +1,13 @@
 package com.sjmcrf.yangfan.web;
 
 import java.io.File;
-import java.util.Date;
-
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
-
 import com.sjmcrf.yangfan.dto.ActionResult;
 import com.sjmcrf.yangfan.util.CustomizedPropertyConfig;
 import com.sjmcrf.yangfan.util.ImageUtils;
@@ -33,7 +28,6 @@ public class CommonController {
 			result.setMessage("请先选择文件");
 			return result;
 		}
-		String path = config.getContextProperty("upload.path");
 		String uploadPath = request.getServletContext().getRealPath(config.getContextProperty("upload.path"));
 		String newName = ImageUtils.getNewName(file.getOriginalFilename());
 		

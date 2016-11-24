@@ -2,7 +2,6 @@ package com.sjmcrf.yangfan.web;
 
 
 import java.util.List;
-
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,53 +11,50 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import com.sjmcrf.yangfan.dto.ActionResult;
 import com.sjmcrf.yangfan.dto.PageQueryResult;
 import com.sjmcrf.yangfan.entity.Column;
-import com.sjmcrf.yangfan.entity.ColumnSimple;
+import com.sjmcrf.yangfan.entity.Case;
+import com.sjmcrf.yangfan.service.CaseService;
 import com.sjmcrf.yangfan.service.ColumnService;
-import com.sjmcrf.yangfan.service.ColumnSimpleService;
-import com.sjmcrf.yangfan.util.CustomizedPropertyConfig;
 
 @Controller
-public class ColumnSimpleController {
+public class CaseController {
 	
 	@Autowired
-	private CustomizedPropertyConfig config;
-	@Autowired
-	private ColumnSimpleService service;
+	private CaseService service;
 	@Autowired
 	private ColumnService columnService;
 	
-	@RequestMapping(value="/admin/columnSimpleList.do")
+	@RequestMapping(value="/admin/caseList.do")
 	public String columnSimpleList(){
 		
-		return "admin/column-simple-list";
+		return "admin/case-list";
 	}
 	
-	@RequestMapping(value="/admin/columnSimple.do")
-	public String columnSimple(String id,HttpServletRequest request,HttpServletResponse response){
+	@RequestMapping(value="/admin/case.do")
+	public String Case(String id,HttpServletRequest request,HttpServletResponse response){
 		
-		ColumnSimple simple = service.get(id);		
+		Case ncase = service.get(id);		
 		List<Column> cloumns = columnService.queryAll();
 		
-		request.setAttribute("simple", simple);
+		request.setAttribute("case", ncase);
 		request.setAttribute("columns", cloumns);
 		
-		return "admin/column-simple";
+		return "admin/case";
 	}
-	@RequestMapping(value="/admin/modifyColumnSimple.do")
+	@RequestMapping(value="/admin/modifyCase.do")
 	@ResponseBody
-	public ActionResult modify(ColumnSimple simple,HttpServletRequest request){
+	public ActionResult modify(Case ncase,HttpServletRequest request){
 		ActionResult result = new ActionResult(false);
 		
-		if(simple.getId() == null||"".equals(simple.getId())){
-			service.insert(simple);
+		if(ncase.getId() == null||"".equals(ncase.getId())){
+			service.insert(ncase);
 		}else{
-			service.update(simple);
+			service.update(ncase);
 		}
 		
 		result.setSuccess(true);
 		return result;
 	}
-	@RequestMapping(value="/admin/deleteColumnSimple.do")
+	@RequestMapping(value="/admin/deleteCase.do")
 	@ResponseBody
 	public ActionResult delete(String id){
 		ActionResult result = new ActionResult(false);
@@ -68,7 +64,7 @@ public class ColumnSimpleController {
 		result.setSuccess(true);
 		return result;
 	}
-	@RequestMapping(value="/admin/queryColumnSimple.do")
+	@RequestMapping(value="/admin/queryCase.do")
 	@ResponseBody
 	public PageQueryResult queryByPage(int pageIndex,int pageSize){
 		

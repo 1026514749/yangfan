@@ -18,15 +18,15 @@
 	
     <insert id="insert" parameterType="Employee" useGeneratedKeys="true" keyProperty="id">
         insert into 
-        	`Employee`(position,name,image,phone,`time`,`order`,deleted)
-        	values(#{position},#{name},#{image},#{phone},#{time},#{order},#{deleted})
+        	`Employee`(position,name,image,phone,`order`,deleted)
+        	values(#{position},#{name},#{image},#{phone},#{order},#{deleted})
     </insert>
     
     <select id="queryByPage" resultType="java.util.Map" >
 		SELECT *
 		FROM `Employee` t
 		WHERE t.deleted = 0
-		ORDER BY t.order,t.code
+		ORDER BY t.order
 		LIMIT #{pageIndex},#{pageSize}
 	</select>
 	
@@ -34,7 +34,7 @@
 		SELECT *
 		FROM `Employee` t
 		WHERE t.deleted = 0
-		ORDER BY t.order,t.code
+		ORDER BY t.order
 	</select>
 	
 	<select id="getCount" resultType="Integer">
@@ -49,7 +49,6 @@
 				name=#{name},
 				image=#{image},
 				phone=#{phone},
-				`time`=#{time},
 				`order`=#{order}
 		where id = #{id}
 	</update>

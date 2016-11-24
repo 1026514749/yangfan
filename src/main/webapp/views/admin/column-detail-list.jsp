@@ -22,13 +22,6 @@
 <form id = "form">
 	<input type="hidden" name = "takon" value="1">
 </form>
-
-<!-- <div class="col-xs-offset-11 col-xs-1">
-    <button  class="btn btn-shadow btn-default" onclick="add()">新增</button>
-</div>
-<div class="col-xs-12">
-	<div id="data_div"></div>
-</div> -->
 <div class="fsarea">
       <h2>栏目详情列表</h2>
 

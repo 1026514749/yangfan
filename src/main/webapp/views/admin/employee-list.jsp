@@ -10,7 +10,7 @@
 <!-- END META -->
 
 <!-- END SHORTCUT ICON -->
-<title>栏目简介列表</title>
+<title>栏目列表</title>
 <%@include file="/common/header-back.jsp" %>
  
 </head>
@@ -22,12 +22,11 @@
 <form id = "form">
 	<input type="hidden" name = "takon" value="1">
 </form>
-
 <div class="fsarea">
-      <h2>栏目简介列表</h2>
+      <h2>员工列表</h2>
 
       <div class="toolbar">
-          <button  class="btn btn-shadow btn-default" onclick="addSimple()">新增</button>
+          <button  class="btn btn-shadow btn-default" onclick="addEmployee()">新增</button>
       </div>
       <div id="data_div" style="border: solid 1px #A8CFEB"></div>
     </div>
@@ -41,25 +40,24 @@ $(function(){
 	gridMenu = $.ligerMenu({
         width:110,
         items:[
-          { id:'modifyClick', text:'修改简介', click:menuClick, icon:'modify' },
-          { id:'deleteClick', text:'删除简介', click:menuClick, icon:'delete' }
+          { id:'modifyClick', text:'修改员工', click:menuClick, icon:'modify' },
+          { id:'deleteClick', text:'删除员工', click:menuClick, icon:'delete' }
         ]
       });
 	dataGrid = $("#data_div").ligerGrid({
     primaryKey:'id',
     columns:[
 	  { display:'操作', width:60, oprcol:true, icon:'${path}/images/ico_opr.gif'},
-      { display:'栏目类型', name:'code', align:'left', width:150},
-      { display:'图片地址', name:'image', align:'left', width:200},
-      { display:'标题', name:'title', align:'left', width:150},
-      { display:'内容', name:'content', align:'left', width:200},
-      { display:'按钮', name:'button', align:'left', width:200},
-      { display:'排序', name:'order', align:'left', width:80}
+      { display:'姓名', name:'name', align:'left', width:200},
+      { display:'职位', name:'position', align:'left', width:200},
+      { display:'电话', name:'phone', align:'left', width:200},
+      { display:'头像', name:'image', align:'left', width:200},
+      { display:'排序', name:'order', align:'left', width:100}
     ], width:'99%',
-    url:path + "/admin/queryColumnSimple.do",
+    url:path + "/admin/queryEmployee.do",
     searchForm:'form',
     onDblClickRow:function (data, index, dom) {
-    	modifySimple(data.id);
+    	modifyEmployee(data.id);
       },
     oprcolMenu:gridMenu
   });
@@ -69,17 +67,17 @@ function menuClick(item, index, jsonObj)
 {
     if (item.id == 'modifyClick') 
     {
-    	modifySimple(jsonObj.rowData.id);
+    	modifyEmployee(jsonObj.rowData.id);
     } else if (item.id == 'deleteClick') 
     {
-    	deleteSimple(jsonObj.rowData.id);
+    	deleteEmployee(jsonObj.rowData.id);
     }
 }
 
-function modifySimple(id){
+function modifyEmployee(id){
 	pts.dialog({
-		title:'新建栏目简介',
-		url:path+'/admin/columnSimple.do?id='+id,
+		title:'新建员工',
+		url:path+'/admin/employee.do?id='+id,
 		width:'70%',
 		height:'70%',
 		onClosed:function(result){
@@ -87,10 +85,10 @@ function modifySimple(id){
 		}
 	});
 }
-function deleteSimple(id){
+function deleteEmployee(id){
 	var param = {};
 	param.id=id;
-	var url = path+"/admin/deleteColumnSimple.do";
+	var url = path+"/admin/deleteEmployee.do";
 	pts.submit({
 		url:url,
 		data:param,
@@ -99,11 +97,11 @@ function deleteSimple(id){
 		}
 	});
 }
-function addSimple()
+function addEmployee()
 {
 	pts.dialog({
-		title:'新建栏目简介',
-		url:path+'/admin/columnSimple.do',
+		title:'新建员工',
+		url:path+'/admin/employee.do',  
 		width:'70%',
 		height:'70%',
 		onClosed:function(result){

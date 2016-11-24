@@ -88,7 +88,7 @@
 <span class="label label-inverse span-sidebar">2</span>
 </a>
 <ul class="sub">
-<li><a href="javascript:">员工信息</a></li>
+<li><a href="javascript:" onclick="openView('/admin/employeeList.do')">员工信息</a></li>
 <li><a href="javascript:">用户账号</a></li>
 </ul>
 </li>
@@ -99,8 +99,8 @@
 <span class="label label-danger span-sidebar">2</span>
 </a>
 <ul class="sub">
-<li><a href="javascript:">案例管理</a></li>
-<li><a href="javascript:">活动管理</a></li>
+<li><a href="javascript:" onclick="openView('/admin/caseList.do')">案例管理</a></li>
+<li><a href="javascript:" onclick="openView('/admin/activityList.do')">活动管理</a></li>
 </ul>
 </li>
 <li class="sub-menu">
@@ -110,7 +110,7 @@
 <span class="label label-danger span-sidebar">1</span>
 </a>
 <ul class="sub">
-<li><a href="javascript:">客户评价</a></li>
+<li><a href="javascript:" onclick="openView('/admin/evaluateList.do')">客户评价</a></li>
 </ul>
 </li>
 </ul>

@@ -2,7 +2,6 @@ package com.sjmcrf.yangfan.web;
 
 
 import java.util.List;
-
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,53 +11,50 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import com.sjmcrf.yangfan.dto.ActionResult;
 import com.sjmcrf.yangfan.dto.PageQueryResult;
 import com.sjmcrf.yangfan.entity.Column;
-import com.sjmcrf.yangfan.entity.ColumnSimple;
+import com.sjmcrf.yangfan.entity.Evaluate;
+import com.sjmcrf.yangfan.service.EvaluateService;
 import com.sjmcrf.yangfan.service.ColumnService;
-import com.sjmcrf.yangfan.service.ColumnSimpleService;
-import com.sjmcrf.yangfan.util.CustomizedPropertyConfig;
 
 @Controller
-public class ColumnSimpleController {
+public class EvaluateController {
 	
 	@Autowired
-	private CustomizedPropertyConfig config;
-	@Autowired
-	private ColumnSimpleService service;
+	private EvaluateService service;
 	@Autowired
 	private ColumnService columnService;
 	
-	@RequestMapping(value="/admin/columnSimpleList.do")
-	public String columnSimpleList(){
+	@RequestMapping(value="/admin/evaluateList.do")
+	public String evaluateList(){
 		
-		return "admin/column-simple-list";
+		return "admin/evaluate-list";
 	}
 	
-	@RequestMapping(value="/admin/columnSimple.do")
-	public String columnSimple(String id,HttpServletRequest request,HttpServletResponse response){
+	@RequestMapping(value="/admin/evaluate.do")
+	public String evaluate(String id,HttpServletRequest request,HttpServletResponse response){
 		
-		ColumnSimple simple = service.get(id);		
+		Evaluate evaluate = service.get(id);		
 		List<Column> cloumns = columnService.queryAll();
 		
-		request.setAttribute("simple", simple);
+		request.setAttribute("evaluate", evaluate);
 		request.setAttribute("columns", cloumns);
 		
-		return "admin/column-simple";
+		return "admin/evaluate";
 	}
-	@RequestMapping(value="/admin/modifyColumnSimple.do")
+	@RequestMapping(value="/admin/modifyEvaluate.do")
 	@ResponseBody
-	public ActionResult modify(ColumnSimple simple,HttpServletRequest request){
+	public ActionResult modify(Evaluate evaluate,HttpServletRequest request){
 		ActionResult result = new ActionResult(false);
 		
-		if(simple.getId() == null||"".equals(simple.getId())){
-			service.insert(simple);
+		if(evaluate.getId() == null||"".equals(evaluate.getId())){
+			service.insert(evaluate);
 		}else{
-			service.update(simple);
+			service.update(evaluate);
 		}
 		
 		result.setSuccess(true);
 		return result;
 	}
-	@RequestMapping(value="/admin/deleteColumnSimple.do")
+	@RequestMapping(value="/admin/deleteEvaluate.do")
 	@ResponseBody
 	public ActionResult delete(String id){
 		ActionResult result = new ActionResult(false);
@@ -68,7 +64,7 @@ public class ColumnSimpleController {
 		result.setSuccess(true);
 		return result;
 	}
-	@RequestMapping(value="/admin/queryColumnSimple.do")
+	@RequestMapping(value="/admin/queryEvaluate.do")
 	@ResponseBody
 	public PageQueryResult queryByPage(int pageIndex,int pageSize){
 		

@@ -1,32 +1,18 @@
 package com.sjmcrf.yangfan.web;
 
 import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.regex.Pattern;
-
 import javax.servlet.http.HttpServletRequest;
-
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
-
 import com.sjmcrf.yangfan.util.CustomizedPropertyConfig;
 import com.sjmcrf.yangfan.util.ImageUtils;
 
 @Controller
 public class CkEditorController {
 
-	private DateFormat df = new SimpleDateFormat("yyyyMMddHHmmss");
 	@Autowired
 	private CustomizedPropertyConfig config;
 	

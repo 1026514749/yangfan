@@ -26,7 +26,7 @@
 		SELECT *
 		FROM `Evaluate` t
 		WHERE t.deleted = 0
-		ORDER BY t.order,t.code
+		ORDER BY t.time DESC
 		LIMIT #{pageIndex},#{pageSize}
 	</select>
 	
@@ -34,7 +34,7 @@
 		SELECT *
 		FROM `Evaluate` t
 		WHERE t.deleted = 0
-		ORDER BY t.order,t.code
+		ORDER BY t.order
 	</select>
 	
 	<select id="getCount" resultType="Integer">

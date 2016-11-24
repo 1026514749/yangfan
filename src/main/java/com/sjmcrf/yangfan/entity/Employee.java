@@ -2,13 +2,11 @@ package com.sjmcrf.yangfan.entity;
 
 public class Employee {
 	
-	private int id;
+	private String id;
 	
 	private String name;
 	
 	private String position;
-	
-	private String time;
 	
 	private String phone;
 	
@@ -18,11 +16,13 @@ public class Employee {
 	
 	private int deleted;
 
-	public int getId() {
+	
+
+	public String getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(String id) {
 		this.id = id;
 	}
 
@@ -40,14 +40,6 @@ public class Employee {
 
 	public void setPosition(String position) {
 		this.position = position;
-	}
-
-	public String getTime() {
-		return time;
-	}
-
-	public void setTime(String time) {
-		this.time = time;
 	}
 
 	public String getPhone() {

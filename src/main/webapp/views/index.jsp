@@ -6,10 +6,17 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="">
-<meta name="author" content="Custom Theme">
-<!-- END META -->
-		<title>æ¬å¸æè²</title>
-		<%@ include file="/common/header-front.jsp" %>
+<meta name="author" content="sjm">
+
+
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/font-awesome.css">
+        <link rel="stylesheet" href="css/templatemo_style.css">
+        <link rel="stylesheet" href="css/templatemo_misc.css">
+        <link rel="stylesheet" href="css/flexslider.css">
+        <link rel="stylesheet" href="css/testimonails-slider.css">
+
+        <script src="js/vendor/modernizr-2.6.1-respond-1.1.0.min.js"></script>
     </head>
     <body class="body111">
         <!--[if lt IE 7]>
@@ -28,20 +35,20 @@
                         <div class="row">
                             <div class="col-md-2">
                                 <div class="logo">
-                                    <a href="#"><img src="images/logo.png" title="Ã¦ÂÂ¬Ã¥Â¸ÂÃ¦ÂÂÃ¨ÂÂ²" alt="Ã¦ÂÂ¬Ã¥Â¸ÂÃ¦ÂÂÃ¨ÂÂ²" ></a>
+                                    <a href="#"><img src="images/logo.png" title="扬帆教育" alt="扬帆教育" ></a>
                                 </div>
                             </div>
                             <div class="col-md-10">
                                 <div class="main-menu">
                                     <ul>
-                                        <li><a href="index.html">Ã¤Â¸Â»Ã©Â¡Âµ</a></li>
-                                        <li><a href="item.html">Ã¥Â¹Â¼Ã¥ÂÂ¿Ã¥ÂÂ¹Ã¨Â®Â­</a></li>
-                                        <li><a href="item.html">Ã¨ÂÂºÃ¦ÂÂ¯Ã¦ÂÂÃ¥Â¸ÂÃ¨Â¾ÂÃ¥ÂÂº</a></li>
-										<li><a href="item.html">Ã¥ÂÂ­Ã©ÂÂ¿Ã¨ÂµÂÃ¦Â Â¼Ã¨Â¯Â</a></li>
-										<li><a href="item.html">Ã¦ÂÂÃ¥Â¸ÂÃ¨ÂµÂÃ¦Â Â¼Ã¨Â¯Â</a></li>
-										<li><a href="item.html">Ã¥Â­Â¦Ã¥ÂÂÃ¦ÂÂÃ¥ÂÂ</a></li>
-										<li><a href="item.html">Ã¥Â¾Â®Ã¤Â¿Â¡Ã¥ÂÂ¬Ã¤Â¼ÂÃ¥ÂÂ·Ã¥ÂÂ¶Ã¤Â½Â</a></li>
-										<li><a href="contact-us.html">Ã¥ÂÂ Ã¥ÂÂ¥Ã¦ÂÂÃ¤Â»Â¬</a></li>
+                                        <li><a href="index.html">主页</a></li>
+                                        <li><a href="item.html">幼儿培训</a></li>
+                                        <li><a href="item.html">艺术教师输出</a></li>
+										<li><a href="item.html">园长资格证</a></li>
+										<li><a href="item.html">教师资格证</a></li>
+										<li><a href="item.html">学历提升</a></li>
+										<li><a href="item.html">微信公众号制作</a></li>
+										<li><a href="contact-us.html">加入我们</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -50,21 +57,21 @@
                 </div>
             </header>
 		<!--	<ul class="social">
-				<li class="twitter"><a href="tencent://message/?uin=1026514749&amp;Site=Ã¦ÂÂÃ¤ÂºÂQÃ¦ÂÂ&amp;Menu=yes">  
-						<img style="border:0px;" src=http://wpa.qq.com/pa?p=1:707321921:9>Ã¥Â®Â¢Ã¦ÂÂ00001</a></li>        
-				<li class="facebook"><a href="tencent://message/?uin=1026514749&amp;Site=Ã¦ÂÂÃ¤ÂºÂQÃ¦ÂÂ&amp;Menu=yes">  
-						<img style="border:0px;" src=http://wpa.qq.com/pa?p=1:707321921:9>Ã¥Â®Â¢Ã¦ÂÂ00001</a></li>
-				<li <a target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=huzv4761tr_zsrfG9-eo5enr" style="text-decoration:none;">Ã¥ÂÂ¬Ã¥ÂÂ¸Ã©ÂÂ®Ã§Â®Â±</a></li>
+				<li class="twitter"><a href="tencent://message/?uin=1026514749&amp;Site=有事Q我&amp;Menu=yes">  
+						<img style="border:0px;" src=http://wpa.qq.com/pa?p=1:707321921:9>客服00001</a></li>        
+				<li class="facebook"><a href="tencent://message/?uin=1026514749&amp;Site=有事Q我&amp;Menu=yes">  
+						<img style="border:0px;" src=http://wpa.qq.com/pa?p=1:707321921:9>客服00001</a></li>
+				<li <a target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=huzv4761tr_zsrfG9-eo5enr" style="text-decoration:none;">公司邮箱</a></li>
 			</ul>
 		-->
 			<div class="pinned note-container">
 				<div class="note">
-					<h5>Ã¨ÂÂÃ§Â³Â»Ã¦ÂÂÃ¤Â»Â¬</h5>
-					<p><a href="tencent://message/?uin=1026514749&amp;Site=Ã¦ÂÂÃ¤ÂºÂQÃ¦ÂÂ&amp;Menu=yes">  
-						<img style="border:0px;" src=http://wpa.qq.com/pa?p=1:707321921:9>Ã¥Â®Â¢Ã¦ÂÂ00001</a></p>
-					<p><a href="tencent://message/?uin=1026514749&amp;Site=Ã¦ÂÂÃ¤ÂºÂQÃ¦ÂÂ&amp;Menu=yes">  
-						<img style="border:0px;" src=http://wpa.qq.com/pa?p=1:707321921:9>Ã¥Â®Â¢Ã¦ÂÂ00001</a></p>
-					<p><a target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=huzv4761tr_zsrfG9-eo5enr" style="text-decoration:none;">Ã¥ÂÂ¬Ã¥ÂÂ¸Ã©ÂÂ®Ã§Â®Â±</a></p>
+					<h5>联系我们</h5>
+					<p><a href="tencent://message/?uin=1026514749&amp;Site=有事Q我&amp;Menu=yes">  
+						<img style="border:0px;" src=http://wpa.qq.com/pa?p=1:707321921:9>客服00001</a></p>
+					<p><a href="tencent://message/?uin=1026514749&amp;Site=有事Q我&amp;Menu=yes">  
+						<img style="border:0px;" src=http://wpa.qq.com/pa?p=1:707321921:9>客服00001</a></p>
+					<p><a target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=huzv4761tr_zsrfG9-eo5enr" style="text-decoration:none;">公司邮箱</a></p>
 				</div>
 			</div>
             <div id="slider">
@@ -72,46 +79,46 @@
                   <ul class="slides">
                     <li>
                         <div class="slider-caption">
-                            <h1>Ã¥Â¹Â¼Ã¥ÂÂ¿Ã¥ÂÂ¹Ã¨Â®Â­</h1>
-                            <p>Ã¨ÂÂ¯Ã¥Â¥Â½Ã§ÂÂÃ¥Â­Â¦Ã¤Â¹Â Ã§ÂÂ¯Ã¥Â¢ÂÃ¯Â¼ÂÃ¤Â¼ÂÃ§Â§ÂÃ§ÂÂÃ¥Â¹Â¼Ã¥ÂÂ¿Ã¦ÂÂÃ¥Â¸ÂÃ¯Â¼ÂÃ¦ÂÂ¬Ã¥Â¸ÂÃ¥Â¸Â®Ã¥ÂÂ©Ã¦ÂÂ¨Ã§ÂÂÃ¥Â°ÂÃ¥Â­Â©
-                            <br><br>Ã¨ÂµÂ¢Ã¥ÂÂ¨Ã¨ÂµÂ·Ã¨Â·ÂÃ§ÂºÂ¿Ã£ÂÂ</p>
-                            <a href="single-post.html">Ã¤ÂºÂÃ¨Â§Â£Ã¨Â¯Â¦Ã¦ÂÂ</a>
+                            <h1>幼儿培训</h1>
+                            <p>良好的学习环境，优秀的幼儿教师，扬帆帮助您的小孩
+                            <br><br>赢在起跑线。</p>
+                            <a href="single-post.html">了解详情</a>
                         </div>
                       <img src="images/slide1.jpg" alt="" />
                     </li>
                     <li>
                         <div class="slider-caption">
-                            <h1>Ã¨ÂÂºÃ¦ÂÂ¯Ã¦ÂÂÃ¥Â¸ÂÃ¨Â¾ÂÃ¥ÂÂº</h1>
-                            <p>Ã¦ÂÂ¥Ã¨ÂÂªÃ§ÂÂ¥Ã¥ÂÂÃ¨ÂÂºÃ¦ÂÂ¯Ã¥Â­Â¦Ã¦Â Â¡Ã§ÂÂÃ¦Â¯ÂÃ¤Â¸ÂÃ¥Â­Â¦Ã§ÂÂÃ¯Â¼ÂÃ¦ÂÂÃ§ÂÂÃ¤Â¼ÂÃ§Â§ÂÃ§ÂÂÃ¨ÂÂÃ¤Â¸ÂÃ¨ÂÂ½Ã¥ÂÂÃ¥ÂÂÃ¨ÂÂ¯Ã¥Â¥Â½Ã§ÂÂÃ¨ÂÂÃ¤Â¸ÂÃ§Â´Â Ã¥ÂÂ»Ã¯Â¼Â
-                            <br><br>Ã¦ÂÂ¯Ã¦ÂÂ¨Ã¥Â·Â¥Ã¤Â½ÂÃ§ÂÂÃ¥Â·Â¦Ã¨ÂÂÃ¥ÂÂ³Ã¨ÂÂÃ£ÂÂ</p>
-                            <a href="single-post.html">Ã¤ÂºÂÃ¨Â§Â£Ã¨Â¯Â¦Ã¦ÂÂ</a>
+                            <h1>艺术教师输出</h1>
+                            <p>来自知名艺术学校的毕业学生，有着优秀的职业能力和良好的职业素养，
+                            <br><br>是您工作的左膀右臂。</p>
+                            <a href="single-post.html">了解详情</a>
                         </div>
                       <img src="images/slide2.jpg" alt="" />
                     </li>
                     <li>
                         <div class="slider-caption">
-                            <h1>Ã¥ÂÂ­Ã©ÂÂ¿Ã¨ÂµÂÃ¦Â Â¼Ã¨Â¯Â</h1>
-                            <p>Ã¦ÂÂÃ¨ÂÂ²Ã©ÂÂ¨Ã¨Â®Â¤Ã¨Â¯ÂÃ§ÂÂÃ¥ÂÂ­Ã©ÂÂ¿Ã¨ÂµÂÃ¦Â Â¼Ã¨Â¯ÂÃ¤Â¹Â¦Ã¯Â¼ÂÃ¥Â¼ÂÃ¥Â¹Â¼Ã¥ÂÂ¿Ã¥ÂÂ­Ã¥Â¿ÂÃ¥Â¤ÂÃ§Â¥ÂÃ¥ÂÂ¨
+                            <h1>园长资格证</h1>
+                            <p>教育部认证的园长资格证书，开幼儿园必备神器
                             <br><br></p>
-                            <a href="single-post.html">Ã¤ÂºÂÃ¨Â§Â£Ã¨Â¯Â¦Ã¦ÂÂ</a>
+                            <a href="single-post.html">了解详情</a>
                         </div>
                       <img src="images/slide3.jpg" alt="" />
                     </li>
 					<li>
                         <div class="slider-caption">
-                            <h1>Ã¦ÂÂÃ¥Â¸ÂÃ¨ÂµÂÃ¦Â Â¼Ã¨Â¯Â</h1>
-                            <p>Ã¦ÂÂÃ¨ÂÂ²Ã©ÂÂ¨Ã¨Â®Â¤Ã¨Â¯ÂÃ§ÂÂÃ¦ÂÂÃ¥Â¸ÂÃ¨ÂµÂÃ¦Â Â¼Ã¨Â¯ÂÃ¤Â¹Â¦
+                            <h1>教师资格证</h1>
+                            <p>教育部认证的教师资格证书
                             <br><br></p>
-                            <a href="single-post.html">Ã¤ÂºÂÃ¨Â§Â£Ã¨Â¯Â¦Ã¦ÂÂ</a>
+                            <a href="single-post.html">了解详情</a>
                         </div>
                       <img src="images/slide3.jpg" alt="" />
                     </li>
 					<li>
                         <div class="slider-caption">
-                            <h1>Ã¥Â­Â¦Ã¥ÂÂÃ¦ÂÂÃ¥ÂÂ</h1>
-                            <p>Ã¨Â¿ÂÃ¥ÂÂ¨Ã¤Â¸ÂºÃ¨ÂÂªÃ¥Â·Â±Ã§ÂÂÃ¤Â½ÂÃ¥Â­Â¦Ã¥ÂÂÃ¨ÂÂÃ§ÂÂ¦Ã¦ÂÂ¼Ã¥ÂÂÃ¯Â¼ÂÃ¨Â¿ÂÃ¥ÂÂ¨Ã¤Â¸ÂºÃ¦Â²Â¡Ã¦ÂÂÃ©ÂÂÃ¥Â¾ÂÃ¦ÂÂÃ¥ÂÂÃ¥Â­Â¦Ã¥ÂÂÃ¨ÂÂÃ¨ÂÂ¦Ã¦ÂÂ¼Ã¥ÂÂÃ¯Â¼Â
-                            <br><br>Ã¨ÂÂÃ§Â³Â»Ã¦ÂÂÃ¤Â»Â¬</p>
-                            <a href="single-post.html">Ã¤ÂºÂÃ¨Â§Â£Ã¨Â¯Â¦Ã¦ÂÂ</a>
+                            <h1>学历提升</h1>
+                            <p>还在为自己的低学历而烦恼吗？还在为没有途径提升学历而苦恼吗？
+                            <br><br>联系我们</p>
+                            <a href="single-post.html">了解详情</a>
                         </div>
                       <img src="images/slide3.jpg" alt="" />
                     </li>
@@ -123,7 +130,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="heading-section">
-                                <h2>Ã¦ÂÂÃ¤Â»Â¬Ã¦ÂÂ¯</h2>
+                                <h2>我们是</h2>
                                 <img src="images/under-heading.png" alt="" >
                             </div>
                         </div>
@@ -131,11 +138,11 @@
                     
                     <div class="row">
                         <div class="col-md-6">
-                        	<h3>Ã¥ÂÂ¬Ã¥ÂÂ¸Ã§Â®ÂÃ¤Â»Â</h3>
+                        	<h3>公司简介</h3>
                             <p>Duis efficitur, est ut sollicitudin efficitur, nulla eros tempus lacus, non auctor mi leo ut justo. Proin euismod sapien nec risus bibendum aliquam. Quisque non maximus augue. Vivamus mattis placerat faucibus. Fusce nec facilisis justo. Vestibulum tristique et purus condimentum dignissim. Curabitur mollis, sem nec condimentum consequat, velit diam consequat ex, nec rhoncus risus purus eget nibh. Sed a mollis dolor.</p>
                         </div>
                         <div class="col-md-6">
-                        	<h3>Ã¥ÂÂ¢Ã©ÂÂÃ§Â®Â¡Ã§ÂÂ</h3>
+                        	<h3>团队管理</h3>
                             <p>Nam id felis nec libero posuere pretium ut ut tortor. Maecenas molestie dolor sed lectus vestibulum viverra. Morbi quis augue massa. Curabitur vel imperdiet justo, ut commodo sem. Donec ac elementum dolor, at finibus ex. Curabitur viverra venenatis gravida. Proin augue libero, accumsan sit amet ullamcorper in, posuere ac erat. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
                         </div>
                     </div>
@@ -146,7 +153,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="heading-section">
-                                <h2>Ã¦ÂÂÃ¥ÂÂ¡Ã¥Â®ÂÃ¦ÂÂ¨</h2>
+                                <h2>服务宗旨</h2>
                                 <img src="images/under-heading.png" alt="" >
                             </div>
                         </div>
@@ -157,8 +164,8 @@
                                 <div class="icon">
                                     <i class="fa fa-pencil"></i>
                                 </div>
-                                <h4>Ã¤Â¸ÂªÃ¦ÂÂ§Ã¥ÂÂÃ¥Â®ÂÃ¥ÂÂ¶</h4>
-                                <p>Ã¥ÂÂ¯Ã¦Â Â¹Ã¦ÂÂ®Ã¥Â®Â¢Ã¦ÂÂ·Ã§ÂÂÃ¦ÂÂÃ¥ÂÂµÃ¦ÂÂÃ¤Â¾ÂÃ¤Â¸ÂÃ¥ÂÂÃ§ÂÂÃ¨Â§Â£Ã¥ÂÂ³Ã¦ÂÂ¹Ã¦Â¡ÂÃ¯Â¼ÂÃ¥Â¸Â®Ã¥ÂÂ©Ã¥Â®Â¢Ã¦ÂÂ·Ã¦ÂÂ¾Ã¥ÂÂ°Ã¦ÂÂÃ¥ÂÂÃ©ÂÂÃ§ÂÂÃ¦ÂÂ¹Ã¦Â¡Â</p>
+                                <h4>个性化定制</h4>
+                                <p>可根据客户的情况提供不同的解决方案，帮助客户找到最合适的方案</p>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
@@ -166,8 +173,8 @@
                                 <div class="icon">
                                     <i class="fa fa-bullhorn"></i>
                                 </div>
-                                <h4>Ã¨Â´Â´Ã¥Â¿ÂÃ¦ÂÂÃ¥ÂÂ¡</h4>
-                                <p>24Ã¥Â°ÂÃ¦ÂÂ¶Ã©ÂÂÃ¦ÂÂ¶Ã¥Â¾ÂÃ¥ÂÂ½Ã¯Â¼ÂÃ¨Â®Â©Ã¦ÂÂ¨Ã¤Â½ÂÃ¤Â¼ÂÃ¥ÂÂ°Ã¦ÂÂÃ¨Â´Â´Ã¥Â¿ÂÃ§ÂÂÃ¦ÂÂÃ¥ÂÂ¡</p>
+                                <h4>贴心服务</h4>
+                                <p>24小时随时待命，让您体会到最贴心的服务</p>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
@@ -175,7 +182,7 @@
                                 <div class="icon">
                                     <i class="fa fa-bell"></i>
                                 </div>
-                                <h4>Ã¤Â¸ÂÃ¤Â¸ÂÃ¦ÂÂÃ¥Â¯Â¼</h4>
+                                <h4>专业指导</h4>
                                 <p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
                             </div>
                         </div>
@@ -184,8 +191,8 @@
                                 <div class="icon">
                                     <i class="fa fa-heart"></i>
                                 </div>
-                                <h4>Ã¦Â»Â¡Ã¦ÂÂÃ¥ÂºÂ¦</h4>
-                                <p>Ã¥Â®Â¢Ã¦ÂÂ·Ã§ÂÂÃ¦Â»Â¡Ã¦ÂÂÃ¯Â¼ÂÃ¦ÂÂ¯Ã¦ÂÂÃ¤Â»Â¬Ã¥ÂÂÃ¨Â¿ÂÃ§ÂÂÃ¦ÂÂÃ¥Â¤Â§Ã¥ÂÂ¨Ã¥ÂÂ</p>
+                                <h4>满意度</h4>
+                                <p>客户的满意，是我们前进的最大动力</p>
                             </div>
                         </div>
                     </div>
@@ -201,7 +208,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="heading-section">
-                                <h2>Ã§Â»ÂÃ¥ÂÂ¸Ã¦Â¡ÂÃ¤Â¾Â</h2>
+                                <h2>经典案例</h2>
                                 <img src="images/under-heading.png" alt="" >
                             </div>
                         </div>
@@ -214,7 +221,7 @@
                                 </div>
                                 <div class="blog-content">
                                     <div class="content-show">
-                                        <h4><a href="single-post.html">Ã§ÂºÂ¢Ã¦ÂÂÃ¥Â¹Â¼Ã¥ÂÂ¿Ã¥ÂÂ­</a></h4>
+                                        <h4><a href="single-post.html">红星幼儿园</a></h4>
                                         <span>2016-10-17</span>
                                     </div>
                                     <div class="content-hide">
@@ -230,7 +237,7 @@
                                 </div>
                                 <div class="blog-content">
                                     <div class="content-show">
-                                        <h4><a href="single-post.html">Ã¥Â¤Â§Ã©Â£ÂÃ¨Â½Â¦Ã¥Â¹Â¼Ã¥ÂÂ¿Ã¥ÂÂ­</a></h4>
+                                        <h4><a href="single-post.html">大风车幼儿园</a></h4>
                                         <span>2016-10-18</span>
                                     </div>
                                     <div class="content-hide">
@@ -246,7 +253,7 @@
                                 </div>
                                 <div class="blog-content">
                                     <div class="content-show">
-                                        <h4><a href="single-post.html">xxÃ¥Â¹Â¼Ã¥ÂÂ¿Ã¥ÂÂ­</a></h4>
+                                        <h4><a href="single-post.html">xx幼儿园</a></h4>
                                         <span>2016-10-18</span>
                                     </div>
                                     <div class="content-hide">
@@ -262,7 +269,7 @@
                                 </div>
                                 <div class="blog-content">
                                     <div class="content-show">
-                                        <h4><a href="single-post.html">xxÃ¥Â¹Â¼Ã¥ÂÂ¿Ã¥ÂÂ­</a></h4>
+                                        <h4><a href="single-post.html">xx幼儿园</a></h4>
                                         <span>2016-10-18</span>
                                     </div>
                                     <div class="content-hide">
@@ -278,7 +285,7 @@
                                 </div>
                                 <div class="blog-content">
                                     <div class="content-show">
-                                        <h4><a href="single-post.html">xxÃ¥Â¹Â¼Ã¥ÂÂ¿Ã¥ÂÂ­</a></h4>
+                                        <h4><a href="single-post.html">xx幼儿园</a></h4>
                                         <span>2016-10-18</span>
                                     </div>
                                     <div class="content-hide">
@@ -294,7 +301,7 @@
                                 </div>
                                 <div class="blog-content">
                                     <div class="content-show">
-                                        <h4><a href="single-post.html">xxÃ¥Â¹Â¼Ã¥ÂÂ¿Ã¥ÂÂ­</a></h4>
+                                        <h4><a href="single-post.html">xx幼儿园</a></h4>
                                         <span>2016-10-18</span>
                                     </div>
                                     <div class="content-hide">
@@ -314,7 +321,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="heading-section">
-                                <h2>Ã¦ÂÂÃ¤Â»Â¬Ã§ÂÂÃ¥ÂÂ¢Ã©ÂÂ</h2>
+                                <h2>我们的团队</h2>
                                 <img src="images/under-heading.png" alt="" >
                             </div>
                         </div>
@@ -337,8 +344,8 @@
                                      </div>
                                  </div>
                                  <div class="author-details">
-                                     <h2>Ã¥Â¼Â Ã¤Â¸Â</h2>
-                                     <span>Ã¨Â®Â¾Ã¨Â®Â¡Ã¥Â¸Â</span>
+                                     <h2>张三</h2>
+                                     <span>设计师</span>
                                  </div>
                             </div>
                             <div class="col-md-3 col-sm-6">
@@ -357,8 +364,8 @@
                                      </div>
                                  </div>
                                  <div class="author-details">
-                                     <h2>Ã¦ÂÂÃ¥ÂÂ</h2>
-                                     <span>Ã¥Â¼ÂÃ¥ÂÂÃ¤ÂºÂºÃ¥ÂÂ</span>
+                                     <h2>李四</h2>
+                                     <span>开发人员</span>
                                  </div>
                             </div>
                             <div class="col-md-3 col-sm-6">
@@ -377,7 +384,7 @@
                                      </div>
                                  </div>
                                  <div class="author-details">
-                                     <h2>Ã¨ÂµÂµÃ¤ÂºÂ</h2>
+                                     <h2>赵五</h2>
                                      <span>CEO</span>
                                  </div>
                             </div>
@@ -397,8 +404,8 @@
                                      </div>
                                  </div>
                                  <div class="author-details">
-                                     <h2>Ã¥Â­ÂÃ¥ÂÂ­</h2>
-                                     <span>Ã§Â»ÂÃ§ÂÂ</span>
+                                     <h2>孙六</h2>
+                                     <span>经理</span>
                                  </div>
                             </div>
                         </div>
@@ -412,7 +419,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="heading-section">
-                                <h2>Ã¥Â®Â¢Ã¦ÂÂ·Ã¨Â¯ÂÃ¤Â»Â·</h2>
+                                <h2>客户评价</h2>
                                 <img src="images/under-heading.png" alt="" >
                             </div>
                         </div>
@@ -423,20 +430,20 @@
                               <ul class="slides">
                                 <li>
                                     <div class="testimonails-content">
-                                        <p>Ã¥ÂÂÃ¥ÂÂÃ¦ÂÂ¿Ã¥ÂÂ°Ã¤ÂºÂÃ¦ÂÂÃ§ÂÂÃ¥ÂÂ­Ã©ÂÂ¿Ã¨ÂµÂÃ¦Â Â¼Ã¨Â¯ÂÃ¯Â¼ÂÃ©ÂÂÃ¥Â¸Â¸Ã§ÂÂÃ¦Â»Â¡Ã¦ÂÂ</p>
-                                        <h6>Ã¥Â¼Â Ã¤Â¸Â - <a href="#">Ã¥ÂÂ­Ã©ÂÂ¿Ã¨ÂµÂÃ¦Â Â¼Ã¨Â¯Â</a></h6>
+                                        <p>刚刚拿到了我的园长资格证，非常的满意</p>
+                                        <h6>张三 - <a href="#">园长资格证</a></h6>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="testimonails-content">
-                                        <p>Ã¦ÂÂÃ§ÂÂÃ¥Â°ÂÃ¥Â­Â©Ã¥ÂÂ¨Ã¨Â¿ÂÃ©ÂÂÃ¥ÂÂ¹Ã¨Â®Â­Ã¤ÂºÂÃ¤Â¸ÂÃ¤Â¸ÂªÃ¦ÂÂÃ¯Â¼ÂÃ¥Â·Â²Ã§Â»ÂÃ¤Â¼ÂÃ¨Â¯Â´Ã¤Â¸ÂÃ¤ÂºÂÃ§Â®ÂÃ¥ÂÂÃ§ÂÂÃ¨ÂÂ±Ã¦ÂÂÃ¥ÂÂÃ¨Â¯ÂÃ¯Â¼ÂÃ¨Â¿ÂÃ¦ÂÂ¿Ã¤ÂºÂÃ¥Â¥Â½Ã¥Â¤ÂÃ¥Â°ÂÃ§ÂºÂ¢Ã¨ÂÂ±Ã¯Â¼ÂÃ§ÂÂÃ§ÂÂÃ¤Â»ÂÃ¥Â¼ÂÃ¥Â¿ÂÃ¯Â¼ÂÃ¦ÂÂÃ¤Â¹ÂÃ¦ÂÂ¯Ã¥Â¾ÂÃ¦Â¬Â£Ã¦ÂÂ°</p>
-                                        <h6>Ã¦ÂÂÃ¥ÂÂ - <a href="#">Ã¥Â¹Â¼Ã¥ÂÂ¿Ã¥ÂÂ¹Ã¨Â®Â­</a></h6>
+                                        <p>我的小孩在这里培训了三个月，已经会说一些简单的英文单词，还拿了好多小红花，看着他开心，我也是很欣慰</p>
+                                        <h6>李四 - <a href="#">幼儿培训</a></h6>
                                     </div> 
                                 </li>
                                 <li>
                                     <div class="testimonails-content">
-                                        <p>Ã¥ÂÂÃ¥Â¤ÂÃ¥Â¼ÂÃ¤Â¸ÂÃ¤Â¸ÂªÃ¨ÂÂªÃ¥Â·Â±Ã§ÂÂÃ¥Â¹Â¼Ã¥ÂÂ¿Ã¥ÂÂ­Ã¯Â¼ÂÃ¤Â½ÂÃ¦ÂÂ¯Ã¤Â¸ÂÃ§ÂÂ¥Ã©ÂÂÃ¥ÂÂ°Ã¥ÂÂªÃ©ÂÂÃ¥ÂÂ»Ã¦ÂÂ¾Ã¥Â¹Â¼Ã¥ÂÂ¿Ã¦ÂÂÃ¥Â¸ÂÃ¯Â¼ÂÃ¦ÂÂ¬Ã¥Â¸ÂÃ§Â»ÂÃ¦ÂÂÃ¦ÂÂ¨Ã¨ÂÂÃ¤ÂºÂÃ¥Â¥Â½Ã¥ÂÂ Ã¤Â¸ÂªÃ¤Â¼ÂÃ§Â§ÂÃ§ÂÂÃ¨ÂÂÃ¥Â¸ÂÃ¯Â¼ÂÃ§ÂÂ°Ã¥ÂÂ¨Ã¥Â¹Â¼Ã¥ÂÂ¿Ã¥ÂÂ­Ã¥ÂÂÃ§ÂÂÃ©ÂÂÃ¥Â¸Â¸Ã¥Â¥Â½</p>
-                                        <h6>Ã¨ÂµÂµÃ¤ÂºÂ - <a href="#">Ã¨ÂÂºÃ¦ÂÂ¯Ã¨ÂÂÃ¥Â¸ÂÃ¨Â¾ÂÃ¥ÂÂº</a></h6>
+                                        <p>准备开一个自己的幼儿园，但是不知道到哪里去找幼儿教师，扬帆给我推荐了好几个优秀的老师，现在幼儿园办的非常好</p>
+                                        <h6>赵五 - <a href="#">艺术老师输出</a></h6>
                                     </div>
                                 </li>
                               </ul>
@@ -452,13 +459,13 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="recent-posts">
-                                    <h4 class="footer-title">Ã¦ÂÂÃ¦ÂÂ°Ã¦Â´Â»Ã¥ÂÂ¨</h4>
+                                    <h4 class="footer-title">最新活动</h4>
                                     <div class="recent-post">
                                         <div class="recent-post-thumb">
                                             <img src="images/recent-post1.jpg" alt="">
                                         </div>
                                         <div class="recent-post-info">
-                                            <h6><a href="#">Ã¥ÂÂ­Ã©ÂÂ¿Ã¨ÂµÂÃ¦Â Â¼Ã¨Â¯ÂÃ¦ÂÂ¥Ã¥ÂÂ</a></h6>
+                                            <h6><a href="#">园长资格证报名</a></h6>
                                             <span>2016-10-17</span>
                                         </div>
                                     </div>
@@ -467,7 +474,7 @@
                                             <img src="images/recent-post2.jpg" alt="">
                                         </div>
                                         <div class="recent-post-info">
-                                            <h6><a href="#">Ã¦ÂÂÃ¥Â¸ÂÃ¨ÂµÂÃ¦Â Â¼Ã¨Â¯ÂÃ¦ÂÂ¥Ã¥ÂÂ</a></h6>
+                                            <h6><a href="#">教师资格证报名</a></h6>
                                             <span>2016-10-17</span>
                                         </div>
                                     </div>
@@ -475,11 +482,11 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="more-info">
-                                    <h4 class="footer-title">Ã¦ÂÂ´Ã¥Â¤ÂÃ¤Â¿Â¡Ã¦ÂÂ¯</h4>
-                                    <p>Ã¥Â¦ÂÃ¦ÂÂÃ¤Â½Â Ã¦ÂÂ³Ã¨Â¦ÂÃ¥Â¯Â¹Ã¦ÂÂÃ¤Â»Â¬Ã¥ÂÂ¬Ã¥ÂÂ¸Ã¦ÂÂÃ¦ÂÂ´Ã¦Â·Â±Ã¥ÂÂ»Ã§ÂÂÃ¤ÂºÂÃ¨Â§Â£Ã¯Â¼ÂÃ¤Â»Â¥Ã¤Â¸ÂÃ¦ÂÂ¯Ã¦ÂÂÃ¤Â»Â¬Ã¥ÂÂ¬Ã¥ÂÂ¸Ã§ÂÂÃ¨ÂÂÃ§Â³Â»Ã¦ÂÂ¹Ã¥Â¼Â</p>
+                                    <h4 class="footer-title">更多信息</h4>
+                                    <p>如果你想要对我们公司有更深刻的了解，以下是我们公司的联系方式</p>
                                     <ul>
                                         <li><i class="fa fa-phone"></i>010-020-0340</li>
-                                        <li><i class="fa fa-globe"></i>Ã¥Â¤Â©Ã¦Â´Â¥Ã¥Â¸ÂxxÃ¥ÂÂºxxÃ¨Â·Â¯xxÃ¥Â¤Â§Ã¦Â¥Â¼xxx</li>
+                                        <li><i class="fa fa-globe"></i>天津市xx区xx路xx大楼xxx</li>
                                         <li><i class="fa fa-envelope"></i><a href="#">yangfangjiaoyu@126.com</a></li>
                                     </ul>
                                 </div>
@@ -487,12 +494,19 @@
                         </div>
                     </div>
                     <div class="bottom-footer">
-                        <p>Copyright ÃÂ© 2084 <a href="#">Ã¦ÂÂ¬Ã¥Â¸ÂÃ¦ÂÂÃ¨ÂÂ²</a> Collect from </p>
+                        <p>Copyright © 2084 <a href="#">扬帆教育</a> Collect from </p>
                     </div>
                     
                 </div>
             </footer>
-        <script type="text/javascript">
+
+    
+        <script src="js/vendor/jquery-1.11.0.min.js"></script>
+        <script src="js/vendor/jquery.gmap3.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+		<script src="js/jquery.pin.js"></script>
+		<script type="text/javascript">
 		$(function(){
 			$(".pinned").pin({
 				minWidth: 940

@@ -1,7 +1,7 @@
 package com.sjmcrf.yangfan.entity;
 
 public class Case {
-	private int id;
+	private String id;
 	
 	private String code;
 	
@@ -21,11 +21,13 @@ public class Case {
 	
 	private int deleted;
 
-	public int getId() {
+
+
+	public String getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(String id) {
 		this.id = id;
 	}
 
