@@ -50,7 +50,7 @@ $(function(){
 	  { display:'操作', width:60, oprcol:true, icon:'${path}/images/ico_opr.gif'},
       { display:'栏目类型', name:'code', align:'left', width:200},
       { display:'栏目内容', name:'content', align:'left', width:600,render:function(data){
-    	  var content = $($.base64.atob(data.content));
+    	  var content = $($.base64.atob(data.content,true));
     	  return content.text();
       }}
     ], width:'99%',

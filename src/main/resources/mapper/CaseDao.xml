@@ -19,7 +19,7 @@
     <insert id="insert" parameterType="Case" useGeneratedKeys="true" keyProperty="id">
         insert into 
         	`Case`(code,title,image,`time`,simple,content,design,`order`,deleted)
-        	values(#{code},#{title},#{image},#{time},,#{simple},#{content},#{order}#{design},#{deleted})
+        	values(#{code},#{title},#{image},#{time},#{simple},#{content},#{design},#{order},#{deleted})
     </insert>
     
     <select id="queryByPage" resultType="java.util.Map" >

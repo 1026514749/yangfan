@@ -16,7 +16,9 @@
 <link href="${path}/css/zeroModal.css" rel="stylesheet"><!-- THEME RESPONSIVE CSS  -->
 
 <script src="${path}/js/jquery/jquery-2.0.0.min.js" type="text/javascript"></script>
-<script  src="${path}/js/jquery/jquery.base64.js" type="text/javascript"></script>
+<script src="${path}/js/jquery/jquery.base64.js" type="text/javascript"></script>
+<script src="${path}/js/jquery/jquery.validate.min.js" > </script><!-- NICESCROLL JS  -->
+<script src="${path}/js/jquery/ajaxfileupload.js"></script><!-- ACCORDING JS -->
 <script src="${path}/js/common/zeroModal.js" type="text/javascript"></script>
 <script src="${path}/js/common/pts.js" type="text/javascript"></script>
 

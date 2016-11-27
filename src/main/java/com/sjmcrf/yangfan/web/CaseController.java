@@ -35,7 +35,7 @@ public class CaseController {
 		Case ncase = service.get(id);		
 		List<Column> cloumns = columnService.queryAll();
 		
-		request.setAttribute("case", ncase);
+		request.setAttribute("ncase", ncase);
 		request.setAttribute("columns", cloumns);
 		
 		return "admin/case";

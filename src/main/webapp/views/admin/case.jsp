@@ -11,7 +11,7 @@
 
 <%@include file="/common/header-simple.jsp" %>
 
-<title>栏目详情</title>
+<title>案例编辑</title>
 
 	<link href="${path}/css/bootstrap-combined.min.css" rel="stylesheet">
 	<link href="${path}/css/layoutit.css" rel="stylesheet">
@@ -30,17 +30,52 @@
 <body style="min-height: 660px; cursor: auto;" class="edit">
 <div class="container-fluid">
 	<form id="form" action="">
-		<input type="hidden" name="design" id="design" value="${detail.design }"/>
-		<input type="hidden" name="content" id="content" value="${detail.content }" onchange="modify()"/>
+		<input type="hidden" name = "id" value="${ncase.id}"/>
+		<input type="hidden" name="design" id="design" value="${ncase.design }"/>
+		<input type="hidden" name="content" id="content" value="${ncase.content }" onchange="modify()"/>
+		<input type="hidden" id="image" name = "image" value="${ncase.image}"/>
 		<div class="row-fluid">
 			<div class="span1"><label class="control-label">栏目类型</label></div>
 			<div class="span5">
             	<select name="code" style="height:30px;">
 					<c:forEach var="column" items="${columns }">
-						<option value="${column.code}" ${column.code eq detail.code ?'selected="selected"':''}>${column.name}</option>
+						<option value="${column.code}" ${column.code eq ncase.code ?'selected="selected"':''}>${column.name}</option>
 					</c:forEach>
 				</select>
             	<span class="help-block"></span>
+        	</div>
+        	<div class="span1"><label class="control-label">案例标题</label></div>
+			<div class="span5">
+            	<input type="text" name="title" value="${ncase.title}"/>
+            	<span class="help-block">案例标题，如：xxxx</span>
+        	</div>
+    	</div>
+    	<div class="row-fluid">
+    		<div class="span1"><label class="control-label">时间</label></div>
+			<div class="span5">
+            	<input type="text" name="time" value="${ncase.time}"/>
+            	<span class="help-block">时间，如：2016-11-24</span>
+        	</div>
+        	<div class="span1"><label class="col-xs-3 control-label">排序</label></div>
+        	<div class="span5">
+            	<input name="order" type="text" class="form-control"  value="${ncase.order}">
+            	<span class="help-block">排序(1-999)，数值越小显示越靠前</span>
+        	</div>
+    	</div>
+    	<div class="row-fluid">
+    		<div class="span1"><label class="control-label">背景图片</label></div>
+        	<div class="span2">
+            	<input id="file" name="file" type="file" value="${ncase.image}">
+            	<button class="btn btn-shadow btn-default " type= "button" onclick="upload()">上传</button>
+            	<div id="imageMsg"></div>
+        	</div>
+
+        	<div class="span3">
+            	<img id="img" alt="" src="${ncase.image}" style="width:100%;height:100%;">
+        	</div>
+    		<div class="span1"><label class="control-label">案例简介</label></div>
+    		<div class="span5">
+        		<textarea rows="3" cols="" name="simple" class="form-control" style="width:100%">${ncase.simple}</textarea>
         	</div>
     	</div>
     </form>
@@ -348,21 +383,85 @@
 </div>
 
 <script type="text/javascript">
+$(function(){
+	var design = "${ncase.design}";
+	$(".demo").html($.base64.atob(design,true));
+	$("#form").validate({          
+	    rules:{
+	    	title:{
+	         	required:true,
+	         	rangelength:[1,20]
+	        },
+	        time:{
+	        	required:true,
+	        	rangelength:[0,20]
+	        },
+	        simple:{
+	        	required:true,
+	        	rangelength:[1,200]
+	        },
+	        order:{
+	        	required:true,
+	        	digits:true,
+	        	rangelength:[1,3]
+	        }
+	     }, 
+	     messages:{
+	    	 title:{
+		         required:'标题不能为空',
+		         rangelength:$.validator.format("输入的范围在 {0}-{1} 之间的字符.")
+		     },
+		     time:{
+		        required:'时间不能为空',
+		        rangelength:$.validator.format("输入的范围在 {0}-{1} 之间的字符.")
+		     },
+		     simple:{
+		        required:'简介内容不能为空',
+		        rangelength:$.validator.format("输入的范围在 {0}-{1} 之间的字符.")
+		     },
+		     order:{
+		        required:'排序不能为空',
+		        digits:'必须为整数',
+		        rangelength:$.validator.format("输入的范围在 {0}-{1} 之间的字符.")
+		     }
+	     } 
+	});
+});
 function modify(){
+	var value = $("#image").val();
+	if(!value){
+		alert("请先上传图片！");
+	}
+	if (!$("#form").valid()) {
+        return;
+    }
+	
 	var param = $("#form").serializeArray();
-	var url = path+"/admin/modifyColumnDetail.do";
+	var url = path+"/admin/modifyCase.do";
 	pts.submit({
 		url:url,
 		data:param,
 		yesClick:function(result){
 			window.close();
 		}
-	});	
+	});
 }
-$(function(){
-	var design = "${detail.design}";
-	$(".demo").html($.base64.atob(design,true));
-});
+function upload(){
+	pts.fileUpload({
+		url: path+'/common/upload.do', //用于文件上传的服务器端请求地址
+        secureuri: false, //是否需要安全协议，一般设置为false
+        fileElementId: 'file', //文件上传域的ID
+        dataType : 'text',
+        uploadSuccess: function (data)  //服务器成功响应处理函数
+        {
+            $("#img").attr('src',data.object); 
+            $("#image").val(data.object);
+        },
+        uploadError:function(data){
+        	$("#imageMsg").text(data.message);
+        }
+	});
+}
 </script>
 </body>
 </html>

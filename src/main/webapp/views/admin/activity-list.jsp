@@ -24,7 +24,7 @@
 </form>
 
 <div class="fsarea">
-      <h2>栏目列表</h2>
+      <h2>活动列表</h2>
 
       <div class="toolbar">
           <button  class="btn btn-shadow btn-default" onclick="addActivity()">新增</button>
@@ -52,7 +52,7 @@ $(function(){
       { display:'标题', name:'title', align:'left', width:200},
       { display:'简介图片', name:'image', align:'left', width:200},
       { display:'内容', name:'content', align:'left', width:400,render:function(data){
-    	  var content = $($.base64.atob(data.content));
+    	  var content = $($.base64.atob(data.content,true));
     	  return content.text();
       }},
       { display:'日期', name:'time', align:'left', width:100}

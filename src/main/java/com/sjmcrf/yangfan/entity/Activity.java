@@ -12,7 +12,7 @@ public class Activity {
 	
 	private String design;
 	
-	private String deleted;
+	private int deleted;
 	
 	private String time;
 
@@ -58,11 +58,11 @@ public class Activity {
 		this.design = design;
 	}
 
-	public String getDeleted() {
+	public int getDeleted() {
 		return deleted;
 	}
 
-	public void setDeleted(String deleted) {
+	public void setDeleted(int deleted) {
 		this.deleted = deleted;
 	}
 

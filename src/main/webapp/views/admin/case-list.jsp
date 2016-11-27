@@ -54,7 +54,7 @@ $(function(){
       { display:'时间', name:'time', align:'left', width:100},
       { display:'简介', name:'simple', align:'left', width:200},
       { display:'内容', name:'content', align:'left', width:400,render:function(data){
-    	  var content = $($.base64.atob(data.content));
+    	  var content = $($.base64.atob(data.content,true));
     	  return content.text();
       }},
       { display:'图片', name:'image', align:'left', width:100},

@@ -21,6 +21,7 @@
 <link href="${path}/css/zeroModal.css" rel="stylesheet"><!-- THEME RESPONSIVE CSS  -->
 
 <script src="${path}/js/jquery/jquery.js" ></script><!-- BASIC JS LIABRARY -->
+<script src="${path}/js/jquery/jquery.base64.js" type="text/javascript"></script>
 <script src="${path}/js/bootstrap/bootstrap.min.js" ></script><!-- BOOTSTRAP JS  -->
 <script src="${path}/js/jquery/ajaxfileupload.js"></script><!-- ACCORDING JS -->
 <script src="${path}/js/jquery/jquery.dcjqaccordion.2.7.js"></script><!-- ACCORDING JS -->

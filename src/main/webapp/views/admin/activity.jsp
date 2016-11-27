@@ -11,7 +11,7 @@
 
 <%@include file="/common/header-simple.jsp" %>
 
-<title>栏目详情</title>
+<title>活动编辑</title>
 
 	<link href="${path}/css/bootstrap-combined.min.css" rel="stylesheet">
 	<link href="${path}/css/layoutit.css" rel="stylesheet">
@@ -30,17 +30,31 @@
 <body style="min-height: 660px; cursor: auto;" class="edit">
 <div class="container-fluid">
 	<form id="form" action="">
-		<input type="hidden" name="design" id="design" value="${detail.design }"/>
-		<input type="hidden" name="content" id="content" value="${detail.content }" onchange="modify()"/>
+		<input type="hidden" name = "id" value="${activity.id}"/>
+		<input type="hidden" name="design" id="design" value="${activity.design }"/>
+		<input type="hidden" name="content" id="content" value="${activity.content }" onchange="modify()"/>
+		<input type="hidden" id="image" name = "image" value="${activity.image}"/>
 		<div class="row-fluid">
-			<div class="span1"><label class="control-label">栏目类型</label></div>
+        	<div class="span1"><label class="control-label">标题</label></div>
 			<div class="span5">
-            	<select name="code" style="height:30px;">
-					<c:forEach var="column" items="${columns }">
-						<option value="${column.code}" ${column.code eq detail.code ?'selected="selected"':''}>${column.name}</option>
-					</c:forEach>
-				</select>
-            	<span class="help-block"></span>
+            	<input type="text" name="title" value="${activity.title}"/>
+            	<span class="help-block">标题，如：xxxx</span>
+        	</div>
+        	<div class="span1"><label class="control-label">时间</label></div>
+			<div class="span5">
+            	<input type="text" name="time" value="${activity.time}"/>
+            	<span class="help-block">时间，如：2016-11-24</span>
+        	</div>
+    	</div>
+    	<div class="row-fluid">
+    		<div class="span1"><label class="control-label">背景图片</label></div>
+        	<div class="span2">
+            	<input id="file" name="file" type="file" value="${activity.image}">
+            	<button class="btn btn-shadow btn-default " type= "button" onclick="upload()">上传</button>
+            	<div id="imageMsg"></div>
+        	</div>
+        	<div class="span3">
+            	<img id="img" alt="" src="${activity.image}" style="width:100%;height:100%;">
         	</div>
     	</div>
     </form>
@@ -348,21 +362,67 @@
 </div>
 
 <script type="text/javascript">
+$(function(){
+	var design = "${activity.design}";
+	$(".demo").html($.base64.atob(design,true));
+	$("#form").validate({          
+	    rules:{
+	    	title:{
+	         	required:true,
+	         	rangelength:[1,20]
+	        },
+	        time:{
+	        	required:true,
+	        	rangelength:[0,20]
+	        }
+	     }, 
+	     messages:{
+	    	 title:{
+		         required:'标题不能为空',
+		         rangelength:$.validator.format("输入的范围在 {0}-{1} 之间的字符.")
+		     },
+		     time:{
+		        required:'时间不能为空',
+		        rangelength:$.validator.format("输入的范围在 {0}-{1} 之间的字符.")
+		     }
+	     } 
+	});
+});
 function modify(){
+	var value = $("#image").val();
+	if(!value){
+		alert("请先上传图片！");
+	}
+	if (!$("#form").valid()) {
+        return;
+    }
+	
 	var param = $("#form").serializeArray();
-	var url = path+"/admin/modifyColumnDetail.do";
+	var url = path+"/admin/modifyActivity.do";
 	pts.submit({
 		url:url,
 		data:param,
 		yesClick:function(result){
 			window.close();
 		}
-	});	
+	});
 }
-$(function(){
-	var design = "${detail.design}";
-	$(".demo").html($.base64.atob(design,true));
-});
+function upload(){
+	pts.fileUpload({
+		url: path+'/common/upload.do', //用于文件上传的服务器端请求地址
+        secureuri: false, //是否需要安全协议，一般设置为false
+        fileElementId: 'file', //文件上传域的ID
+        dataType : 'text',
+        uploadSuccess: function (data)  //服务器成功响应处理函数
+        {
+            $("#img").attr('src',data.object); 
+            $("#image").val(data.object);
+        },
+        uploadError:function(data){
+        	$("#imageMsg").text(data.message);
+        }
+	});
+}
 </script>
 </body>
 </html>
