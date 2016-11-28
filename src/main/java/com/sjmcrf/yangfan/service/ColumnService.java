@@ -17,5 +17,7 @@ public interface ColumnService {
 	
 	Column get(String id);
 	
+	Column getByCode(String code);
+	
 	List<Column> queryAll();
 }

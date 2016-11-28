@@ -11,6 +11,8 @@ public interface ColumnDao {
 	
 	public Column get(@Param(value="id")String id);
 	
+	public Column getByCode(@Param(value="code")String code);
+	
 	public void deleteAll(@Param(value="code")String code);
 	
 	public void delete(@Param(value="id")String id);

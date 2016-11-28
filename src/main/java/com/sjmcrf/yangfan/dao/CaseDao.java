@@ -22,4 +22,6 @@ public interface CaseDao {
 	public List<Map<String,Object>> queryByPage(@Param(value="pageIndex")int pageIndex,@Param(value="pageSize")int pageSize);
 	
 	public List<Case> queryAll();
+	
+	public List<Case> queryAllByCode(@Param(value="code")String code);
 }

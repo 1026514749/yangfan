@@ -37,6 +37,14 @@
 		ORDER BY t.order,t.code
 	</select>
 	
+	<select id="queryAllByCode" resultType="Case" parameterType="String">
+		SELECT *
+		FROM `Case` t
+		WHERE t.deleted = 0
+		and t.code = #{code}
+		ORDER BY t.order,t.code
+	</select>
+	
 	<select id="getCount" resultType="Integer">
 		SELECT COUNT(*)
 		FROM `Case`

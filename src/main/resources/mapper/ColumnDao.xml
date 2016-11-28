@@ -8,6 +8,13 @@
 		FROM `column`
 		where id = #{id}
 	</select>
+	
+	<select id="getByCode" resultType="Column" parameterType="String">
+		SELECT *
+		FROM `column`
+		where code = #{code}
+		and deleted = 0
+	</select>
 
 	<update id="deleteAll">
 		UPDATE `column`

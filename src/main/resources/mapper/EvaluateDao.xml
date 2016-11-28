@@ -34,7 +34,7 @@
 		SELECT *
 		FROM `Evaluate` t
 		WHERE t.deleted = 0
-		ORDER BY t.order
+		ORDER BY t.time DESC
 	</select>
 	
 	<select id="getCount" resultType="Integer">

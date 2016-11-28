@@ -67,4 +67,12 @@ public class CaseServiceImpl implements CaseService {
 		return caseDao.queryAll();
 	}
 
+	@Override
+	public List<Case> queryAllByCode(String code) {
+		// TODO Auto-generated method stub
+		return caseDao.queryAllByCode(code);
+	}
+	
+	
+
 }

@@ -40,7 +40,6 @@
 		FROM column_simple t
 		WHERE t.deleted = 0
 		ORDER BY t.order,t.code
-		LIMIT #{pageIndex},#{pageSize}
 	</select>
 	
 	<select id="getCount" resultType="Integer">

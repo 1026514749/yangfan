@@ -18,4 +18,6 @@ public interface CaseService {
 	Case get(String id);
 	
 	List<Case> queryAll();
+	
+	List<Case> queryAllByCode(String code);
 }
