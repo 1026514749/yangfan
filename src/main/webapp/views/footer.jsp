@@ -8,7 +8,6 @@
 <meta name="description" content="">
 <meta name="author" content="sjm">
 
-<%@include file="/common/header-front.jsp"%>
 <title>天津市扬帆教育</title>
 </head>
 <body>
