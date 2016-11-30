@@ -11,111 +11,222 @@
 <%@include file="/common/header-front.jsp"%>
 <title>天津市扬帆教育</title>
 </head>
-    <body class="body111">
-            <header>
-                <div id="top-header">
-                    <div class="container">
-                        <div class="row">
-                        </div>
-                    </div>
+    <body>
+         <jsp:include page="header.jsp"></jsp:include>
+         
+         <jsp:include page="relate.jsp"></jsp:include>
+         
+<div id="slider">        
+   <div class="flexslider">
+      <ul class="slides">
+      	<c:forEach items="${simples}" var="simple">
+      		<li>
+            	<div class="slider-caption">
+                	<h1>${simple.title}</h1>
+                	<br>
+                 	<p>${simple.content}</p>
+                 	<br><br>
+                    <a href="javaScript:" onclick = "openColumn(${simple.code})">${simple.button}</a>
                 </div>
-                <div id="main-header" style="background-color:#FFEFDB">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-2">
-                                <div class="logo">
-                                    <a href="#"><img src="images/logo.png" title="扬帆教育" alt="扬帆教育" ></a>
-                                </div>
-                            </div>
-                            <div class="col-md-10">
-                                <div class="main-menu">
-                                    <ul>
-                                        <li><a href="index.html">主页</a></li>
-                                        <li><a href="item.html">幼儿培训</a></li>
-                                        <li><a href="item.html">艺术教师输出</a></li>
-										<li><a href="item.html">园长资格证</a></li>
-										<li><a href="item.html">教师资格证</a></li>
-										<li><a href="item.html">学历提升</a></li>
-										<li><a href="item.html">微信公众号制作</a></li>
-										<li><a href="contact-us.html">加入我们</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </header>
+                <img src="${simple.image}" alt="" />
+            </li>
+      	</c:forEach>
+      </ul>
+    </div>
+</div>
 
-			<div class="pinned note-container">
-				<div class="note">
-					<h5>联系我们</h5>
-					<p><a href="tencent://message/?uin=1026514749&amp;Site=有事Q我&amp;Menu=yes">  
-						<img style="border:0px;" src=http://wpa.qq.com/pa?p=1:707321921:9>客服00001</a></p>
-					<p><a href="tencent://message/?uin=1026514749&amp;Site=有事Q我&amp;Menu=yes">  
-						<img style="border:0px;" src=http://wpa.qq.com/pa?p=1:707321921:9>客服00001</a></p>
-					<p><a target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=huzv4761tr_zsrfG9-eo5enr" style="text-decoration:none;">公司邮箱</a></p>
-				</div>
-			</div>
+
+<div id="timeline-post">
+    <div class="container">
+         <div class="row">
+              <div class="col-md-12">
+                  <div class="heading-section">
+                      <h2>我们是</h2>
+                      <img src="${path}/images/under-heading.png" alt="" >
+                  </div>
+              </div>
+         </div>
+         <div class="row">
+              <div class="col-md-6">
+                  <h3>公司简介</h3>
+                  <p>Duis efficitur, est ut sollicitudin efficitur, nulla eros tempus lacus, non auctor mi leo ut justo. Proin euismod sapien nec risus bibendum aliquam. Quisque non maximus augue. Vivamus mattis placerat faucibus. Fusce nec facilisis justo. Vestibulum tristique et purus condimentum dignissim. Curabitur mollis, sem nec condimentum consequat, velit diam consequat ex, nec rhoncus risus purus eget nibh. Sed a mollis dolor.</p>
+              </div>
+              <div class="col-md-6">
+                  <h3>团队管理</h3>
+                  <p>Nam id felis nec libero posuere pretium ut ut tortor. Maecenas molestie dolor sed lectus vestibulum viverra. Morbi quis augue massa. Curabitur vel imperdiet justo, ut commodo sem. Donec ac elementum dolor, at finibus ex. Curabitur viverra venenatis gravida. Proin augue libero, accumsan sit amet ullamcorper in, posuere ac erat. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+              </div>
+          </div>
+     </div>
+</div>
+
+
+<div id="services">
+     <div class="container">
+          <div class="row">
+              <div class="col-md-12">
+                   <div class="heading-section">
+                       <h2>服务宗旨</h2>
+                       <img src="${path}/images/under-heading.png" alt="" >
+                   </div>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-md-3 col-sm-6">
+                   <div class="service-item">
+                       <div class="icon">
+                           <i class="fa fa-pencil"></i>
+                       </div>
+                       <h4>个性化定制</h4>
+                       <p>可根据客户的情况提供不同的解决方案，帮助客户找到最合适的方案</p>
+                   </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                   <div class="service-item">
+                       <div class="icon">
+                           <i class="fa fa-pencil"></i>
+                       </div>
+                       <h4>贴心服务</h4>
+                       <p>24小时随时待命，让您体会到最贴心的服务</p>
+                   </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                   <div class="service-item">
+                       <div class="icon">
+                           <i class="fa fa-pencil"></i>
+                       </div>
+                       <h4>专业指导</h4>
+                       <p>24小时随时待命，让您体会到最贴心的服务</p>
+                   </div>
+              </div>
+          	  <div class="col-md-3 col-sm-6">
+                   <div class="service-item">
+                       <div class="icon">
+                           <i class="fa fa-pencil"></i>
+                       </div>
+                       <h4>专业指导</h4>
+                       <p>24小时随时待命，让您体会到最贴心的服务</p>
+                   </div>
+              </div>
+          </div>
+    </div>
+</div>
+
+<div id="latest-blog">
+    <div class="container">
+        <div class="row">
+             <div class="col-md-12">
+                  <div class="heading-section">
+                        <h2>经典案例</h2>
+                        <img src="${path}/images/under-heading.png" alt="" >
+                  </div>
+             </div>
+        </div>
+        <div class="row">
+        	<c:forEach items="${ cases}" var="ncase">
+        		<div class="col-md-4 col-sm-6">
+             		<div class="blog-post">
+                  		<div class="blog-thumb">
+                      		<img src="${ncase.image}" style="width:100%; height:100;" alt="" />
+                 		</div>
+                  		<div class="blog-content">
+                      		<div class="content-show">
+                          		<h4><a href="javaScript:" onclick="openCase(${ncase.id})">${ncase.title}</a></h4>
+                          		<span>${ncase.time}</span>
+                      		</div>
+                  			<div class="content-hide">
+                      			<p>${ncase.simple}</p>
+                  			</div>
+              			</div>
+         			</div>
+         		</div>
+        	</c:forEach>
+        </div>
+   </div>
+</div>
+
+<div id="our-team">
+   <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                 <div class="heading-section">
+                     <h2>我们的团队</h2>
+                     <img src="${path}/images/under-heading.png" alt="" >
+                 </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="authors">
+                 <c:forEach items="${employees }" var="employee">
+                     <div class="col-md-3 col-sm-6">
+                         <div class="team-thumb">
+                             <div class="author">
+                                 <img src="${employee.image}" alt="">
+                             </div>
+                             <div class="overlay">
+                                 <div class="author-caption">
+                                      <ul>
+                                         <li style="background: fff"><label>手机号：${employee.phone }</label></li>
+                                      </ul>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="author-details">
+                             <h2>${employee.name }</h2>
+                             <span>${employee.position }</span>
+                         </div>
+                     </div>
+                 </c:forEach>
+            </div>
+        </div>
+   </div>
+</div>
 			
 			
-            <div id="view"></div>
-
-			<footer>
-                <div class="container">
-                    <div class="main-footer">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="recent-posts">
-                                    <h4 class="footer-title">最新活动</h4>
-                                    <div class="recent-post">
-                                        <div class="recent-post-thumb">
-                                            <img src="images/recent-post1.jpg" alt="">
-                                        </div>
-                                        <div class="recent-post-info">
-                                            <h6><a href="#">园长资格证报名</a></h6>
-                                            <span>2016-10-17</span>
-                                        </div>
+<div id="testimonails">
+      <div class="container">
+            <div class="row">
+                  <div class="col-md-12">
+                       <div class="heading-section">
+                           <h2>客户评价</h2>
+                           <img src="${path}/images/under-heading.png" alt="" >
+                       </div>
+                  </div>
+            </div>
+            <div class="row">
+                  <div class="col-md-8 col-md-offset-2">
+                       <div class="testimonails-slider">
+                           <ul class="slides">
+                                <li>
+                                    <div class="testimonails-content">
+                                        <p>刚刚拿到了我的园长资格证，非常的满意</p>
+                                        <h6>张三 - <a href="#">园长资格证</a></h6>
                                     </div>
-                                    <div class="recent-post">
-                                        <div class="recent-post-thumb">
-                                            <img src="images/recent-post2.jpg" alt="">
-                                        </div>
-                                        <div class="recent-post-info">
-                                            <h6><a href="#">教师资格证报名</a></h6>
-                                            <span>2016-10-17</span>
-                                        </div>
+                                </li>
+                                <li>
+                                    <div class="testimonails-content">
+                                        <p>我的小孩在这里培训了三个月，已经会说一些简单的英文单词，还拿了好多小红花，看着他开心，我也是很欣慰</p>
+                                        <h6>李四 - <a href="#">幼儿培训</a></h6>
+                                    </div> 
+                                </li>
+                                <li>
+                                    <div class="testimonails-content">
+                                        <p>准备开一个自己的幼儿园，但是不知道到哪里去找幼儿教师，扬帆给我推荐了好几个优秀的老师，现在幼儿园办的非常好</p>
+                                        <h6>赵五 - <a href="#">艺术老师输出</a></h6>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="more-info">
-                                    <h4 class="footer-title">更多信息</h4>
-                                    <p>如果你想要对我们公司有更深刻的了解，以下是我们公司的联系方式</p>
-                                    <ul>
-                                        <li><i class="fa fa-phone"></i>010-020-0340</li>
-                                        <li><i class="fa fa-globe"></i>天津市xx区xx路xx大楼xxx</li>
-                                        <li><i class="fa fa-envelope"></i><a href="#">yangfangjiaoyu@126.com</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="bottom-footer">
-                        <p>Copyright © 2084 <a href="#">扬帆教育</a> Collect from </p>
-                    </div>
-                    
-                </div>
-            </footer>
-		<script type="text/javascript">
-		$(function(){
-			$(".pinned").pin({
-				minWidth: 940
-			});
-			openColumn("index");
-		});	
-		function openColumn(code){
-			$("#view").load("${path}/index/openColumn.do?code="+code);
-		}
-		</script>
+                                </li>
+                           </ul>
+                       </div>
+                  </div>
+            </div>
+      </div>
+</div>
+         <jsp:include page="footer.jsp"></jsp:include>
+			
+			
+<script type="text/javascript">
+	function openCase(id){
+		location.href = "${path}/index/case.do?id="+id;
+	}
+</script>
     </body>
 </html>

@@ -11,15 +11,14 @@
 
 	<update id="delete" parameterType="String">
 		UPDATE `Evaluate`
-		SET 
-		deleted = 1
+		SET deleted = 1
 		where id = #{id}
 	</update>
 	
     <insert id="insert" parameterType="Evaluate" useGeneratedKeys="true" keyProperty="id">
         insert into 
-        	`Evaluate`(column,content,status,`time`,deleted)
-        	values(#{column},#{content},#{status},#{time},#{deleted})
+        	`Evaluate`(name,`column`,content,`status`,`time`,deleted)
+        	values(#{name},#{column},#{content},#{status},#{time},#{deleted})
     </insert>
     
     <select id="queryByPage" resultType="java.util.Map" >
@@ -45,9 +44,10 @@
 	
 	<update id="update" parameterType="Evaluate">
 		update `Evaluate` 
-			set column=#{column},
+			set `column`=#{column},
+				`name`=#{name},
 				content=#{content},
-				status=#{status},
+				`status`=#{status},
 				`time`=#{time}
 		where id = #{id}
 	</update>

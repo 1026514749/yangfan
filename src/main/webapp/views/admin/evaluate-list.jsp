@@ -41,7 +41,7 @@ $(function(){
 	gridMenu = $.ligerMenu({
         width:110,
         items:[
-          { id:'passClick', text:'审批通过', click:menuClick, icon:'pass' },
+          /*{ id:'passClick', text:'审批通过', click:menuClick, icon:'pass' },*/
           { id:'deleteClick', text:'删除评价', click:menuClick, icon:'delete' }
         ]
       });
@@ -49,15 +49,14 @@ $(function(){
     primaryKey:'id',
     columns:[
 	  { display:'操作', width:60, oprcol:true, icon:'${path}/images/ico_opr.gif'},
-      { display:'名称', name:'name', align:'left', width:200},
-      { display:'编码', name:'code', align:'left', width:200},
-      { display:'链接', name:'url', align:'left', width:400},
-      { display:'排序', name:'order', align:'left', width:100}
+      { display:'姓名', name:'name', align:'left', width:150},
+      { display:'项目', name:'column', align:'left', width:150},
+      { display:'时间', name:'time', align:'left', width:100},
+      { display:'评价', name:'content', align:'left', width:600}
     ], width:'99%',
     url:path + "/admin/queryEvaluate.do",
     searchForm:'form',
     onDblClickRow:function (data, index, dom) {
-    	passEvaluate(data.id);
       },
     oprcolMenu:gridMenu
   });

@@ -8,6 +8,11 @@
 		FROM column_detail
 		where id = #{id}
 	</select>
+	<select id="getByCode" resultType="ColumnDetail" parameterType="String">
+		SELECT *
+		FROM column_detail
+		where code = #{code}
+	</select>
 
 	<update id="deleteAll">
 		UPDATE column_detail
@@ -52,7 +57,7 @@
 	<update id="update" parameterType="ColumnDetail">
 		update column_detail 
 			set code=#{code},
-				content=#{content},
+				content=#{content}
 		where id = #{id}
 	</update>
 

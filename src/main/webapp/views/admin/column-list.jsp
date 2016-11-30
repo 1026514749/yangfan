@@ -48,7 +48,7 @@ $(function(){
         width:110,
         items:[
           { id:'modifyClick', text:'修改栏目', click:menuClick, icon:'modify' },
-          { id:'deleteClick', text:'删除表单', click:menuClick, icon:'delete' }
+          { id:'deleteClick', text:'删除栏目', click:menuClick, icon:'delete' }
         ]
       });
 	dataGrid = $("#data_div").ligerGrid({

@@ -30,6 +30,7 @@
 <body style="min-height: 660px; cursor: auto;" class="edit">
 <div class="container-fluid">
 	<form id="form" action="">
+		<input type="hidden" name="id" value="${detail.id }"/>
 		<input type="hidden" name="design" id="design" value="${detail.design }"/>
 		<input type="hidden" name="content" id="content" value="${detail.content }" onchange="modify()"/>
 		<div class="row-fluid">

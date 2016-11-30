@@ -11,12 +11,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import com.sjmcrf.yangfan.entity.Activity;
 import com.sjmcrf.yangfan.entity.Case;
 import com.sjmcrf.yangfan.entity.Column;
+import com.sjmcrf.yangfan.entity.ColumnDetail;
 import com.sjmcrf.yangfan.entity.ColumnSimple;
 import com.sjmcrf.yangfan.entity.Employee;
 import com.sjmcrf.yangfan.entity.Evaluate;
 import com.sjmcrf.yangfan.entity.Info;
 import com.sjmcrf.yangfan.service.ActivityService;
 import com.sjmcrf.yangfan.service.CaseService;
+import com.sjmcrf.yangfan.service.ColumnDetailService;
 import com.sjmcrf.yangfan.service.ColumnService;
 import com.sjmcrf.yangfan.service.ColumnSimpleService;
 import com.sjmcrf.yangfan.service.EmployeeService;
@@ -35,7 +37,10 @@ public class IndexController {
 	private CaseService caseService;
 	
 	@Autowired
-	private ColumnSimpleService columnSimpleSerivice;
+	private ColumnSimpleService columnSimpleService;
+	
+	@Autowired
+	private ColumnDetailService columnDetailService;
 	
 	@Autowired
 	private InfoService infoSerivice;
@@ -46,68 +51,88 @@ public class IndexController {
 	@Autowired
 	private EmployeeService employeeService;
 	
-	@RequestMapping(value="/index.do")
-	public String openIndex(HttpServletRequest request){
-		//取公司信息
-		Info info = infoSerivice.get();
-		
-		//取栏目信息
-		List<Column> columns = columnService.queryAll();
-		
-		//取最新活动
-		
-		request.setAttribute("columns",columns);
-		request.setAttribute("info",info);
-		return "index";
-	}
 	
-	@RequestMapping(value="index/openColumn.do")
+	@RequestMapping(value="/index/column.do")
 	public String openColumn(String code,HttpServletRequest request){
+		getCommoninfo(request);
+		
+		if(code == null){
+			code = "index";
+		}
 		//取栏目
 		Column column = columnService.getByCode(code);
-		//取公司信息
-		Info info = infoSerivice.get();
+		
+		//取栏目内容
+		ColumnDetail columnDetail = columnDetailService.getByCode(code);
+
 		//取经典案例
 		List<Case> cases = caseService.queryAllByCode(code);
+		
 		
 		//以下是首页需要的信息
 		//取客户评价
 		List<Evaluate> evaluates = evaluateService.queryAll();
+		if(evaluates.size()>5){
+			evaluates = evaluates.subList(0, 5);
+		}
 		//取职员信息
 		List<Employee> employees = employeeService.queryAll();
 		//取栏目简介
-		List<ColumnSimple> simples = columnSimpleSerivice.queryAll();
+		List<ColumnSimple> simples = columnSimpleService.queryAll();
 		
 		
-		if(column == null||column.getUrl() == null){
-			column.setUrl("views/item");
-		}
 		
-		
-		request.setAttribute("column",column);
-		request.setAttribute("info",info);
+		request.setAttribute("item",columnDetail);
 		request.setAttribute("evaluates",evaluates);
 		request.setAttribute("employees",employees);
 		request.setAttribute("cases",cases);
 		request.setAttribute("simples",simples);
-		return column.getUrl();
+		
+		
+		if(column == null||column.getUrl() == null){
+			return "index";
+		}else{
+			return column.getUrl();
+		}
+			
 	}
 	
-	@RequestMapping(value="index/openActivity.do")
+	@RequestMapping(value="/index/activity.do")
 	public String openActivity(String id,HttpServletRequest request){
+		getCommoninfo(request);
+		
 		Activity act = activityService.get(id);
 		
 		request.setAttribute("item",act);
 		
-		return "views/blank";
+		return "blank";
 	}
 	
-	@RequestMapping(value="index/openCase.do")
+	@RequestMapping(value="/index/case.do")
 	public String openCase(String id,HttpServletRequest request){
+		getCommoninfo(request);
+		
 		Case ncase = caseService.get(id);
 		
 		request.setAttribute("item",ncase);
 		
-		return "views/blank";
+		return "blank";
+	}
+	
+	public void getCommoninfo(HttpServletRequest request){
+		//取公司信息
+		Info info = infoSerivice.get();
+				
+		//取栏目信息
+		List<Column> columns = columnService.queryAll();
+				
+		//取最新活动
+		List<Activity> activitys = activityService.queryAll();
+		if(activitys.size()>2){
+			activitys = activitys.subList(0, 2);
+		}
+		request.setAttribute("columns",columns);
+		request.setAttribute("info",info);
+		request.setAttribute("activitys",activitys);
 	}
 }

@@ -69,4 +69,12 @@ public class ColumnDetailServiceImpl implements ColumnDetailService {
 		return detailDao.queryAll();
 	}
 
+	@Override
+	public ColumnDetail getByCode(String code) {
+		// TODO Auto-generated method stub
+		return detailDao.getByCode(code);
+	}
+	
+	
+
 }

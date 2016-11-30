@@ -34,7 +34,7 @@
 		SELECT *
 		FROM `Activity` t
 		WHERE t.deleted = 0
-		ORDER BY t.order,t.code
+		ORDER BY t.time,t.id
 	</select>
 	
 	<select id="getCount" resultType="Integer">

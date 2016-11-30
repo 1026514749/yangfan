@@ -18,4 +18,6 @@ public interface ColumnDetailService {
 	ColumnDetail get(String id);
 	
 	List<ColumnDetail> queryAll();
+
+	ColumnDetail getByCode(String code);
 }

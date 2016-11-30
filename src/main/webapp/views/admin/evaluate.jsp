@@ -43,9 +43,9 @@
         </div>
     </div>
     <div class="form-group">
-        <label class="col-xs-3 control-label">排序</label>
+        <label class="col-xs-3 control-label">时间</label>
         <div class=" col-xs-9">
-            <input name="order" type="text" class="form-control"  value="${employee.order}">
+            <input name="time" type="text" class="form-control"  value="${employee.time}">
             <span class="help-block">评价时间</span>
         </div>
     </div>
