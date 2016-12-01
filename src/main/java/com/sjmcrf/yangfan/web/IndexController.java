@@ -119,6 +119,12 @@ public class IndexController {
 		return "blank";
 	}
 	
+	@RequestMapping(value="/admin/index.do")
+	public String aminIndex(HttpServletRequest request){
+		
+		return "admin/index";
+	}
+	
 	public void getCommoninfo(HttpServletRequest request){
 		//取公司信息
 		Info info = infoSerivice.get();

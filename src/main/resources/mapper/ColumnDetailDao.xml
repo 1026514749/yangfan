@@ -11,7 +11,8 @@
 	<select id="getByCode" resultType="ColumnDetail" parameterType="String">
 		SELECT *
 		FROM column_detail
-		where code = #{code}
+		where deleted = 0
+		and code = #{code}
 	</select>
 
 	<update id="deleteAll">

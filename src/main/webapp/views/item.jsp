@@ -36,7 +36,7 @@
                  		</div>
                   		<div class="blog-content" onclick="openCase(${ncase.id})">
                       		<div class="content-show">
-                          		<h4><a href="javaScript:" onclick="openCase(${ncase.id})">红星幼儿园</a></h4>
+                          		<h4><a href="javaScript:" onclick="openCase('${ncase.id}')">红星幼儿园</a></h4>
                           		<span>${ncase.time}</span>
                       		</div>
                   			<div class="content-hide">
@@ -54,7 +54,7 @@
 </body>
 <script type="text/javascript">
 $(document).ready(function(){
-	var design = ${item.contend};
+	var design = '${item.content}';
 	$("#content").html($.base64.atob(design,true));
 });
 </script>

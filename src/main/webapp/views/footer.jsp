@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html lang="en">
 <head>
 <!-- BEGIN META --> 
@@ -24,7 +25,7 @@
                                            <img src="${activity.image}" style="width:100%;height:100%" alt="">
                                       </div>
                                       <div class="recent-post-info">
-                                           <h6><a href="javaScript:" onclick="openActivity(${activity.id })">${activity.title }</a></h6>
+                                           <h6><a href="javaScript:" onclick="openActivity('${activity.id }')">${activity.title }</a></h6>
                                          	<span>${activity.time }</span>
                                       </div>
                                   	</div>

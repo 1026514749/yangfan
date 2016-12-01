@@ -15,13 +15,13 @@
          
     <jsp:include page="relate.jsp"></jsp:include>
     
-    <div id ="content"></div>
+    <div id ="content" style="min-height: 400px"></div>
     
 	<jsp:include page="footer.jsp"></jsp:include>
 </body>
 <script type="text/javascript">
 $(document).ready(function(){
-	var design = ${item.contend};
+	var design = '${item.content}';
 	$("#content").html($.base64.atob(design,true));
 });
 </script>

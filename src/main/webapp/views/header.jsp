@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html lang="en">
 <head>
 <!-- BEGIN META --> 
@@ -24,7 +25,7 @@
                         <div class="main-menu">
                              <ul>
                                  <c:forEach items="${columns }" var="column">
-                                    <li><a href="javaScript:" onclick="openColumn(${column.code})">${column.name}</a></li>
+                                    <li><a href="javaScript:" onclick="openColumn('${column.code}')">${column.name}</a></li>
                                   </c:forEach>
                              </ul>
                         </div>
