@@ -392,6 +392,7 @@ function modify(){
 	var value = $("#image").val();
 	if(!value){
 		alert("请先上传图片！");
+		return;
 	}
 	if (!$("#form").valid()) {
         return;

@@ -42,7 +42,7 @@
         <label class="col-xs-3 control-label">网页链接</label>
         <div class="col-xs-9">
             <input name="url" type="text" class="form-control"  value="${column.url}">
-            <span class="help-block">点击该栏目时打开的网页地址，默认:/views/cloumn.jsp</span>
+            <span class="help-block">点击该栏目时打开的网页地址，默认:item</span>
         </div>
    </div>
    <div class="form-group">

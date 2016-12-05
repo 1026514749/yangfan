@@ -46,13 +46,16 @@
                 </div>
           </div>
           <div class="bottom-footer">
-               <p>Copyright © 2016 <a href="#">sjm</a> Collect from </p>
+               <p>Copyright © 2009-2016 <a href="javaScript:" onclick="openAdmin()">天津市扬帆教育</a> Collect from SJM</p>
           </div>
      </div>
 </footer>
 <script type="text/javascript">
 function openActivity(id){
 	location.href = "${path}/index/activity.do?id="+id;
+}
+function openAdmin(){
+	location.href = "${path}/admin/index.do";
 }
 </script>
 </body>

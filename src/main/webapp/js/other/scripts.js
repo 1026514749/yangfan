@@ -275,6 +275,7 @@ function downloadLayoutSrc() {
 		allowedAttributes: [
 			["id"],
 			["class"],
+			["style"],
 			["data-toggle"],
 			["data-target"],
 			["data-parent"],

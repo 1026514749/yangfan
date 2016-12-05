@@ -30,7 +30,7 @@ public class LoginController {
 	public String login(HttpServletRequest request){
 		HttpSession session = request.getSession(true);
 		session.setAttribute("user", "");
-		return "redirect:/index/openColumn.do";
+		return "redirect:/index/column.do";
 	}
 	@RequestMapping(value = "/login/login.do")
 	public String login(){

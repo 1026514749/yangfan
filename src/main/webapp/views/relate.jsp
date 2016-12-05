@@ -14,7 +14,6 @@
 <style>
 /*mess*/
 * { font-size:13px; font-family:Georgia, "Times New Roman","瀹嬩綋"; color:#333; margin:0; padding:0; list-style:none; text-shadow:0 1px 1px #fff; }
-html {background:url(bg.png) repeat; }
 a img { border:0;}
 .demoTitle { text-align:center; font-size:30px; font-weight:bold; color:#c00; text-shadow:1px 1px 0 #fff; margin:60px 0 40px; border-bottom:1px dashed #999;border-top:1px dashed #999; padding:20px 0; background:#EEE; }
 #demo1,#demo2,#demo3,#demo4,#demo5,#demo6,#demo7,#demo8 { margin:0 auto; }
@@ -38,8 +37,8 @@ a img { border:0;}
 .TmpStyle { margin:50px auto;}
 /* 客服代码CSS */
 .jcContact{position:absolute;top:0;left:0;z-index:99;width:215px;}
-.jcConraper{width:174px;background:url(images/c03.png) repeat-y 0 0;overflow:hidden;}
-.jcConBtn{background:url(images/c01.png) no-repeat;position:absolute;top:0;left:0;width:41px;height:116px;cursor:pointer;}
+.jcConraper{width:174px;background:url(${path}/images/c03.png) repeat-y 0 0;overflow:hidden;}
+.jcConBtn{background:url(${path}/images/c01.png) no-repeat;position:absolute;top:0;left:0;width:41px;height:116px;cursor:pointer;}
 body,ul,ol,h2,h3,h4,h5,p,dl,dt,dd,form{padding:0;margin:0;}
 img{border:none;}
 li{list-style:none;}
@@ -62,9 +61,6 @@ h1.title{height:50px;font-size:12px;background:url(logo.png) no-repeat;}
 h1.title a:link,h1.title a:visited,h1.title a:hover{color:#000;text-decoration:none;}
 </style>
 
-<script src="${path }/js/relate/jquery-1.8.3.min.js" language="javascript" type="text/javascript"></script>
-<script src="${path }/js/relate/jQuery-jcContact.js" language="javascript"></script>
-
 <body>
 <div id="demo3" class="jcContact">
      <div class="jcConraper">
@@ -72,12 +68,12 @@ h1.title a:link,h1.title a:visited,h1.title a:hover{color:#000;text-decoration:n
          <div style=" background:url(${path}/images/c02.png) no-repeat 0 0; height:44px;"></div>
          <ul>
              <li style="font-size:20px; text-align:center; font-weight:bold; color:#ff6600; padding:15px 0 5px;">${info.mobile }</li>
-             <li style="background:url(${path}/images/c04.png) no-repeat center 0; height:140px;"></li>
+             <li style="height:140px;width:174px;"><img  src="${info.wechat }"/></li>
          </ul>
          <div style="background:url(${path}/images/c05.png) no-repeat 0 0; height:11px;"></div>
          <div style="line-height:22px; padding:5px 18px 25px;">
-             <span style="display:block; float:left; height:22px; line-height:22px; font-size:13px; font-weight:bold; color:#555555;">扬帆教育</span>
-             <a href="tencent://message/?uin=${info.qq1}&amp;" style="display:block; float:right; width:74px; height:22px; background:red; "><img src="images/c06.png" height="22" width="74" border="0" /></a>
+             <a href="tencent://message/?uin=1026514749&amp;Site=有事Q我&amp;Menu=yes" style="display:block; float:left; width:60px; height:22px; background:red; margin-right: 10px; "><img src="${path }/images/c06.png" height="22" width="60" border="0" /></a>
+             <a href="tencent://message/?uin=1026514749&amp;Site=有事Q我&amp;Menu=yes" style="display:block; float:left; width:60px; height:22px; background:red; "><img src="${path }/images/c06.png" height="22" width="60" border="0" /></a>
              <div class="clear"></div>
          </div>
          <div style="background:url(${path}/images/c07.png) no-repeat; height:13px;"></div>

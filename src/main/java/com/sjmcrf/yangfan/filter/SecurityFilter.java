@@ -29,10 +29,12 @@ public class SecurityFilter implements Filter {
          HttpSession session = request.getSession(true);     
          String user = (String)session.getAttribute("user");//登录人角色
          String url=request.getRequestURI();   
-         if(user==null || "".equals(user)||url.indexOf(".jsp")<0) {      
+         if(user==null || "".equals(user)||url.indexOf(".jsp")>=0) {      
               //判断获取的路径不为空且不是访问登录页面或执行登录操作时跳转    
-              response.sendRedirect(request.getContextPath() + "/login/login.do");   
-              return ;               
+        	 if(url.indexOf("/admin/")>=0){
+        		 response.sendRedirect(request.getContextPath() + "/login/login.do");   
+                 return ; 
+        	 }              
           }   
           chain.doFilter(arg0, arg1);   
           return;   

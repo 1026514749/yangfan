@@ -5,12 +5,12 @@
 
 	<select id="get" resultType="Employee" parameterType="String">
 		SELECT *
-		FROM `Employee`
+		FROM `employee`
 		where id = #{id}
 	</select>
 
 	<update id="delete" parameterType="String">
-		UPDATE `Employee`
+		UPDATE `employee`
 		SET 
 		deleted = 1
 		where id = #{id}
@@ -18,13 +18,13 @@
 	
     <insert id="insert" parameterType="Employee" useGeneratedKeys="true" keyProperty="id">
         insert into 
-        	`Employee`(position,name,image,phone,`order`,deleted)
+        	`employee`(position,name,image,phone,`order`,deleted)
         	values(#{position},#{name},#{image},#{phone},#{order},#{deleted})
     </insert>
     
     <select id="queryByPage" resultType="java.util.Map" >
 		SELECT *
-		FROM `Employee` t
+		FROM `employee` t
 		WHERE t.deleted = 0
 		ORDER BY t.order
 		LIMIT #{pageIndex},#{pageSize}
@@ -32,19 +32,19 @@
 	
 	<select id="queryAll" resultType="Employee" >
 		SELECT *
-		FROM `Employee` t
+		FROM `employee` t
 		WHERE t.deleted = 0
 		ORDER BY t.order
 	</select>
 	
 	<select id="getCount" resultType="Integer">
 		SELECT COUNT(*)
-		FROM `Employee`
+		FROM `employee`
 		WHERE deleted = 0
 	</select>
 	
 	<update id="update" parameterType="Employee">
-		update `Employee` 
+		update `employee` 
 			set position=#{position},
 				name=#{name},
 				image=#{image},

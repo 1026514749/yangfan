@@ -8,7 +8,6 @@ import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
 import com.sjmcrf.yangfan.cache.RedisCache;
-import com.sjmcrf.yangfan.dao.UserDao;
 
 /**
  * 业务相关的作业调度
@@ -34,8 +33,7 @@ import com.sjmcrf.yangfan.dao.UserDao;
 public class BizQuartz {
 
 	private final Logger LOG = LoggerFactory.getLogger(this.getClass());
-	@Autowired
-	private UserDao userDao;
+	
 	@Autowired
 	private RedisCache cache;
 	
@@ -46,7 +44,6 @@ public class BizQuartz {
 	@Scheduled(cron = "0 0/1 9-17 * * ? ")
 	public void addUserScore() {
 		LOG.info("@Scheduled--------addUserScore()");
-		userDao.addScore(10);
 	}
 	/**
 	 * 每隔5分钟定时清理缓存

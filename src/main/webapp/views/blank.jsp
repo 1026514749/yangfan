@@ -7,8 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="">
 <meta name="author" content="sjm">
-<title>扬帆教育</title>
+<title>天津市扬帆教育</title>
 <%@include file="/common/header-front.jsp" %>
+
 </head>
 <body>
     <jsp:include page="header.jsp"></jsp:include>

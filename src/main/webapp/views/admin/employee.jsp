@@ -130,11 +130,12 @@
 	
 		
 	function modify(){
-		var param = $("#form").serializeArray();
 		var value = $("#image").val();
 		if(!value){
 			alert("请先上传图片！");
+			return;
 		}
+		var param = $("#form").serializeArray();
 		var url = path+"/admin/modifyEmployee.do";
 		pts.submit({
 			url:url,

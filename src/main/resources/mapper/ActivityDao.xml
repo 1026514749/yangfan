@@ -5,12 +5,12 @@
 
 	<select id="get" resultType="Activity" parameterType="String">
 		SELECT *
-		FROM `Activity`
+		FROM `activity`
 		where id = #{id}
 	</select>
 	
 	<update id="delete" parameterType="String">
-		UPDATE `Activity`
+		UPDATE `activity`
 		SET 
 		deleted = 1
 		where id = #{id}
@@ -24,7 +24,7 @@
     
     <select id="queryByPage" resultType="java.util.Map" >
 		SELECT *
-		FROM `Activity` t
+		FROM `activity` t
 		WHERE t.deleted = 0
 		ORDER BY t.time,t.id
 		LIMIT #{pageIndex},#{pageSize}
@@ -32,7 +32,7 @@
 	
 	<select id="queryAll" resultType="Activity" >
 		SELECT *
-		FROM `Activity` t
+		FROM `activity` t
 		WHERE t.deleted = 0
 		ORDER BY t.time,t.id
 	</select>
@@ -44,7 +44,7 @@
 	</select>
 	
 	<update id="update" parameterType="Activity">
-		update `Activity` 
+		update `activity` 
 		set title=#{title},
 			image=#{image},
 			content=#{content},

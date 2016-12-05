@@ -12,7 +12,7 @@
     <!-- BEGIN SHORTCUT ICON -->
     <link rel="shortcut icon" href="${path}/img/favicon.ico">
     <!-- END SHORTCUT ICON -->
-    <title>登录后台</title>
+    <title>天津市扬帆教育</title>
     <!-- BEGIN STYLESHEET-->
     <%
 		String path = request.getContextPath();

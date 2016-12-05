@@ -5,25 +5,25 @@
 
 	<select id="get" resultType="Evaluate" parameterType="String">
 		SELECT *
-		FROM `Evaluate`
+		FROM `evaluate`
 		where id = #{id}
 	</select>
 
 	<update id="delete" parameterType="String">
-		UPDATE `Evaluate`
+		UPDATE `evaluate`
 		SET deleted = 1
 		where id = #{id}
 	</update>
 	
     <insert id="insert" parameterType="Evaluate" useGeneratedKeys="true" keyProperty="id">
         insert into 
-        	`Evaluate`(name,`column`,content,`status`,`time`,deleted)
+        	`evaluate`(name,`column`,content,`status`,`time`,deleted)
         	values(#{name},#{column},#{content},#{status},#{time},#{deleted})
     </insert>
     
     <select id="queryByPage" resultType="java.util.Map" >
 		SELECT *
-		FROM `Evaluate` t
+		FROM `evaluate` t
 		WHERE t.deleted = 0
 		ORDER BY t.time DESC
 		LIMIT #{pageIndex},#{pageSize}
@@ -31,19 +31,19 @@
 	
 	<select id="queryAll" resultType="Evaluate" >
 		SELECT *
-		FROM `Evaluate` t
+		FROM `evaluate` t
 		WHERE t.deleted = 0
 		ORDER BY t.time DESC
 	</select>
 	
 	<select id="getCount" resultType="Integer">
 		SELECT COUNT(*)
-		FROM `Evaluate`
+		FROM `evaluate`
 		WHERE deleted = 0
 	</select>
 	
 	<update id="update" parameterType="Evaluate">
-		update `Evaluate` 
+		update `evaluate` 
 			set `column`=#{column},
 				`name`=#{name},
 				content=#{content},

@@ -140,6 +140,7 @@
 		var value = $("#image").val();
 		if(!value){
 			alert("请先上传图片！");
+			return;
 		}
 		var url = path+"/admin/modifyColumnSimple.do";
 		pts.submit({

@@ -1,8 +1,6 @@
 package com.sjmcrf.yangfan.aop;
 
 import com.sjmcrf.yangfan.dto.ActionResult;
-import com.sjmcrf.yangfan.dto.BaseResult;
-
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;

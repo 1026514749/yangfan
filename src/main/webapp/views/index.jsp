@@ -12,10 +12,9 @@
 <title>天津市扬帆教育</title>
 </head>
     <body>
-         <jsp:include page="header.jsp"></jsp:include>
+        <jsp:include page="header.jsp"></jsp:include>
          
-         <jsp:include page="relate.jsp"></jsp:include>
-         
+    	<jsp:include page="relate.jsp"></jsp:include>
 <div id="slider">        
    <div class="flexslider">
       <ul class="slides">
@@ -26,7 +25,7 @@
                 	<br>
                  	<p>${simple.content}</p>
                  	<br><br>
-                    <a href="javaScript:" onclick = "openColumn(${simple.code})">${simple.button}</a>
+                    <a href="javaScript:" onclick = "openColumn('${simple.code}')">${simple.button}</a>
                 </div>
                 <img src="${simple.image}" alt="" />
             </li>
@@ -196,31 +195,21 @@
                   <div class="col-md-8 col-md-offset-2">
                        <div class="testimonails-slider">
                            <ul class="slides">
-                                <li>
-                                    <div class="testimonails-content">
-                                        <p>刚刚拿到了我的园长资格证，非常的满意</p>
-                                        <h6>张三 - <a href="#">园长资格证</a></h6>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="testimonails-content">
-                                        <p>我的小孩在这里培训了三个月，已经会说一些简单的英文单词，还拿了好多小红花，看着他开心，我也是很欣慰</p>
-                                        <h6>李四 - <a href="#">幼儿培训</a></h6>
-                                    </div> 
-                                </li>
-                                <li>
-                                    <div class="testimonails-content">
-                                        <p>准备开一个自己的幼儿园，但是不知道到哪里去找幼儿教师，扬帆给我推荐了好几个优秀的老师，现在幼儿园办的非常好</p>
-                                        <h6>赵五 - <a href="#">艺术老师输出</a></h6>
-                                    </div>
-                                </li>
+                           		<c:forEach items="${evaluates}" var="evaluate">
+                           			<li>
+                                    	<div class="testimonails-content">
+                                        	<p>${evaluate.content}</p>
+                                        	<h6>${evaluate.name} -  ${evaluate.time} - <a href="#">${evaluate.column}</a></h6>
+                                    	</div>
+                                	</li>
+                           		</c:forEach>
                            </ul>
                        </div>
                   </div>
             </div>
       </div>
 </div>
-         <jsp:include page="footer.jsp"></jsp:include>
+       <jsp:include page="footer.jsp"></jsp:include>
 			
 			
 <script type="text/javascript">

@@ -5,12 +5,12 @@
 
 	<select id="get" resultType="Case" parameterType="String">
 		SELECT *
-		FROM `Case`
+		FROM `case`
 		where id = #{id}
 	</select>
 
 	<update id="delete" parameterType="String">
-		UPDATE `Case`
+		UPDATE `case`
 		SET 
 		deleted = 1
 		where id = #{id}
@@ -18,13 +18,13 @@
 	
     <insert id="insert" parameterType="Case" useGeneratedKeys="true" keyProperty="id">
         insert into 
-        	`Case`(code,title,image,`time`,simple,content,design,`order`,deleted)
+        	`case`(code,title,image,`time`,simple,content,design,`order`,deleted)
         	values(#{code},#{title},#{image},#{time},#{simple},#{content},#{design},#{order},#{deleted})
     </insert>
     
     <select id="queryByPage" resultType="java.util.Map" >
 		SELECT *
-		FROM `Case` t
+		FROM `case` t
 		WHERE t.deleted = 0
 		ORDER BY t.order,t.code
 		LIMIT #{pageIndex},#{pageSize}
@@ -32,14 +32,14 @@
 	
 	<select id="queryAll" resultType="Case" >
 		SELECT *
-		FROM `Case` t
+		FROM `case` t
 		WHERE t.deleted = 0
 		ORDER BY t.order,t.code
 	</select>
 	
 	<select id="queryAllByCode" resultType="Case" parameterType="String">
 		SELECT *
-		FROM `Case` t
+		FROM `case` t
 		WHERE t.deleted = 0
 		and t.code = #{code}
 		ORDER BY t.order,t.code
@@ -47,12 +47,12 @@
 	
 	<select id="getCount" resultType="Integer">
 		SELECT COUNT(*)
-		FROM `Case`
+		FROM `case`
 		WHERE deleted = 0
 	</select>
 	
 	<update id="update" parameterType="Case">
-		update `Case` 
+		update `case` 
 			set code=#{code},
 				title=#{title},
 				image=#{image},

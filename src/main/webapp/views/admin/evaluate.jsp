@@ -37,7 +37,7 @@
 		<div class="col-xs-9">
             <select name="column" style="width:40%">
             	<c:forEach var="column" items="${columns}">
-            		<option value="${column.code}">${column.name}</option>
+            		<option value="${column.name}" ${column.name eq evaluate.column ?'selected="selected"':''}>${column.name}</option>
             	</c:forEach>
             </select>
         </div>

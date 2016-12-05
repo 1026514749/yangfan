@@ -11,6 +11,7 @@
 </script>
 
 <link rel="stylesheet" href="${path}/css/bootstrap.css">
+<link href="${path}/css/bootstrap-combined.min.css" rel="stylesheet">
 <link rel="stylesheet" href="${path}/css/font-awesome.css">
 <link rel="stylesheet" href="${path}/css/templatemo_style.css">
 <link rel="stylesheet" href="${path}/css/templatemo_misc.css">
@@ -20,7 +21,7 @@
 <script src="${path}/js/front/vendor/modernizr-2.6.1-respond-1.1.0.min.js"></script>
 <script src="${path}/js/front/vendor/jquery-1.11.0.min.js"></script>
 <script src="${path}/js/jquery/jquery.base64.js" type="text/javascript"></script>
-<!-- <script src="${path}/js/front/vendor/jquery.gmap3.min.js"></script> -->
 <script src="${path}/js/front/plugins.js"></script>
 <script src="${path}/js/front/main.js"></script>
-<script src="${path}/js/front/jquery.pin.js"></script>
+<script src="${path }/js/relate/jQuery-jcContact.js" language="javascript"></script>
+
