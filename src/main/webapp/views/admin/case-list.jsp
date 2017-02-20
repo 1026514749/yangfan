@@ -60,7 +60,7 @@ $(function(){
       { display:'图片', name:'image', align:'left', width:100},
       { display:'排序', name:'order', align:'left', width:100}
     ], width:'99%',
-    url:path + "/admin/queryCase.do",
+    url:"${path}/admin/queryCase.do",
     searchForm:'form',
     onDblClickRow:function (data, index, dom) {
     	modifyCase(data.id);

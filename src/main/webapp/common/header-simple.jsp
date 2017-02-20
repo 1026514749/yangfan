@@ -22,3 +22,7 @@
 <script src="${path}/js/common/zeroModal.js" type="text/javascript"></script>
 <script src="${path}/js/common/pts.js" type="text/javascript"></script>
 
+<script type="text/javascript">
+    var path = '${path}';
+</script>
+

@@ -25,3 +25,6 @@
 <script src="${path}/js/front/main.js"></script>
 <script src="${path }/js/relate/jQuery-jcContact.js" language="javascript"></script>
 
+<script type="text/javascript">
+    var path = '${path}';
+</script>

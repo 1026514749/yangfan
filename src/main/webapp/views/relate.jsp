@@ -68,12 +68,12 @@ h1.title a:link,h1.title a:visited,h1.title a:hover{color:#000;text-decoration:n
          <div style=" background:url(${path}/images/c02.png) no-repeat 0 0; height:44px;"></div>
          <ul>
              <li style="font-size:20px; text-align:center; font-weight:bold; color:#ff6600; padding:15px 0 5px;">${info.mobile }</li>
-             <li style="height:140px;width:174px;"><img  src="${info.wechat }"/></li>
+             <li style="height:140px;width:174px;"><img  style="height:140px;width:140px;margin-left: 17px" src="${info.wechat }"/></li>
          </ul>
          <div style="background:url(${path}/images/c05.png) no-repeat 0 0; height:11px;"></div>
          <div style="line-height:22px; padding:5px 18px 25px;">
-             <a href="tencent://message/?uin=1026514749&amp;Site=有事Q我&amp;Menu=yes" style="display:block; float:left; width:60px; height:22px; background:red; margin-right: 10px; "><img src="${path }/images/c06.png" height="22" width="60" border="0" /></a>
-             <a href="tencent://message/?uin=1026514749&amp;Site=有事Q我&amp;Menu=yes" style="display:block; float:left; width:60px; height:22px; background:red; "><img src="${path }/images/c06.png" height="22" width="60" border="0" /></a>
+             <a href="tencent://message/?uin=${info.qq1 }&amp;Site=有事Q我&amp;Menu=yes" style="display:block; float:left; width:60px; height:22px; background:red; margin-right: 10px; "><img src="${path }/images/c06.png" height="22" width="60" border="0" /></a>
+             <a href="tencent://message/?uin=${info.qq2 }&amp;Site=有事Q我&amp;Menu=yes" style="display:block; float:left; width:60px; height:22px; background:red; "><img src="${path }/images/c06.png" height="22" width="60" border="0" /></a>
              <div class="clear"></div>
          </div>
          <div style="background:url(${path}/images/c07.png) no-repeat; height:13px;"></div>

@@ -38,3 +38,7 @@
 <script src="${path}/js/common/open.extend.js" type="text/javascript"></script>
 <script src="${path}/js/common/zeroModal.js" ></script><!-- BASIC JS LIABRARY -->
 <script src="${path}/js/common/pts.js" ></script><!-- BASIC JS LIABRARY -->
+
+<script type="text/javascript">
+    var path = '${path}';
+</script>

@@ -57,7 +57,7 @@ $(function(){
       }},
       { display:'日期', name:'time', align:'left', width:100}
     ], width:'99%',
-    url:path + "/admin/queryActivity.do",
+    url:"${path}/admin/queryActivity.do",
     searchForm:'form',
     onDblClickRow:function (data, index, dom) {
     	modifyColumn(data.id);

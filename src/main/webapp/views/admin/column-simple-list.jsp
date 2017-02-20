@@ -56,7 +56,7 @@ $(function(){
       { display:'按钮', name:'button', align:'left', width:200},
       { display:'排序', name:'order', align:'left', width:80}
     ], width:'99%',
-    url:path + "/admin/queryColumnSimple.do",
+    url:"${path}/admin/queryColumnSimple.do",
     searchForm:'form',
     onDblClickRow:function (data, index, dom) {
     	modifySimple(data.id);

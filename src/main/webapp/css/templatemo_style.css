@@ -8,12 +8,12 @@ http://www.cssmoban.com/preview/templatemo_417_grill
 /*-- Basic --*/
 a {
   text-decoration: none;
-  color: #f78e21;
+  color: #35679a;
 }
 
 a:hover {
   text-decoration: none;
-  color: #f78e21;
+  color: #35679a;
 }
 
 p {
@@ -99,7 +99,7 @@ p {
 }
 
 .main-menu a:hover {
-  color: #f78e21;
+  color: #35679a;
 }
 
 .search-box {
@@ -178,7 +178,7 @@ p {
 }
 
 .timeline-thumb:hover {
-  border-color: #f78e21;
+  border-color: #35679a;
 }
 
 .timeline-thumb .thumb img {
@@ -217,7 +217,7 @@ p {
   font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   font-weight: 300;
-  color: #f78e21;
+  color: #35679a;
 }
 
 /*-- End Timeline --*/
@@ -274,7 +274,7 @@ p {
 }
 
 .author-caption a:hover {
-  background-color: #f78e21;
+  background-color: #35679a;
   color: #fff;
 }
 
@@ -293,7 +293,7 @@ p {
 }
 
 .author-details span {
-  color: #f78e21;
+  color: #35679a;
   text-transform: uppercase;
 }
 
@@ -357,7 +357,7 @@ p {
 
 
 #filters span:hover {
-  color: #f78e21;
+  color: #35679a;
   transition: all 0.3s ease-in;
 }
 
@@ -366,7 +366,7 @@ p {
 }
 
 .label-text a:hover {
-  color: #f78e21;
+  color: #35679a;
 }
 
 .label-text h3 {
@@ -383,7 +383,7 @@ p {
   font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
   display: block;
-  color: #f78e21
+  color: #35679a
 }
 
 .portfolio-thumb img {
@@ -407,7 +407,7 @@ p {
   margin-left: -18px;
   margin-top: -18px;
   background-color: rgba(0,0,0, 0.1);
-  border: 1px solid #f78e21;
+  border: 1px solid #35679a;
   width: 80px;
   height: 80px;
   line-height: 80px;
@@ -427,7 +427,7 @@ p {
   text-align: center;
   font-size: 13px;
   width: 100%;
-  color: #f78e21;
+  color: #35679a;
   font-weight: 300;
 }
 
@@ -474,7 +474,7 @@ p {
 }
 
 .pagination a:hover {
-  background-color: #f78e21;
+  background-color: #35679a;
 }
 
 /*- End Products --*/
@@ -502,7 +502,7 @@ p {
 .product-title span {
   display: inline-block;
   font-size: 13px;
-  color: #f78e21;
+  color: #35679a;
 } 
 
 .product-content a {
@@ -555,7 +555,7 @@ p {
 
 .comment-body span {
   font-size: 14px;
-  color: #f78e21;
+  color: #35679a;
 }
 
 .comment-body p {
@@ -566,7 +566,7 @@ p {
   text-transform: uppercase;
   font-size: 14px;
   color: #fff;
-  background-color: #f78e21;
+  background-color: #35679a;
   width: 80px;
   height: 30px;
   line-height: 30px;
@@ -622,7 +622,7 @@ textarea {
   height: 35px;
   line-height: 30px;
   text-align: center;
-  background-color: #f78e21; 
+  background-color: #35679a; 
   font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -638,7 +638,7 @@ textarea {
   height: 35px;
   line-height: 30px;
   text-align: center;
-  background-color: #f78e21; 
+  background-color: #35679a; 
   color: #fff;
   font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -685,7 +685,7 @@ textarea {
 }
 
 .info i {
-  color: #f78e21;
+  color: #35679a;
   margin-right: 10px;
   font-size: 18px;
 }
@@ -702,7 +702,7 @@ textarea {
   font-weight: 700;
   color: #fff;
   text-transform: uppercase;
-  background-color: #f78e21;
+  background-color: #35679a;
   margin-top: 0px;
   padding: 9px 15px 9px 15px;
 }
@@ -722,7 +722,7 @@ textarea {
 .archives-list i {
   font-size: 16px;
   margin-right: 5px;
-  color: #f78e21;
+  color: #35679a;
 }
 
 .archives-list a {
@@ -732,7 +732,7 @@ textarea {
 }
 
 .archives-list a:hover {
-  color: #f78e21;
+  color: #35679a;
 }
 
 .recent-post {
@@ -769,13 +769,13 @@ textarea {
 }
 
 .recent-post-info a:hover {
-  color: #f78e21;
+  color: #35679a;
 }
 
 .recent-post-info span {
   font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 13px;
-  color: #f78e21;
+  color: #35679a;
 }
 
 .flickr-images {
@@ -789,7 +789,7 @@ textarea {
 }
 
 .flickr-images img:hover {
-  border: 3px solid #f78e21;
+  border: 3px solid #35679a;
   transition: all 0.1s ease-in;
   cursor: pointer;
 }
@@ -816,11 +816,10 @@ textarea {
 }
 
 .slider-caption h1 {
-  text-shadow: 1px 1px #777;
   font-size: 48px;
   padding-bottom: 10px;
   font-weight: 500;
-  color: #f78e21;
+  color: #35679a;
   text-transform: uppercase;
 }
 
@@ -835,7 +834,7 @@ textarea {
   margin-top: 20px;
   text-decoration: none;
   display: inline-block;
-  background-color: #f78e21;
+  background-color: #35679a;
   width: 200px;
   height: 40px;
   text-align: center;
@@ -860,8 +859,8 @@ textarea {
 
 .icon i {
   border-radius: 50%;
-  border: 20px solid #f78e21;
-  color: #f78e21;
+  border: 20px solid #35679a;
+  color: #35679a;
   font-size: 28px;
   line-height: 80px;
   width: 120px;
@@ -918,7 +917,7 @@ textarea {
 }
 
 .content-show span {
-  color: #f78e21;
+  color: #35679a;
 }
 
 .content-hide {
@@ -963,7 +962,7 @@ textarea {
 
 footer {
   background-color: #f3f3f3;
-  border-top: 4px solid #f78e21;
+  border-top: 4px solid #35679a;
   margin-top: 120px;
 }
 
@@ -1003,7 +1002,7 @@ footer {
 }
 
 .social-bottom a:hover {
-  background-color: #f78e21;
+  background-color: #35679a;
   color: #fff;
 }
 
@@ -1076,7 +1075,7 @@ footer {
 .shop-list i {
   font-size: 16px;
   margin-right: 5px;
-  color: #f78e21;
+  color: #35679a;
 }
 
 .shop-list a {
@@ -1086,7 +1085,7 @@ footer {
 }
 
 .shop-list a:hover {
-  color: #f78e21;
+  color: #35679a;
 }
 
 .recent-post {
@@ -1118,13 +1117,13 @@ footer {
 }
 
 .recent-post-info a:hover {
-  color: #f78e21;
+  color: #35679a;
 }
 
 .recent-post-info span {
   font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 13px;
-  color: #f78e21;
+  color: #35679a;
 }
 
 .more-info p {
@@ -1145,7 +1144,7 @@ footer {
 }
 
 .more-info i {
-  color: #f78e21;
+  color: #35679a;
   margin-right: 10px;
   font-size: 18px;
 }

@@ -54,7 +54,7 @@ $(function(){
     	  return content.text();
       }}
     ], width:'99%',
-    url:path + "/admin/queryColumnDetail.do",
+    url:"${path}/admin/queryColumnDetail.do",
     searchForm:'form',
     onDblClickRow:function (data, index, dom) {
     	modifyDetail(data.id);

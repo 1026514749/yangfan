@@ -13,24 +13,38 @@
 </head>
 <body>
 <header>
-	<div id="main-header" style="background-color:#FFEFDB">
+	<div id="main-header" style="background-color:#FFFFFF">
          <div class="container">
-              <div class="row">
-                   <div class="col-md-2">
+              <div class="row" >
+                   <div class="col-md-3">
                         <div class="logo">
-                            <a href="#"><img src="${path}/images/logo.png" title="扬帆教育" alt="扬帆教育" ></a>
+                            <a href="#"><img src="${path}/images/logo.png" style="height: 64px; width: 220px;" alt="扬帆教育" ></a>
                         </div>
                    </div>
-                   <div class="col-md-10">
+                   <div class="col-md-3 col-md-offset-6">
+                                <div class="search-box">  
+                                    <form name="search_form" method="get" class="search_form" style="height: 40px;text-shadow: none;">
+                                        <input id="search" type="text" style="height: 40px;"/>
+                                        <input type="submit" id="search-button" />
+                                    </form>
+                                </div>
+                   </div>
+              </div>
+         </div>
+    </div>
+    <div id="main-header" style="background-color:#35679a">
+         <div class="container">
+              <div class="row" >
+              	   <div class="col-md-12">
                         <div class="main-menu">
                              <ul>
                                  <c:forEach items="${columns }" var="column">
-                                    <li><a href="javaScript:" onclick="openColumn('${column.code}')">${column.name}</a></li>
+                                    <li><a  style="color:#FFFFFF;font-size: 17px;" href="javaScript:" onclick="openColumn('${column.code}')">${column.name}</a></li>
                                   </c:forEach>
                              </ul>
                         </div>
                    </div>
-              </div>
+               </div>
          </div>
     </div>
  </header>

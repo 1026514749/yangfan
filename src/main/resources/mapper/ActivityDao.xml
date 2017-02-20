@@ -3,7 +3,7 @@
 <mapper namespace="com.sjmcrf.yangfan.dao.ActivityDao">
 
 
-	<select id="get" resultType="Activity" parameterType="String">
+	<select id="get" resultType="com.sjmcrf.yangfan.entity.Activity" parameterType="String">
 		SELECT *
 		FROM `activity`
 		where id = #{id}
@@ -16,9 +16,9 @@
 		where id = #{id}
 	</update>
 	
-    <insert id="insert" parameterType="Activity" useGeneratedKeys="true" keyProperty="id">
+    <insert id="insert" parameterType="com.sjmcrf.yangfan.entity.Activity" useGeneratedKeys="true" keyProperty="id">
         insert into 
-        	`Activity`(title,image,content,design,deleted,time)
+        	`activity`(title,image,content,design,deleted,time)
         	values(#{title},#{image},#{content},#{design},#{deleted},#{time})
     </insert>
     
@@ -30,7 +30,7 @@
 		LIMIT #{pageIndex},#{pageSize}
 	</select>
 	
-	<select id="queryAll" resultType="Activity" >
+	<select id="queryAll" resultType="com.sjmcrf.yangfan.entity.Activity" >
 		SELECT *
 		FROM `activity` t
 		WHERE t.deleted = 0
@@ -39,11 +39,11 @@
 	
 	<select id="getCount" resultType="Integer">
 		SELECT COUNT(*)
-		FROM `Activity`
+		FROM `activity`
 		WHERE deleted = 0
 	</select>
 	
-	<update id="update" parameterType="Activity">
+	<update id="update" parameterType="com.sjmcrf.yangfan.entity.Activity">
 		update `activity` 
 		set title=#{title},
 			image=#{image},

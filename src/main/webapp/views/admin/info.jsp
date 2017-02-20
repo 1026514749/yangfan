@@ -72,13 +72,6 @@
              </div>
         </div>
         <div class="form-group">
-             <label class="col-xs-2 control-label">谷歌地图</label>
-             <div class="col-xs-5">
-                   <input name="map" type="text" class="form-control"  value="${info.map}">
-                   <span class="help-block">谷歌地图的坐标，类似226.434236,1.324023</span>
-             </div>
-        </div>
-        <div class="form-group">
         	<div class="col-xs-offset-4">
         		<button type="submit" class="btn btn-shadow btn-default">提交</button>
         	</div>
@@ -106,10 +99,6 @@
 		var tel = /^[1-9]\d{4,9}$/; 
 		return this.optional(element) || (tel.test(value)); 
 		}, "qq号码格式错误");
-	jQuery.validator.addMethod("map", function(value, element) { 
-		var map = /^(\d{1,3}.\d{6}),(\d{1,3}.\d{6})$/; 		
-		return this.optional(element) || (map.test(value)); 
-		}, "地图地址错误");
 	$(document).ready(function(){
 		$("#form").validate({          
 		    rules:{
@@ -130,9 +119,6 @@
 		        email:{
 		        	required:true,
 		        	email:true
-		        },
-		        map:{
-		        	map:true
 		        }
 		     }, 
 		     messages:{

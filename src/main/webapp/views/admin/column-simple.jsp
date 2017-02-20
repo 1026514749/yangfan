@@ -25,13 +25,7 @@
 <form class="form-horizontal" id="form" enctype="multipart/form-data">
  	<input type="hidden" name = "id" value="${simple.id}"/>
  	<input type="hidden" id="image" name = "image" value="${simple.image}"/>
-	<div class="form-group">
-		<label class=" col-xs-3 control-label">简介标题</label>
-		<div class="col-xs-9">
-            <input name="title" type="text" class="form-control"  value="${simple.title}">
-            <span class="help-block">简介标题，例如：园长证书</span>
-        </div>
-    </div>
+ 	<input name="title" type="hidden" class="form-control"  value="11">
     <div class="form-group">
         <label class=" col-xs-3 control-label">栏目类型</label>
 		<div class="col-xs-9">
@@ -67,13 +61,7 @@
         <div class=" col-xs-6 row-xs-3">
             <img id="img" alt="" src="${simple.image}" style="width:100%;height:100%;">
         </div>
-    </div>
-    <div class="form-group">
-        <label class="col-xs-3 row-xs-3 control-label">简介内容</label>
-        <div class=" col-xs-9 row-xs-3">
-        	<textarea rows="3" cols="" name="content" class="form-control">${simple.content}</textarea>
-        </div>
-    </div>			
+    </div>		
     <div class="form-group">
     	<div class="col-xs-offset-5 col-xs-7">
     	    <button type="submit" class="btn btn-shadow btn-default">提交</button>
@@ -94,18 +82,6 @@
 	$(document).ready(function(){
 		$("#form").validate({          
 		    rules:{
-		    	title:{
-		         	required:true,
-		         	rangelength:[1,20]
-		        },
-		        button:{
-		        	required:true,
-		        	rangelength:[0,200]
-		        },
-		        content:{
-		        	required:true,
-		        	rangelength:[0,200]
-		        },
 		        order:{
 		        	required:true,
 		        	digits:true,
@@ -113,18 +89,6 @@
 		        }
 		     }, 
 		     messages:{
-		    	 title:{
-			         required:'栏目标题不能为空',
-			         rangelength:$.validator.format("输入的范围在 {0}-{1} 之间的字符.")
-			     },
-			     button:{
-			        required:'按钮名称不能为空',
-			        rangelength:$.validator.format("输入的范围在 {0}-{1} 之间的字符.")
-			     },
-			     content:{
-			        required:'简介内容不能为空',
-			        rangelength:$.validator.format("输入的范围在 {0}-{1} 之间的字符.")
-			     },
 			     order:{
 			        required:'排序不能为空',
 			        digits:'必须为整数',
