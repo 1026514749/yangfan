@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sjmcrf.yangfan.dao.OtherDao">
+
+
+	<select id="get" resultType="Info">
+		SELECT *
+		FROM other
+		where deleted = 0
+	</select>
+
+	<update id="deleteAll">
+		UPDATE info 
+		SET 
+		deleted = 1
+	</update>
+	
+    <insert id="insert" parameterType="Info" useGeneratedKeys="true" keyProperty="id">
+        insert into 
+        	other(content,design,deleted)
+        	values(#{content},#{design},#{deleted})
+    </insert>
+
+</mapper>
